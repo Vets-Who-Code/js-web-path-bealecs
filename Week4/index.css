@@ -65,6 +65,8 @@ button {
 }
 button:hover {
     box-shadow: red 2px 2px 2px 2px;
+    background-color: red;
+    color: white;
 }
 /* Tablet View */
 @media screen and (max-width: 768px) {
