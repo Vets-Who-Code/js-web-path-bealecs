@@ -5,4 +5,4 @@ FigJam : https://www.figma.com/file/OT3cURN3RkusyjSQbL154p/Clif's-Portfolio-wire
 Wireframe Design : https://www.figma.com/file/Bch3fGz38wmGXJUL9rve55/Clif's-Wireframe-Design?t=nqnz6XRrb4sLei53-6
 
 
-***Updated with corrections based on feedback from Schuster
+**Updated again 3/26 ready for review
