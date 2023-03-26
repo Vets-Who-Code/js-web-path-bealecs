@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <!-- Header Section -->
-    <header>
-        <navbar style="display: flex; flex-direction: row; justify-content: space-evenly;">
-            <h1>Clif Codes</h1>
-            <!-- Unorderd list Section -->
-            <ul style="display: flex; flex-direction: row; justify-content: space-between; margin: auto; width: 80%;">
-                <li style="text-decoration: underline; list-style: none; ">Nav Item 1</li>
-                <li style="text-decoration: underline; list-style: none; ">Nav Item 2</li>
-                <li style="text-decoration: underline; list-style: none; ">Nav Item 3</li>
-            </ul>
-        </navbar>
-    </header>
+<body>
 
-    <body>
-        
+        <!-- Header Section -->
+
+        <header>
+            <navbar>
+                <h1>Clif Codes</h1>
+                <!-- Unorderd list Section -->
+                <ul>
+                    <li>Nav Item 1</li>
+                    <li>Nav Item 2</li>
+                    <li>Nav Item 3</li>
+                </ul>
+            </navbar>
+        </header>
+
         <!-- Section #1 -->
 
         <section style="margin: auto">
@@ -44,57 +45,61 @@
         <!-- Section #2 -->
 
         <section>
-            <h3 style="text-align: center;">Contact</h3>
-            <p style="text-align: center;">If you ever wanted to get in contact, this is a good place to do so.
+            <h3>Contact</h3>
+            <p>If you ever wanted to get in contact, this is a good place to do so.
                 Simply fill out your name, email, and your reason for reaching out. That's it, response time may vary..</p>
-            <form style="display: flex; flex-direction: column; width: 50%; padding: 2%;margin: auto;">
+            <form>
                 <label for="f-name">First Name:</label>
                 <input id="f-name" placeholder="First Name" type="text" minlength="1" maxlength="25" required/>
                 <label for="l-name">Last Name:</label>
                 <input id="l-name" placeholder="Last Name" type="text" minlength="1" maxlength="25" required/>
                 <label for="email">Email:</label>
                 <input id="email" placeholder="Email" type="email" minlength="8" maxlength="25" required/>
-                <textarea style="margin-top: 1%;" placeholder="Message..." minlength="10" maxlength="180"></textarea>
+                <textarea placeholder="Message..." minlength="10" maxlength="180"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </section>
 
+        <hr />
+        <br /> 
         <!-- Table Section -->
 
-        <table style="margin: auto;border: 1px solid black">
-            <tr style="margin: auto;border: 1px solid black">
-                <th style="text-align: center;">Table Header</th>
+        <table>
+            <tr>
+                <th>Table Header</th>
             </tr>
-            <tr style="margin: auto;border: 1px solid black">
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
+            <tr>
+                <td>Table Data Column</td>
+                <td>Table Data Column</td>
+                <td>Table Data Column</td>
             </tr>
-            <tr style="margin: auto;border: 1px solid black">
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
+            <tr>
+                <td>Table Data Column</td>
+                <td>Table Data Column</td>
+                <td>Table Data Column</td>
             </tr>
-            <tr style="margin: auto;border: 1px solid black">
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
-                <td style="margin: auto;border: 1px solid black">Table Data Column</td>
+            <tr>
+                <td>Table Data Column</td>
+                <td>Table Data Column</td>
+                <td>Table Data Column</td>
             </tr>
 
-            <tr style="margin: auto;border: 1px solid black">
-                <th style="text-align: center;">Footer</th>
-            </tr>
+            <tfoot>
+                <tr>
+                  <td>Footer</td>
+                </tr>
+              </tfoot>
         </table>
-    </body> 
-
+        
     <!-- Footer Section -->
     
     <footer>
-        <h4 style="text-align: center; margin: 5%;">Footer</h1>
-        <ul style="display: flex; flex-direction: row; justify-content: space-between; margin: auto; width: 50%; align-items: center;">
-            <li style="text-decoration: underline; list-style: none; ">Social Icon 1</li>
-            <li style="text-decoration: underline; list-style: none; ">Social Icon 2</li>
-            <li style="text-decoration: underline; list-style: none; ">Social Icon 3</li>
+        <h4>Footer</h1>
+        <ul>
+            <li>Social Icon 1</li>
+            <li>Social Icon 2</li>
+            <li>Social Icon 3</li>
         </ul>
     </footer>
+</body> 
 </html>
