@@ -37,13 +37,18 @@ section img {
 }
 .hero-img {
     width: 100%;
+    aspect-ratio: 2.5;
     margin: auto;
 }
 .hero-container {
     width: 80%;
     margin: auto;
+    padding-bottom: 2%;
 }
 h4 {
+    text-align: center;
+}
+h2 {
     text-align: center;
 }
 .footer-container {
@@ -60,13 +65,13 @@ button {
     margin-top: 2%;
     padding: 1%;
     border: 1px solid black;
-    transition: box-shadow ease-in 0.4s;
+    transition: box-shadow ease-in 0.1s;
     border-radius: 10%;
 }
 button:hover {
-    box-shadow: red 2px 2px 2px 2px;
-    background-color: red;
-    color: white;
+    box-shadow: red 0px 4px 12px 0px;
+    background-color: white;
+    color: red;
 }
 /* Tablet View */
 @media screen and (max-width: 768px) {
