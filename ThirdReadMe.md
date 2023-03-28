@@ -1,6 +1,9 @@
 # Clif Codes
 
-### This is serving as my changes to the MarkDown with VS code
+### *This is serving as my changes to the MarkDown with VS code*
+
+#### I added a new branch and I will be committing this file to the 2-Developer-Workflow branch and then opening the pull request to the main branch from there
+
 
 >#### What I did during the week 2 assignment:
 >
