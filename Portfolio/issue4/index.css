@@ -1,0 +1,94 @@
+@keyframes scale {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(100%)
+    }
+}
+* {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-name: scale;
+}
+.container {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 2%;
+}
+section {
+    width: 30%;
+    margin: auto;
+}
+section img {
+    width: 100%;
+    aspect-ratio: 1.7;
+}
+.hero-img {
+    width: 100%;
+    aspect-ratio: 2.5;
+    margin: auto;
+}
+.hero-container {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2%;
+}
+h4 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h1 {
+    text-align: center;
+}
+button {
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    transition: box-shadow ease-in 0.1s;
+    border-radius: 10%;
+}
+button:hover {
+    box-shadow: red 0px 4px 12px 0px;
+    background-color: white;
+    color: red;
+}
+/* Tablet View */
+@media screen and (max-width: 768px) {
+    section {
+        width: 40%;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+    section img {
+        width: 80%;
+    }
+    section {
+        width: 100%;
+    }
+    .hero-container {
+        width: 100%;
+    }
+}
