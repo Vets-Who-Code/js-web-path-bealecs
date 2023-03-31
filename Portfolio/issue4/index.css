@@ -82,8 +82,11 @@ button:hover {
 
 /* Mobile View */
 @media screen and (max-width: 480px) {
-    section {
+    section img {
         width: 80%;
+    }
+    section {
+        width: 100%;
     }
     .hero-container {
         width: 100%;
