@@ -3,6 +3,10 @@
 **Design Link**
 >[Figma_Design](https://www.figma.com/file/Bch3fGz38wmGXJUL9rve55/Clif's-Wireframe-Design?t=Ke8AdRqrYzVzGcUY-6)
 
+**Updates**
+> I changed the navbar and footer section to be frames so that I could make them into components. I also added the prototyping as asked in issue 5. Minor changes to UI 
+like changing text boxes, and updating form page were also made.  
+
 **My 5 Laws that were utilized**
 
 **Jakob's law**
