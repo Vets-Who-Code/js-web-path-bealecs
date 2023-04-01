@@ -1,7 +1,7 @@
 **Issue 5**
 
 **Design Link**
->[Figma_Design](https://www.figma.com/file/Bch3fGz38wmGXJUL9rve55/Clif's-Wireframe-Design?t=Ke8AdRqrYzVzGcUY-6)
+>[Updated_Figma_Design](https://www.figma.com/file/Bch3fGz38wmGXJUL9rve55/Clif's-Wireframe-Design?t=5PDaq1Z5uM9ZzqsT-6)
 
 **Updates**
 > I changed the navbar and footer section to be frames so that I could make them into components. I also added the prototyping as asked in issue 5. Minor changes to UI 
@@ -26,7 +26,7 @@ you are using law of common region by placing like items in similar nav links
  > Be liberal in what you accept, and conservative in what you send.
  > I am not sending any info to the user, however users can leave feedback via the feedback input section or reach out to contact with a personalized message
 
- **Aesthetic Usability Effect**
- > Users often perceive aesthetically pleasing design as design that’s more usable.
- > I try to make my designs aethestically pleasing. I think my favorite section is the project cards
+ **Miller's Law**
+ > The average person can only keep 7 (plus or minus 2) items in their working memory
+ > When reworking the projects cards, I broke them down and made it a little more simple to digest by changing it to carousel theme. This law is also exhibited by giving the resume and contact form their own pages for viewing. 
 
