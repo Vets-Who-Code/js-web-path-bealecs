@@ -11,7 +11,7 @@ like changing text boxes, and updating form page were also made.
 
 **Jakob's law**
  > Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.
- > Contact form is similar to others, Navbar component, footer component
+ > I would say this is a solid comparison https://www.w3schools.com/howto/howto_css_contact_form.asp the form for the site will be fairly basic as it is solely a contact form meant to capture name, email, and message. The only differences that are typically found with contact forms is CSS differences or different input methods like phone number or ect.. A familiar contact form is easy to navigate and users know what is expected of them. This is why I associated Jakob's law with the contact form
 
 **Law of Common Region**
  > Elements tend to be perceived into groups if they are sharing an area with a clearly defined boundary.
