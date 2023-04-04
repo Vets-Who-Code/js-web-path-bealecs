@@ -12,6 +12,9 @@
     animation-delay: 0s;
     animation-name: scale;
 }
+#apiSection {
+    text-align: center;
+}
 .container {
     width: 100%;
     display: inline-flex;
