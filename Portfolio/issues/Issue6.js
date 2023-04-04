@@ -1,7 +1,10 @@
     //Step 1: Assign an array of 5 random numbers to a variable
     let numArray = new Array(5)
     numArray = numArray.fill(0).map(() => Math.floor(Math.random() * 100));
-    //Step 2 & 3 & 4: Use a for loop to iterate through the array and add the counter to each item in the array
+    
+    //Step 2: Assign a number to a variable and call it counter
+    //Step 3: Use a for loop to iterate through the array and add the counter to each item in the array
+    //Step 4: On each iteration add 1 to the counter
     for(let counter = 0 ; counter < numArray.length; counter++) {
         const newValue = numArray[counter] + counter; 
         console.log(`Old Value: ${numArray[counter]} | The updated value after counting is: ${newValue}`);
