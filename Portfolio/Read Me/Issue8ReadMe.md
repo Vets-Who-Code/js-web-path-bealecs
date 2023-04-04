@@ -10,4 +10,4 @@
 >./Portfolio/issues/Issue8.js <br />
 >./Portfolio/ReadMe/Issue8ReadMe.md
 
-[Netlify_Preview](https://app.netlify.com/sites/clifcodesweek8/settings/general)
+[Netlify_Preview](https://clifcodesweek8.netlify.app/)
