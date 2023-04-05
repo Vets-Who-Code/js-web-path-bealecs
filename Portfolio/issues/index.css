@@ -18,6 +18,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+#apiSection {
+    text-align: center;
+}
 .clicked {
     font-size: 1.5rem;
     background-color: red;
