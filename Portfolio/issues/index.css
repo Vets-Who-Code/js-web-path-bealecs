@@ -19,7 +19,9 @@
     flex-wrap: wrap;
 }
 #apiSection {
+    width: 100%;
     text-align: center;
+    margin: auto;
 }
 .clicked {
     font-size: 1.5rem;
