@@ -18,6 +18,14 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.clicked {
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+}
+li {
+    cursor: default;
+}
 navbar {
     display: flex;
     flex-direction: row;
