@@ -26,6 +26,10 @@
 li {
     cursor: default;
 }
+#issue7 {
+    width: 100%;
+    margin: auto;
+}
 navbar {
     display: flex;
     flex-direction: row;
