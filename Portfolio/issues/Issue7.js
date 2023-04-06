@@ -1,43 +1,34 @@
 //Step 1: Select the <body> element
 const body = document.getElementById('issue7');
 
-//Step 2: Add a list element as a child of the body
-const list = document.createElement('li');
-list.textContent = "List item"
-body.appendChild(list);
+function createElement(element, text, name) { //function to create an element given its parameters of element type, text content, and id-name
+  const created = document.createElement(element); //variable for the newly created element
+  created.setAttribute("id", name); //sets created elements id = name parameter
+  created.textContent = text; //sets text content to text parameter
+  body.appendChild(created); //appends to html <body>
+  return created;
+}
 
-//Step 3: Add 2 buttons as children to the <body> element
-const addButton = document.createElement('button');
-addButton.textContent = 'Add List Item';
-body.appendChild(addButton);
+function addList() { //function to create list item, used with button for adding list item
+    const listItem = createElement('li', 'List item', 'list-item');
+    listItem.addEventListener('click', () => {
+      listItem.classList.toggle('clicked'); //when clicked, list items have a background color of red, 1.5rem font size and white font color
+    });
+}
 
-const removeButton = document.createElement('button');
-removeButton.textContent = 'Remove List Item';
-body.appendChild(removeButton);
-
-//Step 4: The first button should add a list item element to the newly created list
-addButton.addEventListener('click', () => {
-  const listItem = document.createElement('li');
-  listItem.textContent = 'List Item';
-  list.appendChild(listItem);
-});
-
-//Step 5: The second button should remove a list item from the list
-removeButton.addEventListener('click', () => {
-  const lastListItem = list.lastElementChild; 
-  if (lastListItem) { //ensures that there is a list item to remove
-    list.removeChild(lastListItem);
+function removeList() { //function to remove list item, used with button for removing list item
+  const listItem = document.getElementById("list-item");
+  if (listItem) { //ensures that there is a list item to remove
+    body.removeChild(listItem);
   }
-});
+}
 
-//Step 6: Make an event that listens for a click on one of the list items and when that event happens something updates (example: the background color updates) using .classList.add and .classList.remove
-list.addEventListener('click', (event) => {
-  const listItem = event.target;
-    if(listItem.tagName === "LI") {
-        if(listItem.classList.contains("clicked")) {
-            listItem.classList.remove("clicked");
-        } else {
-            listItem.classList.add("clicked"); //On click, the list items will have a background color of red, a font size of 1.5 rem and a font color of white
-        }
-    }
-});
+createElement('button', 'Add List Item', 'add-button'); //creates add button using function call
+createElement('button', 'Remove List Item', 'remove-button'); //creates remove button using function call
+
+const addButton = document.getElementById("add-button"); //assigns add button to addButton variable
+const removeButton = document.getElementById("remove-button"); //assigns remove button to removeButton variable
+
+addButton.addEventListener('click', addList); //adding event listener for on click with function for adding a list using the add list button
+removeButton.addEventListener('click', removeList); //adding event listener for on click with function for removing a list using the removing list button
+
