@@ -11,6 +11,7 @@
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-name: scale;
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container {
     width: 100%;
@@ -18,14 +19,45 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-navbar {
+.clicked {
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+}
+li {
+    cursor: default;
+}
+#issue7 {
+    width: 100%;
+    margin: auto;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 2%;
+}
+nav > ul {
+    width: 85%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
+}
+nav > h1 {
+    align-items: center;
+    font-size: 2rem;
+}
+#issue7 {
     margin: auto;
-    padding-bottom: 2%;
+    text-align: center;
+}
+#issue7 button {
+    margin: 1%;
 }
 section {
     width: 30%;
@@ -72,6 +104,17 @@ button:hover {
     box-shadow: red 0px 4px 12px 0px;
     background-color: white;
     color: red;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+    box-shadow: red 0px 0px 4px 0px;
+    border-radius: 10%;
+    transition: background-color ease-in 0.2s;
+}
+a:hover {
+    background-color: rgb(255, 0, 0, 0.65);
 }
 /* Tablet View */
 @media screen and (max-width: 768px) {
