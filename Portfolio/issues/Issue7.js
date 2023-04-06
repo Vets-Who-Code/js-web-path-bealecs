@@ -1,9 +1,9 @@
 //Step 1: Select the <body> element
-const body = document.querySelector('body');
+const body = document.getElementById('issue7');
 
 //Step 2: Add a list element as a child of the body
 const list = document.createElement('li');
-list.textContent = "First list item"
+list.textContent = "List item"
 body.appendChild(list);
 
 //Step 3: Add 2 buttons as children to the <body> element
@@ -18,7 +18,7 @@ body.appendChild(removeButton);
 //Step 4: The first button should add a list item element to the newly created list
 addButton.addEventListener('click', () => {
   const listItem = document.createElement('li');
-  listItem.textContent = 'New List Item';
+  listItem.textContent = 'List Item';
   list.appendChild(listItem);
 });
 
