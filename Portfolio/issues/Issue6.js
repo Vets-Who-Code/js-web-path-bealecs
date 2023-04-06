@@ -7,7 +7,7 @@
        return numbers;
     };
     const numArray = genRandArr();
-
+ //Steps 2-4: Iterate through the array determining whether each item is odd or even
     for(let counter = 0 ; counter < numArray.length; counter++) {
         const newValue = numArray[counter] + counter; 
         console.log(`Old Value: ${numArray[counter]} \n
