@@ -31,6 +31,11 @@ li {
     width: 100%;
     margin: auto;
 }
+#apiSection {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
 nav {
     display: flex;
     flex-direction: row;
