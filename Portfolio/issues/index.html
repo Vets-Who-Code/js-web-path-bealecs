@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Clif Codes</title>
     <script src="Issue6.js" async></script>
     <script src="./Issue7.js" async></script>
@@ -15,56 +16,59 @@
         <nav>
             <h1>Clif Codes</h1>
             <ul>
-                <a href="#">Resume</a>
-                <a href="#">Contact</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
+                <a class="nav-button" href="#">Resume <i class="fa fa-briefcase"></i></a>
+                <a class="nav-button" href="#">Contact <i class="fa fa-address-book-o"></i></a>
+                <a class="nav-button" href="#">Projects <i class="fa fa-handshake-o"></i></a>
+                <a class="nav-button" href="#">About <i class="fa fa-male"></i></a>
             </ul>
         </nav>
     </header>
-    <h2>Check out my console log for some Javascript treats</h2>
-    <div class="hero-container">
-        <h4>Stock image | On mobile, it will take 100% rather than 80%</h4>
-        <img class="hero-img" src="https://as1.ftcdn.net/v2/jpg/04/78/13/36/1000_F_478133647_UFA1sS2kIFhBqOcmoPUelsmvY7wngONd.jpg" alt="white stairs leading to red stair at the top" />
+    <section class="landing-section">
+        <div>
+            <h2 class="name">I'm <span class="name2">Clif</span></h2>
+            <h3 class="typewriter-text"><span class="typewriter">Husband, Web Developer, Veteran, Gamer</span><span class="typewriter-cursor"></span></h3>
+            <a class="vwc" href="https://vetswhocode.io" target="_blank" rel="noopener noreferrer">#VetsWhoCode</a>
+        </div>
+        <div>
+            <img class="pfp" src="./images/pfp.webp" alt="Professional shot of Clif Beale with a transparent background" width="400px"/>
+        </div>
+    </section>
+    <h2 class="proj-h2">Projects</h2>
+    <div class="container" id="projects">
+        <section class="cards-section">
+            <h4>Pips with Paul</h4>
+            <img src="./images/pipswithpaul.webp" alt="Screenshot of pips with paul website">
+            <p>Get your learning journey started today! Personalized courses built towards your success.
+            </p>
+        </section>
+        <section class="cards-section">
+            <h4>Clif's Catalog</h4>
+            <img src="./images/clifscatalog.webp" alt="Screenshot of Clif's Catalog website">
+            <p>A cookbook inspired from lack of inspiration; what started as a random meal generator has grown into something larger, and something that I can be more proud of.</p>
+        </section>
+        <section class="cards-section">
+            <h4>Cross & Carlile Lighting</h4>
+            <img src="./images/cclightingpage.webp" alt="Screenshot of Cross & Carlile Lighting website">
+            <p>Exterior lighting company based in southeastern VA. With Cross & Carlile, you are guaranteed a bright experience.
+            </p>
+        </section>
     </div>
-    <section id="issue7">
-        <h2>Create a new list</h2>
+    <h2 class="treats">Check out my console log for some Javascript treats</h2>
+    <section class="about-container">
+        <h4 class="about-title">Stock image | On mobile, it will take 100% rather than 80%</h4>
+        <img class="about-img" src="https://as1.ftcdn.net/v2/jpg/04/78/1.jpg" alt="white stairs leading to red stair at the top" />
     </section>
     <section id="apiSection">
         <h2>Want to learn more about Luke Skywalker?</h2>
         <button id="api">Click here</button>
     </section>
-    <h2>Sample Text Title Here</h2>
-    <div class="container">
-        <section>
-            <img src="https://as1.ftcdn.net/v2/jpg/03/20/36/36/1000_F_320363623_bLioLpIHZMx1Nw6MRoDZ1zN1YclIikbA.jpg" alt="Clouds with dark background">
-            <h4>Header Text</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis, nisi eget placerat rhoncus, dui ex efficitur arcu, ut finibus augue quam sed lectus.
-                 Suspendisse ullamcorper pretium augue, id maximus est lacinia sed
-            </p>
-        </section>
-        <section>
-            <img src="https://as1.ftcdn.net/v2/jpg/03/13/71/64/1000_F_313716400_PcEagqD4MMcR6U260D43y8CnVrIgmB51.jpg" alt="dark pattern with purple lighting">
-            <h4>Header Text</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis, nisi eget placerat rhoncus, dui ex efficitur arcu, ut finibus augue quam sed lectus.
-                Suspendisse ullamcorper pretium augue, id maximus est lacinia sed
-            </p>
-        </section>
-        <section>
-            <img src="https://as1.ftcdn.net/v2/jpg/02/76/21/14/1000_F_276211407_iQ03ryBski67G5bV26rZUx8QXHIRem0C.jpg" alt="blurred city lights">
-            <h4>Header Text</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis, nisi eget placerat rhoncus, dui ex efficitur arcu, ut finibus augue quam sed lectus.
-                Suspendisse ullamcorper pretium augue, id maximus est lacinia sed
-            </p>
-        </section>
-    </div>
+    <section id="issue7">
+        <h2>Create a new list</h2>
+    </section>
     <footer>
-        <h2>Footer</h2>
-        <div class="footer-container">
-            <a href='https://www.linkedin.com/in/clif-beale/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href='https://codepen.io/clifcodes' target="_blank" rel="noopener noreferrer">CodePen</a>
-            <a href='https://github.com/bealecs' target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
+        <a class="nav-button" href='https://www.linkedin.com/in/clif-beale/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="nav-button" href='https://codepen.io/clifcodes' target="_blank" rel="noopener noreferrer">CodePen</a>
+        <a class="nav-button" href='https://github.com/bealecs' target="_blank" rel="noopener noreferrer">GitHub</a>
     </footer>
 </body>
 </html>
