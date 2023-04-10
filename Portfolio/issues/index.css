@@ -160,9 +160,14 @@ li {
     background-color: #4986B6;
     color: white;
     margin-top: 2%;
+    border-radius: 10%;
+}
+.cards-section p {
+    padding: 4%;
 }
 .cards-section > h4 {
     font-size: 1.7rem;
+    padding: 3%;
 }
 .cards-section img {
     width: 100%;
