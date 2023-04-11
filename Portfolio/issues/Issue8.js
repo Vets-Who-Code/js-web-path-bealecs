@@ -15,12 +15,14 @@ function createElement(element, text, name) { //function to create an element gi
 
 //Start of Promise to fetch data from given API
     new Promise((resolve) => setTimeout(resolve, 1000)) //1 second timeout before fetching data
-        .then(() => fetch("https://swapi.dev/api/people/1/")) //url which I am fetching data from, pulled from swapi documentation
-        .then((response) => {
-            return response.json(); //JSON formatted response of data
-        })
+        .then(() => fetch("https://theaudiodb.com/api/v1/json/2/artist.php?i=152666")) //url which I am fetching data from, pulled from swapi documentation
+        .then((response) => response.json()) //JSON formatted response of data
         .then((data) => {
-            const result = createElement('pre', JSON.stringify(data, null, 3), 'data')
+            dataObject = data.artists;
+        })
+        .then(() => {
+            const [strArtist, strArtistThumb, strLabel] = dataObject;
+            const result = createElement('pre', JSON.stringify(strArtistThumb, null, 6), 'data');
             document.getElementById("apiSection").appendChild(result); //appending that text to the apiSection id element
         })
         .catch((error) => {
