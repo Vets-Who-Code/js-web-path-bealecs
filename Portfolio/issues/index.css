@@ -264,6 +264,13 @@ footer {
     margin: auto;
     width: fit-content;
 }
+.footer-button {
+    text-decoration: none;
+    font-size: 5rem;
+    transition: background-color ease-in 0.1s;
+    background-color: #4986B6;
+    color: white;
+}
 
 /* End of Footer Section */
 
