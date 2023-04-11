@@ -236,6 +236,9 @@ h2.data {
     margin: auto;
     line-height: 1.5rem;
 }
+.list-item {
+    list-style:upper-roman;
+}
 /* End of Project Section */
 
 /* Start of About Section */
