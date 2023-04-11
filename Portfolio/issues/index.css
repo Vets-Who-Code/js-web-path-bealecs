@@ -230,6 +230,7 @@ h2.data {
 }
 .data-img {
     width: 300px;
+    border-radius: 10%;
 }
 .data-p {
     width: 50%;
