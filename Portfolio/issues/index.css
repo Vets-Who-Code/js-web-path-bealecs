@@ -225,6 +225,17 @@ li.nav-button:hover {
 .treats {
     text-align: center;
 }
+h2.data {
+    padding: 1%;
+}
+.data-img {
+    width: 300px;
+}
+.data-p {
+    width: 50%;
+    margin: auto;
+    line-height: 1.5rem;
+}
 /* End of Project Section */
 
 /* Start of About Section */

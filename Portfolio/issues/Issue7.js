@@ -29,7 +29,7 @@ function createElement7(element, text, name) { //function to create an element g
 function removeList() { //function to remove list item, used with button for removing list item
   const listItem = document.querySelector(".list-item");
   if (listItem) { //ensures that there is a list item to remove
-    issue7Body.removeChild(listItem);
+    issue7Body.removeChild(issue7Body.lastChild);
     counter--;
   }
 }

@@ -8,6 +8,7 @@ function createElement(element, text, name) { //function to create an element gi
   issue8Body.appendChild(created); //appends to html <body>
   return created;
 }
+
 //adding a click event listener to add loading text when the button is fired..
     button.addEventListener('click', () => { 
         createElement('p', 'Loading...', 'loading');
@@ -21,9 +22,16 @@ function createElement(element, text, name) { //function to create an element gi
             dataObject = data.artists;
         })
         .then(() => {
-            const [strArtist, strArtistThumb, strLabel] = dataObject;
-            const result = createElement('pre', JSON.stringify(strArtistThumb, null, 6), 'data');
-            document.getElementById("apiSection").appendChild(result); //appending that text to the apiSection id element
+            const [strArtist] = dataObject;
+            const resultName = createElement('h2', JSON.stringify(strArtist.strArtist, null, 2), 'data');
+            const resultPara = createElement('p', JSON.stringify(strArtist.strBiographyEN), 'data-p');
+            const resultImg = document.createElement("img"); //creates the image element
+            resultImg.src = strArtist.strArtistThumb; //draws src for image from fetch request variable
+            resultImg.alt = "Rosalia Thumbnail";
+            resultImg.classList.add('data-img');
+            document.getElementById("apiSection").appendChild(resultName); //appending that text to the apiSection id element
+            document.getElementById("apiSection").appendChild(resultPara);
+            document.getElementById("apiSection").appendChild(resultImg);
         })
         .catch((error) => {
             const errorResult = createElement('p', error, 'error');
