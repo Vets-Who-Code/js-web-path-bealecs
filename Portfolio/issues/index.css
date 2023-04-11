@@ -69,7 +69,7 @@ h1 {
     align-items: center;
 }
 .pfp {
-    border-radius: 10%;
+    border-radius: 20%;
 }
 .name {
     font-size: 2rem;
@@ -239,6 +239,7 @@ h2.data {
 }
 .list-item {
     list-style:upper-roman;
+    margin-bottom: 0.5%;
 }
 /* End of Project Section */
 
@@ -330,7 +331,9 @@ h2.data {
     font-size: 1.7rem;
     margin-top: 1%;
 }
-
+.contact-container p {
+    text-align: center;
+}
 /* End of Contact Section */
 
 
