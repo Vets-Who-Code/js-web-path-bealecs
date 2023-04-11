@@ -1,11 +1,3 @@
-@keyframes scale {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(100%)
-    }
-}
 @keyframes blink {
     from, to { background-color: transparent }
     50% { background-color: black }
@@ -16,10 +8,6 @@
   }
   
 * {
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-name: scale;
     font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
 }
@@ -155,12 +143,16 @@ li {
     margin: 1%;
 }
 .cards-section {
-    width: 35%;
+    width: 30%;
     margin: auto;
     background-color: #4986B6;
     color: white;
     margin-top: 2%;
     border-radius: 10%;
+}
+.cards-section:hover {
+    box-shadow: #4986B6 0px 0px 24px 0px;
+    border: 2px solid white;
 }
 .cards-section p {
     padding: 4%;
@@ -168,6 +160,7 @@ li {
 .cards-section > h4 {
     font-size: 1.7rem;
     padding: 3%;
+    text-align: center;
 }
 .cards-section img {
     width: 100%;
@@ -211,18 +204,49 @@ a.nav-button:hover {
 }
 /* End of Project Section */
 
-
-
 /* Start of About Section */
 .about-img {
-    width: 100%;
-    aspect-ratio: 2.5;
+    width: 65%;
+    aspect-ratio: 1;
     margin: auto;
+    padding: 2%;
+    margin-left: 10%;
+}
+.about-div {
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 2%;
+}
+.about-div p {
+    margin-right: 10%;
+}
+.about-title {
+    display: block;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #4986B6;
 }
 .about-container {
-    width: 80%;
+    width: 100%;
+    min-height: 85vh;
     margin: auto;
     padding-bottom: 2%;
+    background-color: #4986B6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.about-container h2 {
+    text-align: center;
+}
+.vwc-tag {
+    color: white;
 }
 /* End of About Section */
 
