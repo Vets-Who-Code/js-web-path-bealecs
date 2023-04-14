@@ -16,7 +16,7 @@
 
     <header>
         <nav>
-            <h1 id="logotitle">Clif Codes</h1>
+            <h1 id="logotitle" class="logo-title">Clif Codes</h1>
             <ul>
                 <li class="nav-button" id="projectsID">Projects <i class="fa fa-handshake-o"></i></li>
                 <li class="nav-button" id="aboutID">About <i class="fa fa-male"></i></li>
@@ -28,6 +28,9 @@
 
     <section class="landing-section" id="landingSection">
         <div>
+            <img class="pfp" src="./images/pfp.webp" alt="Professional shot of Clif Beale with a transparent background" width="350px"/>
+        </div>
+        <div class="landing-info">
             <h2 class="name">I'm <span class="name2">Clif</span></h2>
             <h3 class="typewriter-text"><span class="typewriter">Husband, Web Developer, Veteran, Gamer</span><span class="typewriter-cursor"></span></h3>
             <a class="vwc" href="https://vetswhocode.io" target="_blank" rel="noopener noreferrer">#VetsWhoCode</a>
@@ -37,29 +40,26 @@
                 <a class="footer-button" href='https://www.linkedin.com/in/clif-beale/' target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a>
             </div>
         </div>
-        <div>
-            <img class="pfp" src="./images/pfp.webp" alt="Professional shot of Clif Beale with a transparent background" width="350px"/>
-        </div>
     </section>
 
     <h2 class="proj-h2" id="projectsSection">Projects</h2>
-    <h2 class="treats">Check out my console log for some Javascript treats</h2>
+    <h2 class="treats">Click on a project card to view the repo</h2>
     <article class="container" id="projects">
-        <section class="cards-section">
+        <section class="cards-section" id="pwpSection">
             <h4>Pips with Paul</h4>
             <img src="./images/pipswithpaul.webp" alt="Screenshot of pips with paul website">
-            <p>Get your learning journey started today! Personalized courses built towards your success. *Click to view the repo*
+            <p>Get your learning journey started today! Personalized courses built towards your success.
             </p>
         </section>
-        <section class="cards-section">
+        <section class="cards-section" id="clifCatalogSection">
             <h4>Clif's Catalog</h4>
             <img src="./images/clifscatalog.webp" alt="Screenshot of Clif's Catalog website">
-            <p>A cookbook inspired from lack of inspiration; what started as a random meal generator has grown into something larger, and something that I can be more proud of. *Click to view the repo*</p>
+            <p>A cookbook inspired from lack of inspiration; what started as a random meal generator has grown into something larger, and something that I can be more proud of.</p>
         </section>
-        <section class="cards-section">
+        <section class="cards-section" id="ccLightingSection">
             <h4>Cross & Carlile Lighting</h4>
             <img src="./images/cclightingpage.webp" alt="Screenshot of Cross & Carlile Lighting website">
-            <p>Exterior lighting company based in southeastern VA. With Cross & Carlile, you are guaranteed a bright experience. *Click to view the repo*
+            <p>Exterior lighting company based in southeastern VA. With Cross & Carlile, you are guaranteed a bright experience.
             </p>
         </section>
         <section id="apiSection">
@@ -105,10 +105,102 @@
         </form>
     </section>
 
+    <section class="resume-container" id="resumeSection">
+        <h2 class="about-title">My <span class="name2">Resume</span></h2>
+        <h4 class="download-txt">For the full resume, click below to download</h4>
+        <a class="nounderline" href="./pdf/Clifton Beale's Resume (Dice).pdf" target="_blank" rel="noopener noreferrer" download><button>Download</button></a>
+        <div class="top-resume">
+            <article class="education">
+                <h3 class="resume-h3">Education</h3>
+                <section class="edu-section">
+                    <h4 class="edu-title">CodeCademy Online</h4>
+                    <p>I completed and earned a certificate for front-end path work from Codecademy's online courses. Within these courses, 
+                        I was taught the basics of HTML and CSS, as well as touching into some basic functionality with Javascript.
+                    </p>
+                </section>
+                <section class="edu-section">
+                    <h4 class="edu-title">Google IT Support Professional Certificate</h4>
+                    <p>Eight-month IT support program, developed by Google, that covers troubleshooting,
+                        customer service, networking, operating systems, system administration, and security, and
+                        includes hands-on labs
+                    </p>
+                </section>
+                <section class="edu-section">
+                    <h4 class="edu-title">Coursera Online - META Front-End Web Developer</h4>
+                    <p>Completed and earned certificates through Coursera over several months, taking deeper dives into the fundamentals of Javascript and basics of Object Oriented Programming.
+                        I also gained experience during this course developing with React, a popular JavaScript framework.
+                    </p>
+                </section>
+                <section class="edu-section">
+                    <h4 class="edu-title">JavaScript Web Path 2023 Bootcamp</h4>
+                    <p>A program offered by #VetsWhoCode, I am currently in the process of working through issues designed to eventually have a fully functional professional portfolio display.
+                        Within this program, I am utilizing HTML, CSS, and Vanilla JavaScript to really build on the fundamentals of programming with JavaScript.
+                    </p>
+                </section>
+            </article>
+            <article class="experience">
+                <h3 class="resume-h3">Experience</h3>
+                <section class="edu-section">
+                    <h4 class="edu-title">United States Air Force- Madison, WI— Integrated Avionics Technician (SrA)</h4>
+                    <span>March, 2018 - January, 2022</span>
+                    <h4 class="key-highlights">Key Highlights</h4>
+                    <ul class="highlights-list">
+                        <li>Ran electrical diagnostics on F-16 jets to troubleshoot and make appropriate repairs to
+                            systems like pneumatic pressure, flight controls, radar threat warning, communication, and
+                            navigation.
+                        </li>
+                        <li>
+                            Supervised and educated new recruits on basic and advanced aircraft maintenance
+                            protocols and procedures.
+                        </li>
+                        <li>
+                            Routinely performed safe, on-the-spot, maintenance in stressful, time-sensitive, situations
+                            in order to ensure mission readiness
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+        <div class="bottom-resume">
+            <article>
+                <h3 class="resume-h3">Skills</h3>
+                <section class="edu-section">
+                    <ul class="skills">
+                        <li>CSS/HTML/Javascript</li>
+                        <li>React Framework</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Problem Solving</li>
+                        <li>NextJS Framework</li>
+                        <li>Version Control</li>
+                        <li>Continuous Integration/Continuous delivery</li>
+                        <li>Figma</li>
+                        <li>UI/UX Design</li>
+                        <li>Basic Computer Architecture</li>
+                        <li>Ability to work individually or with a team</li>
+                        <li>Dedicated</li>
+                    </ul>
+                </section>
+            </article>
+            <article>
+    
+            </article>
+        </div>    
+    </section>
+
     <footer>
         <a class="footer-button" href='https://github.com/bealecs' target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
         <a class="footer-button" href='https://codepen.io/clifcodes' target="_blank" rel="noopener noreferrer"><i class="fa fa-codepen"></i></a>
         <a class="footer-button" href='https://www.linkedin.com/in/clif-beale/' target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square"></i></a>
+        <section class="form-section">
+            <form>
+                <h3>Leave some feedback about the site</h3>
+                <label for="feedback-name">Name</label>
+                <input type="text" id="feedback-name" placeholder="Name...">
+                <label for="feedback-msg">Feedback</label>
+                <textarea id="feedback-msg" placeholder="Feedback..."></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
     </footer>
 </body>
 </html>

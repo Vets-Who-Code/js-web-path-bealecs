@@ -76,6 +76,7 @@ h1 {
     padding: 15%;
     display: block;
     color: white;
+    text-align: center;
 }
 .name2 {
     color: orange;
@@ -92,7 +93,7 @@ h1 {
     height: fit-content;
 }
 .typewriter-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-bottom: 15%;
 }
 .typewriter {
@@ -336,15 +337,96 @@ h2.data {
 }
 /* End of Contact Section */
 
+/* Start of Resume Section */
+
+.resume-container {
+    min-height: 85vh;
+    background-color: #4986B6;
+    padding-bottom: 1%;
+}
+.top-resume {
+    background-color: #fffdd0;
+    min-height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+.bottom-resume {
+    background-color: #fffdd0;
+    min-height: 20vh;
+    width: 60%;
+    margin: auto;
+}
+.resume-container article {
+    padding: 1%;
+}
+.experience {
+    width: 50%;
+}
+.resume-h3 {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: black;
+}
+.download-txt {
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+.nounderline {
+    text-decoration: none;
+}
+.resume-container button {
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
+}
+.resume-container button:hover {
+    background-color: #1C3144;
+    box-shadow: white 0px 0px 8px 0px;
+    color: white;
+}
+.education {
+    width: 50%;
+}
+.edu-title {
+    padding: 1%;
+}
+.edu-section p {
+    padding: 2%;
+}
+.edu-section {
+    border-left: 2px solid #4986B6;
+}
+.edu-section span {
+    padding: 2%;
+}
+.key-highlights {
+    padding: 1%;
+}
+.highlights-list > li {
+    padding: 1%;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 30vh;
+}
+.skills > li {
+    padding: 1%;
+}
+
+/* End of Resume Section */
 
 /* Start of Footer Section */
 footer {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #4986B6;
-    margin-top: 2%;
 }
 .footer-logo {
     align-items: center;
@@ -358,29 +440,255 @@ footer {
     background-color: #4986B6;
     color: white;
 }
+.form-section {
+    display: block;
+    width: 100%;
+}
+footer form {
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    color: white;
+    padding: 1%;
+}
+footer h3 {
+    text-align: center;
+    color: white;
+}
 .footer-button:hover {
     color: #1C3144;
+}
+footer form button:hover {
+    color: white;
+    background-color: #1C3144;
+    box-shadow: white 0px 0px 8px 0px;
 }
 
 /* End of Footer Section */
 
+/* Middle View */
+
+@media only screen and (max-width: 1200px) {
+    .cards-section {
+        width: 40%;
+    }
+    .about-container {
+        flex-wrap: wrap;
+    }
+    .about-div {
+        width: 60%;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .contact-container p{
+        width: 100%;
+    }
+    .contact-form { 
+        width: 70%;
+    }
+    .top-resume {
+        width: 100%;
+    }
+    .bottom-resume {
+        width: 100%;
+    }
+}
+
+/* Middle View */
+
+@media only screen and (max-width: 1000px) {
+    .cards-section {
+        width: 80%;
+    }
+    .resume-container {
+        width: 100%;
+    }
+    .top-resume {
+        width: 100%;
+    }
+    .bottom-resume {
+        width: 100%;
+    }
+}
 
 /* Tablet View */
 @media screen and (max-width: 768px) {
-    section {
-        width: 40%;
+    
+    .cards-section {
+        width: 90%;
+    }
+
+    /*Landing Section*/
+    
+    .typewriter-text {
+        font-size: 1rem;
+    }
+    .landing-section {
+        padding-top: 10%;
+        width: 100%;
+    }
+    .typewriter-text {
+        display: none;
+    }
+
+    /*About Section*/
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .about-div {
+        width: 65%;
+    }
+
+    /* Contact Section */
+
+    .contact-container {
+        width: 100%;
+    }
+    .contact-container p {
+        width: 80%;
+    }
+    .contact-container form {
+        width: 70%;
+    }
+
+    /*Resume Section*/
+    .resume-container {
+        width: 100%;
+    }
+    .top-resume {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .bottom-resume {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 500px;
+    }
+    .education {
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+    }
+    .skills {
+        flex-wrap: nowrap;
+    }
+    footer form {
+        width: 60%;
     }
 }
 
 /* Mobile View */
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     section img {
         width: 80%;
     }
     section {
         width: 100%;
     }
+    /* Landing Section */
+    .pfp {
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-top: 10%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .landing-section {
+        flex-wrap: wrap;
+        width: 100%;
+        min-height: 95vh;
+        display: block;
+    }
+    .landing-info {
+        width: 100%;
+        
+    }
+    .typewriter-text {
+        font-size: 0.75rem;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+    .logo-title {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .nav-button {
+        display: none;
+    }
+
+    /* Projects Section */
+
+    .cards-section {
+        width: 100%;
+    }
+    .data-p {
+        width: 90%;
+    }
+    .container {
+        width: 100%;
+    }
+    
+    /* About Section */
+
+    .about-img {
+        width: 100%;
+    }
     .about-container {
         width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .about-div {
+        width: 80%;
+    }
+
+    /* Contact Section */
+
+    .contact-container p{
+        width: 100%;
+    }
+    .contact-container form {
+        width: 70%;
+    }
+    .footer-button {
+        font-size: 3rem;
+    }
+
+    /*Resume Section */
+
+    .resume-container {
+        width: 100%;
+    }
+    .skills {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    .edu-section p {
+        width: 100%;
+    }
+    .top-resume {
+        flex-wrap:wrap;
+        width: 100%;
+    }
+    .bottom-resume {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 500px;
+    }
+
+    /*Footer Section*/
+
+    footer form {
+        width: 80%;
     }
 }
