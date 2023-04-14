@@ -456,6 +456,9 @@ footer h3 {
     text-align: center;
     color: white;
 }
+.submit-feedback {
+    padding: 3%;
+}
 .footer-button:hover {
     color: #1C3144;
 }
