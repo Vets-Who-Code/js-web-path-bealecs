@@ -70,6 +70,7 @@ h1 {
 }
 .pfp {
     border-radius: 20%;
+    width: 350px;
 }
 .name {
     font-size: 2rem;
@@ -172,6 +173,8 @@ li {
     color: white;
     margin-top: 2%;
     border-radius: 10%;
+    border: 2px solid #fffdd0;
+    transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
 }
 .cards-section:hover {
     box-shadow: #4986B6 0px 0px 24px 0px;
@@ -195,6 +198,7 @@ button {
     padding: 1%;
     border: 1px solid black;
     border-radius: 10%;
+    transition: background-color ease-in 0.2s, color ease-in 0.2s, border ease-in 0.2s, box-shadow ease-in 0.2s;
 }
 button:hover {
     box-shadow: #4986B6 0px 4px 12px 0px;
@@ -210,7 +214,7 @@ li.nav-button {
     margin: 1%;
     box-shadow: black 0px 0px 4px 0px;
     border-radius: 10%;
-    transition: background-color ease-in 0.1s;
+    transition: background-color ease-in 0.2s, box-shadow ease-in 0.2s;
     background-color: #4986B6;
     color: white;
 }
@@ -373,8 +377,24 @@ h2.data {
     color: white;
     padding: 1%;
 }
-.nounderline {
+.download-resume {
     text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 10%;
+    margin-bottom: 0.8%;
+    background-color: #f0f0f0;
+    transition: background-color ease-in 0.2s, color ease-in 0.2s, border ease-in 0.2s;
+}
+.download-resume:hover {
+    background-color: #1C3144;
+    color: white;
+    border: 2px solid white;
 }
 .resume-container button {
     display: block;
@@ -439,6 +459,7 @@ footer {
     transition: color ease-in 0.1s;
     background-color: #4986B6;
     color: white;
+    transition: color ease-in 0.2s;
 }
 .form-section {
     display: block;
@@ -462,6 +483,7 @@ footer h3 {
 .footer-button:hover {
     color: #1C3144;
 }
+
 footer form button:hover {
     color: white;
     background-color: #1C3144;
