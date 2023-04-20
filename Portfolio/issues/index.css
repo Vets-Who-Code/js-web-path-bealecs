@@ -383,18 +383,17 @@ h2.data {
     text-align: center;
     display: block;
     margin: auto;
-    border: 2px solid black;
     width: fit-content;
     padding: 1%;
     border-radius: 10%;
     margin-bottom: 0.8%;
     background-color: #f0f0f0;
-    transition: background-color ease-in 0.2s, color ease-in 0.2s, border ease-in 0.2s;
+    transition: background-color ease-in 0.2s, color ease-in 0.2s, box-shadow ease-in 0.2s;
 }
 .download-resume:hover {
     background-color: #1C3144;
     color: white;
-    border: 2px solid white;
+    box-shadow: white 0px 0px 8px 0px;
 }
 .resume-container button {
     display: block;

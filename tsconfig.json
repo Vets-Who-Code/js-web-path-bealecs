@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "jsxImportSource": "preact",
+      "isolatedModules": true,
+      "noImplicitAny": true
+    }
+  }
