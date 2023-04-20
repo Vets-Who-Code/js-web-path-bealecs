@@ -2,7 +2,7 @@
   "name": "js-web-path-bealecs",
   "version": "1.0.0",
   "description": "A portfolio web path project instructed and led by Vets Who Code. Follow along in the GitHub Repo",
-  "main": "index.js",
+  "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
