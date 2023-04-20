@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
