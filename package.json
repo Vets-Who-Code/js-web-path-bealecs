@@ -6,7 +6,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel index.html",
-    "build": "npm parcel build index.html",
+    "build": "parcel build index.html",
     "tsc": "tsc"
   },
   "keywords": [],
