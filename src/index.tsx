@@ -19,3 +19,5 @@ const finalArr: myArr = []; //declaring a new variable with the type of the earl
 const callFunc = getArrNum(finalArr, 10); //storing the function call to a variable
 
 console.log(callFunc); //console log
+
+console.log("Troubleshooting");
