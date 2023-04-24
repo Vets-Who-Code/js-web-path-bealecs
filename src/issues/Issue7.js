@@ -34,8 +34,8 @@ function removeList() { //function to remove list item, used with button for rem
   }
 }
 
-createElement7('button', 'Show Next', 'add-button'); //creates add button using function call
 createElement7('button', 'Remove Last', 'remove-button'); //creates remove button using function call
+createElement7('button', 'Show Next', 'add-button'); //creates add button using function call
 
 const addButton = document.querySelector(".add-button"); //assigns add button to addButton variable
 const removeButton = document.querySelector(".remove-button"); //assigns remove button to removeButton variable

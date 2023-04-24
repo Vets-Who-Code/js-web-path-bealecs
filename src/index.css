@@ -17,7 +17,7 @@
     color: #F1EDEE;
 }
 body {
-    background-color: #fffdd0;
+    background-color: #fffdfa;
 }
 
 /* Start of Navbar Section */
@@ -169,11 +169,11 @@ li {
 .cards-section {
     width: 30%;
     margin: auto;
-    background-color: #4986B6;
-    color: white;
+    background: radial-gradient(circle, rgba(255,253,250,1) 0%, rgba(73,134,182,1) 100%);
+    color: black;
     margin-top: 2%;
     border-radius: 10%;
-    border: 2px solid #fffdd0;
+    border: 2px solid #fffdfa;
     transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
 }
 .cards-section:hover {
@@ -225,7 +225,6 @@ li.nav-button:hover {
 }
 .proj-h2 {
     text-align: center;
-    font-size: 2.5rem;
 }
 .treats {
     text-align: center;
@@ -305,10 +304,10 @@ h2.data {
     min-height: 85vh;
 }
 .contact-container > p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 30%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 .contact-form {
     display: flex;
@@ -333,8 +332,6 @@ h2.data {
 }
 .contact-title {
     text-align: center;
-    font-size: 1.7rem;
-    margin-top: 1%;
 }
 .contact-container p {
     text-align: center;
@@ -349,14 +346,14 @@ h2.data {
     padding-bottom: 1%;
 }
 .top-resume {
-    background-color: #fffdd0;
+    background-color: #fffdfa;
     min-height: 20vh;
     width: 60%;
     margin: auto;
     display: flex;
 }
 .bottom-resume {
-    background-color: #fffdd0;
+    background-color: #fffdfa;
     min-height: 20vh;
     width: 60%;
     margin: auto;
@@ -435,6 +432,7 @@ h2.data {
 .skills > li {
     padding: 1%;
 }
+
 
 /* End of Resume Section */
 
