@@ -35,7 +35,8 @@ nav {
     max-height: 10vh;
 }
 nav > ul {
-    width: 85%;
+    width: 75%;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -54,6 +55,12 @@ nav > h1 {
 h1 {
     text-align: center;
 }
+.hamburger-menu {
+    display: none;
+}
+.drop-down {
+    display: none;
+}
 /* End of Navbar Section*/
 
 /*Landing Section*/
@@ -65,7 +72,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     background-color: #4986b9;
-    margin-top: 4%;
+    padding-top: 4%;
     align-items: center;
 }
 .pfp {
@@ -306,6 +313,7 @@ h2.data {
 /* Start of Contact Section */
 .contact-container {
     min-height: 85vh;
+    width: 100%;
 }
 .contact-container > p {
     font-size: 1.3rem;
@@ -348,6 +356,7 @@ h2.data {
     min-height: 85vh;
     background-color: #4986B6;
     padding-bottom: 1%;
+    width: 100%;
 }
 .top-resume {
     background-color: #fffdfa;
@@ -540,11 +549,62 @@ footer form button:hover {
 }
 
 /* Tablet View */
+
 @media screen and (max-width: 768px) {
     
     .cards-section {
         width: 90%;
     }
+    /* Start of navbar section */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-right: 5%;
+    }
+    .hamburger-bar {
+        width: 40px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(1){
+        opacity: 0;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(2){
+        transform:rotate(45deg) translateY(8px);
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(3){
+        transform:rotate(-45deg) translateY(-8px);
+    }
+    .logo-title {
+        margin: 1%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul { 
+        display: none;
+    }
+    .drop-down.active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        margin-top: 7%;
+        padding-top: 5%;
+        background-color: #4986B6;
+    }
+    .drop-down li {
+        width: fit-content;
+    }
+    .drop-down ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /*End of navbar section */
+
 
     /*Landing Section*/
     
@@ -618,6 +678,55 @@ footer form button:hover {
     section {
         width: 100%;
     }
+
+    /* Start of navbar section */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-right: 5%;
+    }
+    .hamburger-bar {
+        width: 40px;
+        height: 2px;
+        margin: 4px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(1){
+        opacity: 0;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(2){
+        transform:rotate(45deg) translateY(8px);
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(3){
+        transform:rotate(-45deg) translateY(-8px);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul { 
+        display: none;
+    }
+    .drop-down.active {
+        display: block;
+        background-color: #4986B6;
+        position: fixed;
+        margin-top: 11%;
+    }
+    .drop-down li {
+        width: fit-content;
+    }
+    .drop-down ul {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    /*End of navbar section */
+
     /* Landing Section */
     .pfp {
         width: 60%;
@@ -635,7 +744,6 @@ footer form button:hover {
     }
     .landing-info {
         width: 100%;
-        
     }
     .typewriter-text {
         font-size: 0.75rem;
@@ -645,12 +753,11 @@ footer form button:hover {
         display: block;
     }
     .logo-title {
-        width: 100%;
+        padding: 1%;
+        width: fit-content;
         font-size: 1.5rem;
     }
-    .nav-button {
-        display: none;
-    }
+    
 
     /* Projects Section */
 
