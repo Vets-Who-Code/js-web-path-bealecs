@@ -23,20 +23,20 @@ const contactSection = document.getElementById("contactSection");
 const resumeSection = document.getElementById("resumeSection");
 const landingSection = document.getElementById("landingSection");
 
-//toggle dropdown function
+//toggle dropdown function is for opening and closing the hamburger menu
 const toggleDropDown = () => {
     hamburger.classList.toggle("active");
     dropDown.classList.toggle("active");
 }
-//utilizes scrollIntoView
+//utilizes scrollIntoView to scroll the desired element into view via a function + parameter
 const scrollIntoViewFunc = (section) => {
     section.scrollIntoView({behavior: "smooth"});
 }
 
-//Event listeners being created
+
+//Event listeners being created for nav buttons to ensure they are scrolled into view properly per clicked item
 logoButton.addEventListener('click', () => {
-    scrollIntoViewFunc(landingSection
-        );
+    scrollIntoViewFunc(landingSection);
 });
 
 projectsButton.addEventListener('click', () => {
@@ -79,7 +79,7 @@ hamburger.addEventListener('click', () => {
     toggleDropDown();
 });
 
-//project section event listeners
+//project section event listeners, click the whole project card to view the listed repo
 pwpProject.addEventListener('click', () => {
     window.open("https://github.com/bealecs/pipswithpaul/blob/main/README.md", "_blank");
 });

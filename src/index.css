@@ -61,6 +61,13 @@ h1 {
 .drop-down {
     display: none;
 }
+.logo-letters {
+    color: orange;
+    font-size: 3rem;
+}
+.logo-title {
+    align-items: center;
+}
 /* End of Navbar Section*/
 
 /*Landing Section*/
@@ -74,6 +81,11 @@ h1 {
     background-color: #4986b9;
     padding-top: 4%;
     align-items: center;
+}
+.landing-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .pfp {
     border-radius: 20%;
@@ -188,6 +200,7 @@ li {
     border: 2px solid white;
     cursor: pointer;
 }
+
 .cards-section p {
     padding: 4%;
 }
@@ -546,6 +559,12 @@ footer form button:hover {
     .bottom-resume {
         width: 100%;
     }
+    .logo-title {
+        font-size: 1.5rem;
+    }
+    .logo-letters {
+        font-size: 2rem;
+    }
 }
 
 /* Tablet View */
@@ -592,7 +611,7 @@ footer form button:hover {
         display: block;
         position: fixed;
         width: 100%;
-        margin-top: 7%;
+        margin-top: 12%;
         padding-top: 5%;
         background-color: #4986B6;
     }
@@ -617,6 +636,10 @@ footer form button:hover {
     }
     .typewriter-text {
         display: none;
+    }
+    .pfp {
+        width: 250px;
+        margin: auto;
     }
 
     /*About Section*/
@@ -714,7 +737,7 @@ footer form button:hover {
         display: block;
         background-color: #4986B6;
         position: fixed;
-        margin-top: 11%;
+        margin-top: 15%;
     }
     .drop-down li {
         width: fit-content;
