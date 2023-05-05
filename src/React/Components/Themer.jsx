@@ -9,11 +9,11 @@ export const Themer = () => {
         if(theme === "light"){
             setTheme("dark");
             body.className = "";
-            body.classList.add("body-" + theme);
+            body.classList.add("body-" + "dark");
         } else {
             setTheme("light");
             body.className = "";
-            body.classList.add("body-" + theme);
+            body.classList.add("body-" + "light");
         }
     }
 
