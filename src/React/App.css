@@ -1,0 +1,27 @@
+.app h3 {
+    text-align: center;
+    line-height: 2rem;
+}
+.app h4 {
+    text-align: center;
+    line-height: 2rem;
+}
+.click-calc {
+    display: flex;
+    padding-bottom: 1%;
+    justify-content: center;
+}
+.app p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.app button {
+    width: fit-content;
+    margin: 1%;
+}
+.click-c {
+    font-size: 3rem;
+    color: orange;
+}

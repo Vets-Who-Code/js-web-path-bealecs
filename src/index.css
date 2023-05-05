@@ -16,8 +16,12 @@
     background-color: #383F51;
     color: #F1EDEE;
 }
-body {
+.body-light {
     background-color: #fffdfa;
+}
+.body-dark {
+    background-color: #383F51;
+    color: white;
 }
 
 /* Start of Navbar Section */
@@ -68,6 +72,15 @@ h1 {
 .logo-title {
     align-items: center;
 }
+.themer {
+    list-style: none;
+    font-size: 2.5rem;
+    user-select: none;
+}
+.themer:hover {
+    font-size: 3rem;
+}
+
 /* End of Navbar Section*/
 
 /*Landing Section*/
@@ -370,6 +383,7 @@ h2.data {
     background-color: #4986B6;
     padding-bottom: 1%;
     width: 100%;
+    color: black;
 }
 .top-resume {
     background-color: #fffdfa;
@@ -611,7 +625,7 @@ footer form button:hover {
         display: block;
         position: fixed;
         width: 100%;
-        margin-top: 12%;
+        top: 50;
         padding-top: 5%;
         background-color: #4986B6;
     }

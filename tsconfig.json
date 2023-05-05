@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
-
+    "jsx": "react-jsx",
     "target": "es2016", 
     "experimentalDecorators": true,
-    "jsxImportSource": "preact",
-
     "module": "commonjs",
     "rootDir": "./src",
                 
