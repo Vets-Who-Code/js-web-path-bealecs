@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     scroll-margin-top: 80px;
-    outline: 1px solid red;
 }
 *::selection {
     background-color: #383F51;
