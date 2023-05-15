@@ -1,0 +1,193 @@
+/* Start of Navbar Section */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    background-color: #4986B6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 10vh;
+}
+nav > ul {
+    width: 75%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+nav > h1 {
+    align-items: center;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 1.5%;
+    color: white;
+    cursor: default;
+}
+h1 {
+    text-align: center;
+}
+.hamburger-menu {
+    display: none;
+}
+.drop-down {
+    display: none;
+}
+.logo-letters {
+    color: orange;
+    font-size: 3rem;
+}
+.logo-title {
+    align-items: center;
+}
+.themer {
+    list-style: none;
+    font-size: 2.5rem;
+    user-select: none;
+}
+.themer:hover {
+    font-size: 3rem;
+}
+button {
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 10%;
+    transition: background-color ease-in 0.2s, color ease-in 0.2s, border ease-in 0.2s, box-shadow ease-in 0.2s;
+}
+button:hover {
+    box-shadow: #4986B6 0px 4px 12px 0px;
+    background-color: white;
+    color: #4986B6;
+    border: 1px solid #4986B6;
+}
+li.nav-button {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: black 0px 0px 4px 0px;
+    border-radius: 10%;
+    transition: background-color ease-in 0.2s, box-shadow ease-in 0.2s;
+    background-color: #4986B6;
+    color: white;
+}
+li.nav-button:hover {
+    background-color: #1C3144;
+    box-shadow: white 0px 0px 8px 0px;
+    
+}
+
+/* End of Navbar Section*/
+
+@media screen and (max-width: 768px) {
+    
+    /* Start of navbar section */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-right: 5%;
+    }
+    .hamburger-bar {
+        width: 40px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(1){
+        opacity: 0;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(2){
+        transform:rotate(45deg) translateY(8px);
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(3){
+        transform:rotate(-45deg) translateY(-8px);
+    }
+    .logo-title {
+        margin: 1%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul { 
+        display: none;
+    }
+    .drop-down.active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 50;
+        background-color: #4986B6;
+    }
+    .drop-down li {
+        width: fit-content;
+    }
+    .drop-down ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /*End of navbar section */
+}
+
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+
+    /* Start of navbar section */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-right: 5%;
+    }
+    .hamburger-bar {
+        width: 40px;
+        height: 2px;
+        margin: 4px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(1){
+        opacity: 0;
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(2){
+        transform:rotate(45deg) translateY(8px);
+    }
+    .hamburger-menu.active .hamburger-bar:nth-child(3){
+        transform:rotate(-45deg) translateY(-8px);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul { 
+        display: none;
+    }
+    .drop-down.active {
+        display: block;
+        background-color: #4986B6;
+        position: fixed;
+        
+    }
+    .drop-down li {
+        width: fit-content;
+    }
+    .drop-down ul {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    /*End of navbar section */
+}

@@ -1,0 +1,19 @@
+@keyframes blink {
+    from, to { background-color: transparent }
+    50% { background-color: black }
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+* {
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 80px;
+}
+*::selection {
+    background-color: #383F51;
+    color: #F1EDEE;
+}
