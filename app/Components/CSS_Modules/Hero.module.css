@@ -1,6 +1,6 @@
 /*Landing Section*/
 
-.landing-section { 
+.landingSection { 
     min-height: 40vh;
     max-height: 90vh;
     width: 100%;
@@ -10,7 +10,7 @@
     padding-top: 4%;
     align-items: center;
 }
-.landing-info {
+.landingInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,7 @@
     width: fit-content;
     height: fit-content;
 }
-.typewriter-text {
+.typewriterText {
     font-size: 1.2rem;
     padding-bottom: 15%;
 }
@@ -54,7 +54,7 @@
     animation-timing-function: steps(50);
     color: white;
   }
-  .typewriter-cursor {
+  .typewriterCursor {
     display: inline-block;
     vertical-align: middle;
     width: 0.1em;
@@ -62,14 +62,14 @@
     background-color: black;
     animation: blink 0.7s infinite;
   }
-  .landing-section .icon {
+  .landingSection .icon {
     font-size: 2rem;
     margin: auto;
     color: white;
     padding: 2%;
     justify-content: space-between;
   }
-  .icons-flex {
+  .iconFlex {
     display: flex;
     justify-content: space-between;
   }
@@ -78,14 +78,14 @@
 @media screen and (max-width: 768px) {
 /*Landing Section*/
     
-.typewriter-text {
+.typewriterText {
     font-size: 1rem;
 }
-.landing-section {
+.landingSection {
     padding-top: 10%;
     width: 100%;
 }
-.typewriter-text {
+.typewriterText {
     display: none;
 }
 .pfp {
@@ -98,7 +98,7 @@
 @media only screen and (max-width: 480px) {
 
 /* Landing Section */
-.typewriter-text {
+.typewriterText {
     display: none;
 }
 .pfp {
@@ -109,16 +109,16 @@
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.landing-section {
+.landingSection {
     flex-wrap: wrap;
     width: 100%;
     min-height: 95vh;
     display: block;
 }
-.landing-info {
+.landingInfo {
     width: 100%;
 }
-.typewriter-text {
+.typewriterText {
     font-size: 0.75rem;
     text-align: center;
     width: 70%;

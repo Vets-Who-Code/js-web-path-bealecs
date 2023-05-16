@@ -1,5 +1,5 @@
 /* Start of Navbar Section */
-nav {
+.nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -12,7 +12,7 @@ nav {
     width: 100%;
     max-height: 10vh;
 }
-nav > ul {
+.nav > ul {
     width: 75%;
     padding: 1%;
     display: flex;
@@ -22,7 +22,7 @@ nav > ul {
     align-items: center;
     margin: auto;
 }
-nav > h1 {
+.nav > h1 {
     align-items: center;
     font-size: 2rem;
     margin: auto;
@@ -30,21 +30,20 @@ nav > h1 {
     color: white;
     cursor: default;
 }
-h1 {
-    text-align: center;
-}
-.hamburger-menu {
+
+.hamburgerMenu {
     display: none;
 }
-.drop-down {
+.dropDown {
     display: none;
 }
-.logo-letters {
+.logoLetters {
     color: orange;
     font-size: 3rem;
 }
-.logo-title {
+.logoTitle {
     align-items: center;
+    text-align: center;
 }
 .themer {
     list-style: none;
@@ -54,21 +53,7 @@ h1 {
 .themer:hover {
     font-size: 3rem;
 }
-button {
-    margin: auto;
-    margin-top: 2%;
-    padding: 1%;
-    border: 1px solid black;
-    border-radius: 10%;
-    transition: background-color ease-in 0.2s, color ease-in 0.2s, border ease-in 0.2s, box-shadow ease-in 0.2s;
-}
-button:hover {
-    box-shadow: #4986B6 0px 4px 12px 0px;
-    background-color: white;
-    color: #4986B6;
-    border: 1px solid #4986B6;
-}
-li.nav-button {
+li.navButton {
     text-decoration: none;
     list-style: none;
     color: black;
@@ -80,7 +65,7 @@ li.nav-button {
     background-color: #4986B6;
     color: white;
 }
-li.nav-button:hover {
+li.navButton:hover {
     background-color: #1C3144;
     box-shadow: white 0px 0px 8px 0px;
     
@@ -91,49 +76,49 @@ li.nav-button:hover {
 @media screen and (max-width: 768px) {
     
     /* Start of navbar section */
-    .hamburger-menu {
+    .hamburgerMenu {
         display: flex;
         flex-direction: column;
         width: fit-content;
         margin-right: 5%;
     }
-    .hamburger-bar {
+    .hamburgerBar {
         width: 40px;
         height: 3px;
         margin: 5px auto;
         background-color: white;
         transition: all 0.3s ease-in-out;
     }
-    .hamburger-menu.active .hamburger-bar:nth-child(1){
+    .hamburgerMenu.active .hamburgerBar:nth-child(1){
         opacity: 0;
     }
-    .hamburger-menu.active .hamburger-bar:nth-child(2){
+    .hamburgerMenu.active .hamburgerBar:nth-child(2){
         transform:rotate(45deg) translateY(8px);
     }
-    .hamburger-menu.active .hamburger-bar:nth-child(3){
+    .hamburgerMenu.active .hamburgerBar:nth-child(3){
         transform:rotate(-45deg) translateY(-8px);
     }
-    .logo-title {
+    .logoTitle {
         margin: 1%;
     }
-    nav {
+    .nav {
         display: flex;
         justify-content: space-between;
     }
-    nav ul { 
+    .nav ul { 
         display: none;
     }
-    .drop-down.active {
+    .dropDown.active {
         display: block;
         position: fixed;
         width: 100%;
         top: 50;
         background-color: #4986B6;
     }
-    .drop-down li {
+    .dropDown li {
         width: fit-content;
     }
-    .drop-down ul {
+    .dropDown ul {
         display: flex;
         justify-content: space-evenly;
     }
@@ -144,46 +129,46 @@ li.nav-button:hover {
 @media only screen and (max-width: 480px) {
 
     /* Start of navbar section */
-    .hamburger-menu {
+    .hamburgerMenu {
         display: flex;
         flex-direction: column;
         width: fit-content;
         margin-right: 5%;
     }
-    .hamburger-bar {
+    .hamburgerBar {
         width: 40px;
         height: 2px;
         margin: 4px auto;
         background-color: white;
         transition: all 0.3s ease-in-out;
     }
-    .hamburger-menu.active .hamburger-bar:nth-child(1){
+    .hamburgerMenu.active .hamburgerBar:nth-child(1){
         opacity: 0;
     }
-    .hamburger-menu.active .hamburger-bar:nth-child(2){
+    .hamburgerMenu.active .hamburgerBar:nth-child(2){
         transform:rotate(45deg) translateY(8px);
     }
-    .hamburger-menu.active .hamburger-bar:nth-child(3){
+    .hamburgerMenu.active .hamburgerBar:nth-child(3){
         transform:rotate(-45deg) translateY(-8px);
     }
     
-    nav {
+    .nav {
         display: flex;
         justify-content: space-between;
     }
-    nav ul { 
+    .nav ul { 
         display: none;
     }
-    .drop-down.active {
+    .dropDown.active {
         display: block;
         background-color: #4986B6;
         position: fixed;
         
     }
-    .drop-down li {
+    .dropDown li {
         width: fit-content;
     }
-    .drop-down ul {
+    .dropDown ul {
         display: flex;
         justify-content: center;
         
