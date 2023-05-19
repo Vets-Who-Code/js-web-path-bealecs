@@ -1,0 +1,62 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #4986B6;
+}
+.footer-logo {
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+}
+.footerButton {
+    text-decoration: none;
+    font-size: 5rem;
+    transition: color ease-in 0.1s;
+    background-color: #4986B6;
+    color: white;
+    transition: color ease-in 0.2s;
+}
+.formSection {
+    display: block;
+    width: 100%;
+}
+.footer form {
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    color: white;
+    padding: 1%;
+}
+.footer h3 {
+    text-align: center;
+    color: white;
+}
+.submitFeedback {
+    padding: 3%;
+}
+.footerButton:hover {
+    color: #1C3144;
+}
+
+.footer form button:hover {
+    color: white;
+    background-color: #1C3144;
+    box-shadow: white 0px 0px 8px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer form {
+        width: 60%;
+    }   
+}
+
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+    .footer form {
+        width: 80%;
+    }
+}

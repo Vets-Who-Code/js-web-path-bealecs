@@ -1,0 +1,75 @@
+.contactContainer {
+    min-height: 85vh;
+    width: 100%;
+}
+.contactContainer > p {
+    font-size: 1.3rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 30%;
+    margin-top: 5%;
+}
+.contactForm label {
+    font-weight:bolder;
+}
+.contactForm input {
+    margin-bottom: 5%;
+    padding: 2%;
+}
+.contactForm textarea {
+    padding: 5%;
+}
+.contactForm button {
+    padding: 3%;
+    margin-top: 5%;
+}
+.contactTitle {
+    text-align: center;
+}
+.contactContainer p {
+    text-align: center;
+}
+.name2 {
+    color: orange;
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contactContainer p{
+        width: 100%;
+    }
+    .contactForm { 
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactContainer {
+        width: 100%;
+    }
+    .contactContainer p {
+        width: 80%;
+    }
+    .contactContainer form {
+        width: 70%;
+    }   
+}
+
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+    .contactContainer p{
+        width: 100%;
+    }
+    .contactContainer form {
+        width: 70%;
+    }
+    .footer-button {
+        font-size: 3rem;
+    }
+}
