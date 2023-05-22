@@ -1,3 +1,12 @@
+@keyframes blink {
+    from, to { background-color: transparent }
+    50% { background-color: black }
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
 /*Landing Section*/
 
 .landingSection { 
@@ -64,14 +73,15 @@
   }
   .landingSection .icon {
     font-size: 2rem;
-    margin: auto;
     color: white;
     padding: 2%;
+    margin: auto;
     justify-content: space-between;
   }
   .iconFlex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: auto;
   }
 /* End of Landing Section */
 

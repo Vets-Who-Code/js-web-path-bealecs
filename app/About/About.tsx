@@ -1,10 +1,12 @@
 import React from "react";
-import AboutStyles from './CSS_Modules/About.module.css';
+import AboutStyles from '../Components/CSS_Modules/About.module.css';
+import { Navigation } from "../Components/Navigation";
 
-export const About = () => {
+export const AboutPage = () => {
 
     return (
         <>
+        <Navigation />
         <h2 className={AboutStyles.aboutTitle} id="aboutSection">About <span className={AboutStyles.name2}>Clif</span></h2>
         <section className={AboutStyles.aboutContainer}>
             <div className={AboutStyles.aboutDiv}>

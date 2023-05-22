@@ -44,6 +44,8 @@
 .logoTitle {
     align-items: center;
     text-align: center;
+    color: white;
+    text-decoration: none;
 }
 .themer {
     list-style: none;
@@ -53,24 +55,28 @@
 .themer:hover {
     font-size: 3rem;
 }
-li.navButton {
-    text-decoration: none;
+.listItem {
     list-style: none;
-    color: black;
-    padding: 1%;
+}
+.navButton {
+    text-decoration: none;
+    padding: 0.8rem 1rem;
     margin: 1%;
     box-shadow: black 0px 0px 4px 0px;
     border-radius: 10%;
     transition: background-color ease-in 0.2s, box-shadow ease-in 0.2s;
     background-color: #4986B6;
     color: white;
+    text-decoration: none;
+    list-style: none;
 }
-li.navButton:hover {
+.navButton:hover {
     background-color: #1C3144;
     box-shadow: white 0px 0px 8px 0px;
-    
 }
-
+.navbutton::selection {
+    text-decoration: none;
+}
 /* End of Navbar Section*/
 
 @media screen and (max-width: 768px) {

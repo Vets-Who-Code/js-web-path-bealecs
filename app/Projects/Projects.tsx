@@ -1,9 +1,11 @@
 import React from "react"
-import ProjectsStyles from './CSS_Modules/Projects.module.css';
+import ProjectsStyles from '../Components/CSS_Modules/Projects.module.css';
+import { Navigation } from "../Components/Navigation";
 
-export const Projects = () => {
+export const ProjectsPage = () => {
     return (
         <>
+            <Navigation />
             <h2 className={ProjectsStyles.projH2} id="projectsSection">My <span className={ProjectsStyles.name2}>Projects</span></h2>
             <h2 className={ProjectsStyles.treats}>Click on a project card to view the repo</h2>
             <article className={ProjectsStyles.container} id="projects">

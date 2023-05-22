@@ -1,9 +1,12 @@
 import React from "react";
-import ResumeStyles from './CSS_Modules/Resume.module.css';
+import ResumeStyles from '../Components/CSS_Modules/Resume.module.css';
+import { Navigation } from "../Components/Navigation";
 
-export const Resume = () => {
+export const ResumePage = () => {
 
     return (
+        <>
+        <Navigation />
         <section className={ResumeStyles.resumeContainer} id="resumeSection">
         <h2 className={ResumeStyles.aboutTitle}>My <span className={ResumeStyles.name2}>Resume</span></h2>
         <h2 className={ResumeStyles.downloadTxt}>For the full resume, click below to download</h2>
@@ -85,5 +88,6 @@ export const Resume = () => {
             </article>
         </div>    
     </section>
+    </>
     )
 }

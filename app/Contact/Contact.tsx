@@ -1,7 +1,7 @@
 import React from "react";
-import ContactStyles from './CSS_Modules/Contact.module.css';
+import ContactStyles from '../Components/CSS_Modules/Contact.module.css';
 
-export const Contact = () => {
+export const ContactPage = () => {
 
     return (
         <section className={ContactStyles.contactContainer} id="contactSection">
