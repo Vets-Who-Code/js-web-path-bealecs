@@ -1,9 +1,12 @@
 import React from "react";
 import ContactStyles from '../Components/CSS_Modules/Contact.module.css';
+import { Navigation } from "../Components/Navigation";
 
 export const ContactPage = () => {
 
     return (
+        <>
+        <Navigation />
         <section className={ContactStyles.contactContainer} id="contactSection">
             <h2 className={ContactStyles.contactTitle} id="aboutSection">Point of <span className={ContactStyles.name2}>Contact</span></h2>
             <p>The easiest way to get in contact with me, leave me a message here</p>
@@ -18,5 +21,6 @@ export const ContactPage = () => {
                 <button type="submit">Send Message</button>
             </form>
         </section>
+        </>
     )
 }
