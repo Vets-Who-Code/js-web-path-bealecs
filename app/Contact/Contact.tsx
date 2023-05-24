@@ -1,6 +1,7 @@
 import React from "react";
 import ContactStyles from '../Components/CSS_Modules/Contact.module.css';
 import { Navigation } from "../Components/Navigation";
+import { Footer } from "../Components/Footer";
 
 export const ContactPage = () => {
 
@@ -21,6 +22,7 @@ export const ContactPage = () => {
                 <button type="submit">Send Message</button>
             </form>
         </section>
+        <Footer />
         </>
     )
 }

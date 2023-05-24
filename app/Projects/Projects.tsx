@@ -1,6 +1,7 @@
 import React from "react"
 import ProjectsStyles from '../Components/CSS_Modules/Projects.module.css';
 import { Navigation } from "../Components/Navigation";
+import { Footer } from "../Components/Footer";
 
 export const ProjectsPage = () => {
     return (
@@ -38,6 +39,7 @@ export const ProjectsPage = () => {
             <section id="app" className={ProjectsStyles.issue10}>
 
             </section>
+            <Footer />
         </>
         
     )

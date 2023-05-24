@@ -1,6 +1,7 @@
 .contactContainer {
     min-height: 85vh;
     width: 100%;
+    padding-top: 5rem;
 }
 .contactContainer > p {
     font-size: 1.3rem;

@@ -1,6 +1,7 @@
 import React from "react";
 import ResumeStyles from '../Components/CSS_Modules/Resume.module.css';
 import { Navigation } from "../Components/Navigation";
+import { Footer } from "../Components/Footer";
 
 export const ResumePage = () => {
 
@@ -88,6 +89,7 @@ export const ResumePage = () => {
             </article>
         </div>    
     </section>
+    <Footer />
     </>
     )
 }
