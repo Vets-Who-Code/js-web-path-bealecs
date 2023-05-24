@@ -13,7 +13,6 @@ export const Blog = () => {
     }
     useEffect(() => {
         fetchBlogs();
-        console.log(posts[0])
     }, []);
     
     return (

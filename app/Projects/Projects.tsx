@@ -27,13 +27,6 @@ export const ProjectsPage = () => {
                     <p>Exterior lighting company based in southeastern VA. With Cross & Carlile, you are guaranteed a bright experience.
                     </p>
                 </section>
-                <section id="apiSection">
-                    <h2>Can you guess my favorite music artist at the moment?</h2>
-                    <button className={ProjectsStyles.api} id="api">Find out</button>
-                </section>
-                <section id="issue7">
-                    <h2>My Top Recommended Songs</h2>
-                </section>
             </article>
 
             <section id="app" className={ProjectsStyles.issue10}>
