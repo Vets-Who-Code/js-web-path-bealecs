@@ -10,7 +10,7 @@ export const ResumePage = () => {
         <section className={ResumeStyles.resumeContainer} id="resumeSection">
         <h2 className={ResumeStyles.aboutTitle}>My <span className={ResumeStyles.name2}>Resume</span></h2>
         <h2 className={ResumeStyles.downloadTxt}>For the full resume, click below to download</h2>
-        <a className={ResumeStyles.downloadResume} href="./pdf/Clifton Beale's Resume (Dice).pdf" target="_blank" rel="noopener noreferrer" download>Download Resume</a>
+        <a className={ResumeStyles.downloadResume} href="/Clifton Beale's Resume (Dice).pdf" target="_blank" rel="noopener noreferrer" download>Download Resume</a>
         <div className={ResumeStyles.topResume}>
             <article className={ResumeStyles.education}>
                 <h3 className={ResumeStyles.resumeH3}>Education</h3>
