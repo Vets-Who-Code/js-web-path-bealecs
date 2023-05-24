@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./page.css";
 import { Navigation } from "./Components/Navigation";
 import { HeroSection } from "./Components/Hero";
 import { Footer } from "./Components/Footer";
+import { Blog } from "./Components/Blog";
 
 export default function Page() {
 
@@ -10,6 +11,7 @@ export default function Page() {
         <div>
             <Navigation />
             <HeroSection />
+            <Blog />
             <Footer />
         </div>
     );
