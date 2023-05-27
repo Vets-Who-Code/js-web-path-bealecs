@@ -1,8 +1,8 @@
 .aboutImg {
     width: 65%;
     aspect-ratio: 1;
-    display: block;
     margin: auto;
+    float: left;
     
 }
 .aboutDiv {

@@ -63,6 +63,13 @@
     animation-timing-function: steps(50);
     color: white;
   }
+  .socialIcons {
+    transition: all ease 0.3s;
+  }
+  .socialIcons:hover {
+    border-radius: 50%;
+    box-shadow: 0px 6px 9px 0px orange;
+  }
   .typewriterCursor {
     display: inline-block;
     vertical-align: middle;
@@ -78,10 +85,11 @@
     margin: auto;
     justify-content: space-between;
   }
-  .iconFlex {
+  .iconsFlex {
     display: flex;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1rem auto;
   }
 /* End of Landing Section */
 

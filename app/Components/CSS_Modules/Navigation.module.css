@@ -11,6 +11,7 @@
     top: 0;
     width: 100%;
     max-height: 10vh;
+    z-index: 1;
 }
 .nav > ul {
     width: 80%;

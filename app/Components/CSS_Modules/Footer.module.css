@@ -1,11 +1,3 @@
-.footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #4986B6;
-}
 .footer-logo {
     align-items: center;
     margin: auto;
@@ -19,17 +11,38 @@
     color: white;
     transition: color ease-in 0.2s;
 }
-.formSection {
-    display: block;
+.footerSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: #4986B6;
 }
-.footer form {
+.socialLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50rem;
+}
+.feedbackForm {
     display:flex;
     flex-direction: column;
-    width: 30%;
     margin: auto;
     color: white;
     padding: 1%;
+}
+.feedbackForm label {
+    margin-top: 1rem;
+}
+.feedbackForm input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.feedbackForm textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 .footer h3 {
     text-align: center;
@@ -37,7 +50,22 @@
 }
 .submitFeedback {
     padding: 3%;
+    background-color: #4986B6;
+    color: white;
+    border-radius: 5rem;
+    transition: all ease 0.3s;
 }
+.submitFeedback:hover {
+    background-color: #1C3144;
+    color: white;
+}
+.socialIcons {
+    transition: all ease 0.3s;
+  }
+  .socialIcons:hover {
+    border-radius: 50%;
+    box-shadow: 0px 6px 9px 0px orange;
+  }
 .footerButton:hover {
     color: #1C3144;
 }

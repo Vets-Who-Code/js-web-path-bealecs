@@ -1,9 +1,7 @@
 import React from "react";
 import HeroStyles from './CSS_Modules/Hero.module.css'
 import Image from "next/image";
-import 'font-awesome/css/font-awesome.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from "@fortawesome/free-solid-svg-icons"
+import { SocialIcon } from "react-social-icons";
 
 export const HeroSection = () => {
 
@@ -17,9 +15,9 @@ export const HeroSection = () => {
             <h3 className={HeroStyles.typewriterText}><span className={HeroStyles.typewriter}>Husband, Web Developer, Veteran, Gamer</span><span className={HeroStyles.typewriterCursor}></span></h3>
             <a className={HeroStyles.vwc} href="https://vetswhocode.io" target="_blank" rel="noopener noreferrer">#VetsWhoCode</a>
             <div className={HeroStyles.iconsFlex}>
-                <FontAwesomeIcon icon={faCode} width={50} className={HeroStyles.icon} />
-                <FontAwesomeIcon icon={faCode} width={50} className={HeroStyles.icon} />
-                <FontAwesomeIcon icon={faCode} width={50} className={HeroStyles.icon} />
+               <SocialIcon className={HeroStyles.socialIcons} url="https://github.com/bealecs" bgColor="white" />
+               <SocialIcon className={HeroStyles.socialIcons} url="https://www.linkedin.com/in/clif-beale/" bgColor="white" />
+               <SocialIcon className={HeroStyles.socialIcons} url="https://codepen.io/clifcodes" bgColor="white" />
             </div>
         </div>
     </section>
