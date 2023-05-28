@@ -1,5 +1,6 @@
 .container {
     min-height: 92vh;
+    margin: 7rem auto;
 }
 .container > h2 {
     text-align: center;
@@ -44,6 +45,7 @@
     color: black;
     background-color: #4986B6;
     transition: all ease 0.3s;
+    margin: 1rem;
 }
 .back:hover {
     background-color: #1C3144;

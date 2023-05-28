@@ -1,17 +1,20 @@
 import Link from 'next/link'
 import PWPStyles from '../Components/CSS_Modules/PWP.module.css'
+import { Navigation } from '../Components/Navigation'
+import { Footer } from '../Components/Footer'
 
 export const PWP = () => {
 
     return (
         <>
+            <Navigation />
             <section className={PWPStyles.container}>
-                <Link className={PWPStyles.back} href='../'><span className={PWPStyles.arrow}>←</span> Back to home</Link>
+                <Link className={PWPStyles.back} href='/Projects'><span className={PWPStyles.arrow}>←</span> Back to projects</Link>
                 <h2> Pips With Paul </h2>
                 <img className={PWPStyles.image} src="./pwpLogo.webp" alt="Screenshot of pips with paul website" />
                 <div className={PWPStyles.anchors}>
-                    <a href='https://www.google.com' target='_blank'>Check out the Github Repo</a>
-                    <a href='https://www.github.com' target='_blank'>Check out the site directly</a>
+                    <a href='https://www.google.com' rel="noopener noreferrer" target='_blank'>Check out the Github Repo</a>
+                    <a href='https://www.github.com' rel="noopener noreferrer" target='_blank'>Check out the site directly</a>
                 </div>
                 <article className={PWPStyles.article}>
                     <p>Paul is a long standing friend of mine from around the age of 11. When my programming journey started, Paul was there with me as well.
@@ -28,6 +31,7 @@ export const PWP = () => {
                     </p>
                 </article>
             </section>
+            <Footer />
         </>
     )
 }

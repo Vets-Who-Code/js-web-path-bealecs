@@ -3,13 +3,13 @@ article#projects {
     min-height: 85vh;
 }
 .container {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 80rem;
+    display: flex;
+    margin: auto;
     justify-content: space-evenly;
-    margin-bottom: 2%;
+    flex-wrap: wrap;
 }
+
 .clicked {
     font-size: 1.5rem;
     background-color: #4986B6;
@@ -35,14 +35,13 @@ article#projects {
     margin: 1%;
 }
 .cardsSection {
-    width: 30%;
-    margin: auto;
+    margin: 2rem auto;
     background: radial-gradient(circle, rgba(255,253,250,1) 0%, rgba(73,134,182,1) 100%);
     color: black;
-    margin-top: 2%;
     border-radius: 10%;
     border: 2px solid #fffdfa;
     transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
+    width: 25rem;
 }
 .cardsSection:hover {
     box-shadow: #4986B6 0px 0px 24px 0px;
@@ -52,11 +51,13 @@ article#projects {
 
 .cardsSection p {
     padding: 4%;
+    text-decoration: none;
 }
-.cardsSection > h4 {
-    font-size: 1.7rem;
+.cardsSection h4 {
+    font-size: 1.5rem;
     padding: 3%;
     text-align: center;
+    text-decoration: none;
 }
 .cardsSection img {
     display: block;
@@ -64,6 +65,13 @@ article#projects {
     height: 230px;
     border-radius: 50%;
     margin: auto;
+}
+.para {
+    font-size: 1.6rem;
+    width: 70rem;
+    margin: auto;
+    line-height: 2.5rem;
+    padding: 1rem;
 }
 .api {
     margin: auto;
@@ -94,7 +102,11 @@ li.nav-button {
 li.nav-button:hover {
     background-color: #1C3144;
     box-shadow: white 0px 0px 8px 0px;
-    
+}
+.landingAnchor {
+    text-decoration: underline;
+    color: orange;
+    font-weight: bolder;
 }
 .name2 {
     color: orange;

@@ -19,10 +19,8 @@
 }
 .aboutTitle {
     display: block;
-    color: white;
     width: 100%;
     text-align: center;
-    background-color: #4986B6;
     padding-top: 5rem;
 }
 .aboutContainer {
@@ -30,8 +28,6 @@
     min-height: 85vh;
     margin: auto;
     padding-bottom: 2%;
-    background-color: #4986B6;
-    color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -41,7 +37,7 @@
     text-align: center;
 }
 .vwcTag {
-    color: white;
+    color: black;
 }
 .firstLetter {
     font-size: 2.5rem;

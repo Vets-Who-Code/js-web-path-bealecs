@@ -10,7 +10,7 @@ export const Blog = () => {
     const fetchBlogs = async () => {
         try {
             setLoading(true);
-            const response = await fetch("https://dev.to/api/articles?username=bealecs");
+            const response = await fetch("https://dev.to/api/articles?username=bealecs", { cache: 'no-store'});
             const data = await response.json();
             setPosts(data);
         } catch (error) {

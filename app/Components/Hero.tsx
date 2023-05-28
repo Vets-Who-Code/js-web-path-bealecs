@@ -15,9 +15,9 @@ export const HeroSection = () => {
             <h3 className={HeroStyles.typewriterText}><span className={HeroStyles.typewriter}>Husband, Web Developer, Veteran, Gamer</span><span className={HeroStyles.typewriterCursor}></span></h3>
             <a className={HeroStyles.vwc} href="https://vetswhocode.io" target="_blank" rel="noopener noreferrer">#VetsWhoCode</a>
             <div className={HeroStyles.iconsFlex}>
-               <SocialIcon className={HeroStyles.socialIcons} url="https://github.com/bealecs" bgColor="white" />
-               <SocialIcon className={HeroStyles.socialIcons} url="https://www.linkedin.com/in/clif-beale/" bgColor="white" />
-               <SocialIcon className={HeroStyles.socialIcons} url="https://codepen.io/clifcodes" bgColor="white" />
+               <SocialIcon className={HeroStyles.socialIcons} rel="noopener noreferrer" url="https://github.com/bealecs" bgColor="white" />
+               <SocialIcon className={HeroStyles.socialIcons} rel="noopener noreferrer" url="https://www.linkedin.com/in/clif-beale/" bgColor="white" />
+               <SocialIcon className={HeroStyles.socialIcons} rel="noopener noreferrer" url="https://codepen.io/clifcodes" bgColor="white" />
             </div>
         </div>
     </section>
