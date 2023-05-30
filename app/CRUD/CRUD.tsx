@@ -1,56 +1,57 @@
 "use client"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CRUDStyles  from '../Components/CSS_Modules/CRUD.module.css';
 
 export const CRUD = () => {
 
     const [comment, setComment] = useState("")
+    const [commentsData, setCommentsData] = useState([]);
 
     const setValue = (event) => {
         setComment(event.target.value);
     }
     async function postComments() {
-        const res = await fetch("https://crudcrud.com/api/42c28f92281a48efaf2d65f18fd8bd46/comment", {
+        const res = await fetch("https://crudcrud.com/api/46cdaaac464243d187e768b28a9429f3/comments", {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
             },
             body: JSON.stringify({
                 comment: comment
             })
           });
-        }
-    // async function getComments() {
-    //     const res = await fetch("https://crudcrud.com/api/42c28f92281a48efaf2d65f18fd8bd46/comment", {
-    //         method: "GET",
-    //         headers: {
-    //           "Content-Type": "application/json"
-    //         },
-    //     });
 
-    //     if(!res.ok) {
-    //         throw new Error('Failed to fetch data');
-    //     }
-        
-    //     return res.json();
-    // }
-    
-    // const comments = getComments();
+          if (!res.ok) {
+            throw new Error('Failed to post data');
+          }
+
+          return res.json();
+        }
+
+        useEffect(() => {
+            fetch("https://crudcrud.com/api/46cdaaac464243d187e768b28a9429f3/comments", { cache: 'no-store'})
+            .then((response) => response.json())
+            .then((data) => setCommentsData(data));
+        }, []);
 
     return (
         <>
             <form onSubmit={postComments}>
                 <label htmlFor="comment">Comment:</label>
-                <input id="comment" name='comment' type="text" onChange={setValue} value={comment} minLength={10} maxLength={500} placeholder="Comment here" />
+                <input id="comment" name='comments' type="text" onChange={setValue} value={comment} placeholder="Comment here" />
                 <input type="submit" value="Submit feedback"/>
             </form> 
-            {/* {comments &&
-                <section className={CRUDStyles.commentSection}>
+            {commentsData.length < 0 ? <p>Nothing to show here</p> :  
+                <section className={CRUDStyles.comments}>
+                    <h2>Previous Feedback</h2>
                     <ul>
-                        <li>{comments}</li>
+                        {commentsData.map(comment => (
+                         <li key={comment._id}>{comment.comment}</li>
+                        ))}
                     </ul>
                 </section>
-            } */}
+            }
         </>
     )
 }
