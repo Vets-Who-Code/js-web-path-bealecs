@@ -4,6 +4,7 @@ import { Navigation } from "./Components/Navigation";
 import { HeroSection } from "./Components/Hero";
 import { Footer } from "./Components/Footer";
 import { Blog } from "./Components/Blog";
+import { CRUD } from "./CRUD/CRUD";
 
 export default function Page() {
 
@@ -12,6 +13,7 @@ export default function Page() {
             <Navigation />
             <HeroSection />
             <Blog />
+            <CRUD />
             <Footer />
         </div>
     );

@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react';
+import { cache, useEffect, useState } from 'react';
 import BlogStyles from './CSS_Modules/Blog.module.css';
 
 export const Blog = () => {
@@ -23,7 +23,7 @@ export const Blog = () => {
     useEffect(() => {
         fetchBlogs();
     }, []);
-    
+
     return (
         <>
             <h2 className={BlogStyles.header}><span className={BlogStyles.name2}>Clif's</span> latest blog posts</h2>
