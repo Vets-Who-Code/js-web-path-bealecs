@@ -16,7 +16,7 @@ export const Footer = () => {
                     <h2>Useful Links</h2>
                     <Link href='/' >Back to top</Link>
                     <Link href='/' >Back to landing</Link>
-                    <Link href='/' >Leave some feedback</Link>
+                    <Link href='/CRUD' >Leave some feedback</Link>
                 </div>
             </section>
     )

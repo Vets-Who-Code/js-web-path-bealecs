@@ -13,7 +13,6 @@ export default function Page() {
             <Navigation />
             <HeroSection />
             <Blog />
-            <CRUD />
             <Footer />
         </div>
     );

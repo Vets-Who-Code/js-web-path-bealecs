@@ -1,3 +1,64 @@
-.commentSection {
+.commentsContainer {
+    font-size: 2rem;
+    text-align: center;
+    width: 60rem;
+    margin: 5rem auto;
+    min-height: 40vh;
+}
+.comment {
+    font-size: 1.2rem;
+    text-align: start;
+    padding: 1rem;
+    width: 68rem;
+    list-style: none;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: auto;
+    padding: 2rem;
+}
+.form label {
+    margin: 1rem;
+}
+.form input {
+    margin: 1rem;
+    padding: 1rem;
+}
+.submit {
+    background-color: #4986B6;
+    border-radius: 1rem;
+    transition: all ease 0.3s;
+}
+.submit:hover {
+    background-color: #1C3144;
+    color: white;
+}
+.button {
+    margin: auto;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    width: 14rem;
+    border-radius: 1rem;
+    background-color: #4986B6;
+    transition: all ease 0.3s;
+}
+.button:hover {
+    background-color: #1C3144;
+    color: white;
+}
+.div {
+    display: flex;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+.name2 {
+    color: orange;
+    font-size: 3rem;
+}
+.name {
     font-size: 2rem;
 }

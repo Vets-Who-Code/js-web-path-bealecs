@@ -20,7 +20,7 @@
     background-color: #4986b9;
     width: fit-content;
     margin: auto;
-    border-radius: 10%;
+    border-radius: 1rem;
     transition: background-color ease 0.3s;
     margin-top: 1rem;
 }

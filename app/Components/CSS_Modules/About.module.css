@@ -1,12 +1,11 @@
 .aboutImg {
-    width: 65%;
+    width: 30rem;
     aspect-ratio: 1;
     margin: auto;
     float: left;
     
 }
 .aboutDiv {
-    width: 50%;
     align-items: center;
     margin: auto;
     font-size: 1.5rem;
@@ -16,6 +15,7 @@
 .aboutDiv p {
     display: block;
     margin: auto;
+    text-align: justify;
 }
 .aboutTitle {
     display: block;
@@ -24,7 +24,7 @@
     padding-top: 5rem;
 }
 .aboutContainer {
-    width: 100%;
+    width: 60rem;
     min-height: 85vh;
     margin: auto;
     padding-bottom: 2%;

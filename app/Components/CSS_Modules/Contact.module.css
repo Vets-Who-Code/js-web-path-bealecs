@@ -29,6 +29,12 @@
 .contactForm button {
     padding: 3%;
     margin-top: 5%;
+    background-color: #4986b9;
+    transition: all ease 0.3s;
+}
+.contactForm button:hover {
+    background-color: #1C3144;
+    color: white;
 }
 .contactTitle {
     text-align: center;

@@ -9,11 +9,9 @@ export const AboutPage = () => {
         <>
         <Navigation />
         <h2 className={AboutStyles.aboutTitle} id="aboutSection">About <span className={AboutStyles.name2}>Clif</span></h2>
-        <section className={AboutStyles.aboutContainer}>
+        <section className={AboutStyles.aboutContainer}>            
             <div className={AboutStyles.aboutDiv}>
                 <img className={AboutStyles.aboutImg} src="/collage.webp" alt="collage of Clif, his wife Mari, and two dogs Nymeria and Max" />
-            </div>
-            <div className={AboutStyles.aboutDiv}>
                 <p><span className={AboutStyles.firstLetter}>L</span>earning web development has been a passion of mine for over a year now, focusing more on the front-end, but also exploring other aspects. 
                 <br />
                 <br />
