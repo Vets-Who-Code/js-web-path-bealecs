@@ -128,7 +128,7 @@
     display: none;
   }
   .pfp {
-    width: 70%;
+    width: 50%;
     height: 70%;
     display: block;
     margin: 3.6rem auto auto;
@@ -137,7 +137,7 @@
     flex-wrap: wrap;
     width: 100%;
     min-height: 95vh;
-    height: fit-content;
+    padding-bottom: 2rem;
     display: block;
   }
   .landingInfo {

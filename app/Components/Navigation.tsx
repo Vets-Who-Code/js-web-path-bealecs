@@ -62,18 +62,26 @@ export const Navigation = () => {
       {active && (
         <section className={NavigationStyles.dropDown} id="drop-down">
           <ul>
-            <li className={NavigationStyles.navButton} id="hamburgerProjectsID">
+          <li className={NavigationStyles.listItem} id="projectsID">
+            <Link className={NavigationStyles.navButton} href="/Projects">
               Projects
-            </li>
-            <li className={NavigationStyles.navButton} id="hamburgerAboutID">
+            </Link>
+          </li>
+          <li className={NavigationStyles.listItem} id="projectsID">
+            <Link className={NavigationStyles.navButton} href="/About">
               About
-            </li>
-            <li className={NavigationStyles.navButton} id="hamburgerContactID">
+            </Link>
+          </li>
+          <li className={NavigationStyles.listItem} id="projectsID">
+            <Link className={NavigationStyles.navButton} href="/Contact">
               Contact
-            </li>
-            <li className={NavigationStyles.navButton} id="hamburgerResumeID">
+            </Link>
+          </li>
+          <li className={NavigationStyles.listItem} id="projectsID">
+            <Link className={NavigationStyles.navButton} href="/Resume">
               Resume
-            </li>
+            </Link>
+          </li>
           </ul>
         </section>
       )}

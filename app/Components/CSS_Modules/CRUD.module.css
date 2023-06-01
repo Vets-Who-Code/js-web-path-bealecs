@@ -2,6 +2,7 @@
   font-size: 2rem;
   text-align: center;
   width: 60%;
+
   margin: 5rem auto;
   min-height: 40vh;
 }
@@ -9,8 +10,9 @@
   font-size: 1.2rem;
   text-align: start;
   padding: 1rem;
-  width: 68rem;
   list-style: none;
+  display: block;
+  width: 100%;
 }
 .form {
   display: flex;
@@ -50,10 +52,12 @@
 }
 .div {
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid black;
-  margin: 1rem;
+  margin: 1rem auto;
   border-radius: 1rem;
   align-items: center;
+  width: fit-content;
 }
 .name2 {
   color: orange;
