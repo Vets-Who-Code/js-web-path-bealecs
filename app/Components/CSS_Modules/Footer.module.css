@@ -1,47 +1,47 @@
 .footerButton {
-    text-decoration: none;
-    font-size: 5rem;
-    transition: color ease-in 0.1s;
-    background-color: #4986B6;
-    color: white;
-    transition: color ease-in 0.2s;
+  text-decoration: none;
+  font-size: 5rem;
+  transition: color ease-in 0.1s;
+  background-color: #4986b6;
+  color: white;
+  transition: color ease-in 0.2s;
 }
 .footerSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: auto;
-    flex-wrap: wrap;
-    background-color: #4986B6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-wrap: wrap;
+  background-color: #4986b6;
 }
 .socialLinks {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50rem;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50rem;
+  padding: 1rem;
 }
 .socialIcons {
-    transition: all ease 0.3s;
-  }
-  .socialIcons:hover {
-    border-radius: 50%;
-    box-shadow: 0px 6px 9px 0px orange;
-  }
+  transition: all ease 0.3s;
+}
+.socialIcons:hover {
+  border-radius: 50%;
+  box-shadow: 0px 6px 9px 0px orange;
+}
 .footerButton:hover {
-    color: #1C3144;
+  color: #1c3144;
 }
 .otherLinks {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1rem;
 }
 .linkies {
-    color: white;
-    padding: 1rem;
+  color: white;
+  padding-top: 1rem;
 }
 .otherLinks > h2 {
-    color: white;
+  color: white;
 }

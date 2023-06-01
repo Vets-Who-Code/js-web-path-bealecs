@@ -1,10 +1,10 @@
 * {
-    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-margin-top: 80px;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 80px;
 }
 *::selection {
-    background-color: #383F51;
-    color: #F1EDEE;
+  background-color: #383f51;
+  color: #f1edee;
 }

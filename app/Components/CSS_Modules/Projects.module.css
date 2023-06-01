@@ -1,171 +1,184 @@
 /* Start of Project Section */
 article#projects {
-    min-height: 85vh;
+  min-height: 85vh;
 }
 .container {
-    width: 80rem;
-    display: flex;
-    margin: auto;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  width: 80rem;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .clicked {
-    font-size: 1.5rem;
-    background-color: #4986B6;
-    color: white;
-    width: fit-content;
-    margin: auto;
+  font-size: 1.5rem;
+  background-color: #4986b6;
+  color: white;
+  width: fit-content;
+  margin: auto;
 }
 #issue7 {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 #apiSection {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    margin-top: 1%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
 }
 #issue7 {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 #issue7 button {
-    margin: 1%;
+  margin: 1%;
 }
 .cardsSection {
-    margin: 2rem auto;
-    background: radial-gradient(circle, rgba(255,253,250,1) 0%, rgba(73,134,182,1) 100%);
-    color: black;
-    border-radius: 10%;
-    border: 2px solid #fffdfa;
-    transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
-    width: 25rem;
+  margin: 2rem auto;
+  background: radial-gradient(
+    circle,
+    rgba(255, 253, 250, 1) 0%,
+    rgba(73, 134, 182, 1) 100%
+  );
+  color: black;
+  border-radius: 10%;
+  border: 2px solid #fffdfa;
+  transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
+  width: 25rem;
 }
 .cardsSection:hover {
-    box-shadow: #4986B6 0px 0px 24px 0px;
-    border: 2px solid white;
-    cursor: pointer;
+  box-shadow: #4986b6 0px 0px 24px 0px;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .cardsSection p {
-    padding: 4%;
-    text-decoration: none;
+  padding: 4%;
+  text-decoration: none;
 }
 .cardsSection h4 {
-    font-size: 1.5rem;
-    padding: 3%;
-    text-align: center;
-    text-decoration: none;
+  font-size: 1.5rem;
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
 }
 .cardsSection img {
-    display: block;
-    width: 250px;
-    height: 230px;
-    border-radius: 50%;
-    margin: auto;
+  display: block;
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  margin: auto;
 }
 .para {
-    font-size: 1.6rem;
-    width: 70rem;
-    margin: auto;
-    line-height: 2.5rem;
-    padding: 1rem;
+  font-size: 1.6rem;
+  width: 70rem;
+  margin: auto;
+  line-height: 2.5rem;
+  padding: 1rem;
 }
 .api {
-    margin: auto;
-    margin-top: 2%;
-    padding: 1%;
-    border: 1px solid black;
-    border-radius: 10%;
-    transition: background-color ease-in 0.2s, color ease-in 0.2s, border ease-in 0.2s, box-shadow ease-in 0.2s;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 10%;
+  transition: background-color ease-in 0.2s, color ease-in 0.2s,
+    border ease-in 0.2s, box-shadow ease-in 0.2s;
 }
 .api:hover {
-    box-shadow: #4986B6 0px 4px 12px 0px;
-    background-color: white;
-    color: #4986B6;
-    border: 1px solid #4986B6;
+  box-shadow: #4986b6 0px 4px 12px 0px;
+  background-color: white;
+  color: #4986b6;
+  border: 1px solid #4986b6;
 }
 li.nav-button {
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    padding: 1%;
-    margin: 1%;
-    box-shadow: black 0px 0px 4px 0px;
-    border-radius: 10%;
-    transition: background-color ease-in 0.2s, box-shadow ease-in 0.2s;
-    background-color: #4986B6;
-    color: white;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  padding: 1%;
+  margin: 1%;
+  box-shadow: black 0px 0px 4px 0px;
+  border-radius: 10%;
+  transition: background-color ease-in 0.2s, box-shadow ease-in 0.2s;
+  background-color: #4986b6;
+  color: white;
 }
 li.nav-button:hover {
-    background-color: #1C3144;
-    box-shadow: white 0px 0px 8px 0px;
+  background-color: #1c3144;
+  box-shadow: white 0px 0px 8px 0px;
 }
 .landingAnchor {
-    text-decoration: underline;
-    color: orange;
-    font-weight: bolder;
+  text-decoration: underline;
+  color: orange;
+  font-weight: bolder;
 }
 .name2 {
-    color: orange;
-    font-size: 4rem;
+  color: orange;
+  font-size: 4rem;
 }
 .projH2 {
-    text-align: center;
-    padding-top: 5rem;
+  text-align: center;
+  padding-top: 5rem;
 }
 .treats {
-    text-align: center;
+  text-align: center;
 }
 h2.data {
-    padding: 1%;
+  padding: 1%;
 }
 .data-img {
-    width: 300px;
-    border-radius: 10%;
+  width: 300px;
+  border-radius: 10%;
 }
 .data-p {
-    width: 50%;
-    margin: auto;
-    line-height: 1.5rem;
+  width: 50%;
+  margin: auto;
+  line-height: 1.5rem;
 }
 .list-item {
-    list-style:upper-roman;
-    margin-bottom: 0.5%;
+  list-style: upper-roman;
+  margin-bottom: 0.5%;
 }
 /* End of Project Section */
 
 @media only screen and (max-width: 1200px) {
-    .cardsSection {
-        width: 40%;
-    }
+  .cardsSection {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .cardsSection {
-        width: 80%;
-    }
+  .cardsSection {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .cardsSection {
-        width: 90%;
-    }
+  .cardsSection {
+    width: 90%;
+  }
 }
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
-/* Projects Section */
+  /* Projects Section */
 
-.cardsSection {
-    width: 100%;
-}
-.data-p {
+  .cardsSection {
+    width: 80%;
+  }
+  .data-p {
     width: 90%;
-}
-.container {
+  }
+  .container {
     width: 100%;
-}
+  }
+  .para {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .cardsSection img {
+    width: 150px;
+    height: 150px;
+  }
 }

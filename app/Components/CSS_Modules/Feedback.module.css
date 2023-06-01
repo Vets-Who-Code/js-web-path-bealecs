@@ -1,52 +1,51 @@
 .feedbackForm {
-    display:flex;
-    flex-direction: column;
-    margin: auto;
-    color: white;
-    padding: 1%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
+  padding: 1%;
 }
 .feedbackForm label {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 .feedbackForm input {
-    margin-bottom: 1rem;
-    padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .feedbackForm textarea {
-    margin-bottom: 1rem;
-    padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .footer h3 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 .submitFeedback {
-    padding: 3%;
-    background-color: #4986B6;
-    color: white;
-    border-radius: 5rem;
-    transition: all ease 0.3s;
+  padding: 3%;
+  background-color: #4986b6;
+  color: white;
+  border-radius: 5rem;
+  transition: all ease 0.3s;
 }
 .submitFeedback:hover {
-    background-color: #1C3144;
-    color: white;
+  background-color: #1c3144;
+  color: white;
 }
 .submitFeedback:hover {
-    color: white;
-    background-color: #1C3144;
-    box-shadow: white 0px 0px 8px 0px;
+  color: white;
+  background-color: #1c3144;
+  box-shadow: white 0px 0px 8px 0px;
 }
-
 
 @media screen and (max-width: 768px) {
-    .feedbackForm {
-        width: 60%;
-    }   
+  .feedbackForm {
+    width: 60%;
+  }
 }
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
-    .feedbackForm {
-        width: 80%;
-    }
+  .feedbackForm {
+    width: 80%;
+  }
 }

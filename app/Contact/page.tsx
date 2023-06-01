@@ -1,6 +1,5 @@
 import { ContactPage } from "./Contact";
 
-export default function Contact () {
-    
-    return <ContactPage />
+export default function Contact() {
+  return <ContactPage />;
 }
