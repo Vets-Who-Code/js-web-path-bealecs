@@ -22,7 +22,7 @@ export const CRUD = () => {
     //Export functions and move outside of scope of Component
     
     async function postComments() {
-        const res = await fetch("https://crudcrud.com/api/5d10aa7515bd431f9ab85ff6499b294f/comments", {
+        const res = await fetch("https://crudcrud.com/api/4677ad0108bf4094960d08132929a2f6/comments", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export const CRUD = () => {
         }
 
         function getComments() {
-            fetch("https://crudcrud.com/api/5d10aa7515bd431f9ab85ff6499b294f/comments", { cache: 'no-store'})
+            fetch("https://crudcrud.com/api/4677ad0108bf4094960d08132929a2f6/comments", { cache: 'no-store'})
             .then((response) => response.json())
             .then((data) => setCommentsData(data));
             
@@ -49,7 +49,7 @@ export const CRUD = () => {
 
         const deleteComment = async (event) =>  {
             setChange(true);
-            await fetch(`https://crudcrud.com/api/5d10aa7515bd431f9ab85ff6499b294f/comments/${event.target.id}`, {
+            await fetch(`https://crudcrud.com/api/4677ad0108bf4094960d08132929a2f6/comments/${event.target.id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ export const CRUD = () => {
         const editComment = async (event) => {
             setChange(true);
             if(comment) {
-                await fetch(`https://crudcrud.com/api/5d10aa7515bd431f9ab85ff6499b294f/comments/${event.target.id}`, {
+                await fetch(`https://crudcrud.com/api/4677ad0108bf4094960d08132929a2f6/comments/${event.target.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
