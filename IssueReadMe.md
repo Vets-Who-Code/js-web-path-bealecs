@@ -1,9 +1,13 @@
-# Issue 10
+# Issue 11
 
-#### I have finished with issue 10 and it is ready for review:
+#### I am still in the process of issue 11
 
-#### For this issue, I had to npm install React and React DOM. After doing that, I went ahead and started setting up a seperate folder for the react files, and added a second child folder to the react folder for components (such as the theme switcher). 
+#### Since it is such a big PR coming up, and a lot of new changes, I am going to walk through it here. Most of it is moving the css over to be modularized, and making components out of the html. I have added many style changes to accompany a move to better suit NextJS. The new routes from NextJS provided easy navigation, and so I modified the look of my page. 
 
-#### The React folder contains 3 files, an index.jsx which renders the 'App' component. The App.jsx file contains all of the jsx and logic for the issue 10 section, and finally there is the CSS page which is just styles specifically for the issue 10 section as a module. This directory also contains, as aforementioned, the components directory. Inside here, I have created my component for the theme switcher. The theme switcher changes the background color for the body element of the page
+#### There is a components folder which houses some of the basic components, and then folders solely designated for their page route based off of their content.
 
-#### Note for VWC Mentors: If this was not the folder structure that was in mind for the project, please let me know and I will promptly make changes accordingly. Thanks for reading!
+#### The deploy preview will have an example of the issue 11, if you just click the footer link that says leave some feedback
+
+#### Note for VWC Mentors: There were some gray areas with the newer technologies of NextJS not utilizing getServerSideProps anymore. I utilized their app router structure as it is the suggested structure now.
+
+P.S. Apologies for the terribly long PR

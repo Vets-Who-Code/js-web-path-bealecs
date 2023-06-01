@@ -13,8 +13,8 @@ export const PWP = () => {
                 <h2> Pips With Paul </h2>
                 <img className={PWPStyles.image} src="./pwpLogo.webp" alt="Screenshot of pips with paul website" />
                 <div className={PWPStyles.anchors}>
-                    <a href='https://www.google.com' rel="noopener noreferrer" target='_blank'>Check out the Github Repo</a>
-                    <a href='https://www.github.com' rel="noopener noreferrer" target='_blank'>Check out the site directly</a>
+                    <a href='https://www.github.com/bealecs/pipswithpaul' rel="noopener noreferrer" target='_blank'>Check out the Github Repo</a>
+                    <a href='https://pipswithpaul.vercel.app' rel="noopener noreferrer" target='_blank'>Check out the site directly</a>
                 </div>
                 <article className={PWPStyles.article}>
                     <p>Paul is a long standing friend of mine from around the age of 11. When my programming journey started, Paul was there with me as well.

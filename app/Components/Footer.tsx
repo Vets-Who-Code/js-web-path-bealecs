@@ -14,9 +14,8 @@ export const Footer = () => {
                 </div>
                 <div className={FooterStyles.otherLinks}>
                     <h2>Useful Links</h2>
-                    <Link href='/' >Back to top</Link>
-                    <Link href='/' >Back to landing</Link>
-                    <Link href='/CRUD' >Leave some feedback</Link>
+                    <Link className={FooterStyles.linkies} href='/' >Back to landing</Link>
+                    <Link className={FooterStyles.linkies} href='/CRUD' >Leave some feedback</Link>
                 </div>
             </section>
     )
