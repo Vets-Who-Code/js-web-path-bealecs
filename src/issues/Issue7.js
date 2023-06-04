@@ -10,7 +10,7 @@ function createElement7(element, text, name) { //function to create an element g
 }
 
 //function to create list item, used with button for adding list item
-  const textContent = ['Besos Mojados', 'LLYLM', 'La Fama', 'Despecha', 'Yo x Ti, Tu x Mi'];
+  const textContent = ['Besos Mojados', 'Besos', 'La Fama', 'Vampiros', 'Yo x Ti, Tu x Mi'];
   let counter = 0;
   
   function addList() {

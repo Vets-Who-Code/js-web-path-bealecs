@@ -1,24 +1,28 @@
 {
   "name": "js-web-path-bealecs",
   "description": "A portfolio web path project instructed and led by Vets Who Code. Follow along in the GitHub Repo",
-  "source": "src/index.html",
+  "source": "./app/layout.tsx",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "latest",
+    "@types/node": "20.1.4",
+    "@types/react": "^18.2.6",
     "process": "^0.11.10",
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "parcel": "latest",
+    "next": "^13.4.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-social-icons": "^5.15.0"
   }
 }
