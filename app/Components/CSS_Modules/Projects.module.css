@@ -3,7 +3,7 @@ article#projects {
   min-height: 85vh;
 }
 .container {
-  width: 80rem;
+  width: 80%;
   display: flex;
   margin: auto;
   justify-content: space-evenly;
@@ -142,31 +142,11 @@ h2.data {
 }
 /* End of Project Section */
 
-@media only screen and (max-width: 1200px) {
-  .cardsSection {
-    width: 40%;
-  }
-}
 
-@media only screen and (max-width: 1000px) {
-  .cardsSection {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cardsSection {
-    width: 90%;
-  }
-}
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
   /* Projects Section */
-
-  .cardsSection {
-    width: 80%;
-  }
   .data-p {
     width: 90%;
   }
@@ -176,9 +156,5 @@ h2.data {
   .para {
     width: 80%;
     font-size: 1rem;
-  }
-  .cardsSection img {
-    width: 150px;
-    height: 150px;
   }
 }
