@@ -1,11 +1,28 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavigationStyles from "./CSS_Modules/Navigation.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Navigation = () => {
   const [active, setActive] = useState(false);
+  const [theme, setTheme] = useState(false);
 
+  useEffect(() => {
+    const themer = document.getElementById("themer");
+    themer.addEventListener("click", () => {
+      document.body.style.backgroundColor = theme ? "white" : "#1c3144";
+      document.body.style.color = theme ? "#1c3144" : "white";
+    });
+  }, [theme]);
+
+  const changeTheme = () => {
+    if (!theme) {
+      setTheme(true);
+    } else if(theme) {
+      setTheme(false);
+    }
+  };
   const hamburgerClick = () => {
     if (!active) {
       setActive(true);
@@ -46,7 +63,29 @@ export const Navigation = () => {
               Resume
             </Link>
           </li>
-          <li className={NavigationStyles.themer} id="themer"></li>
+          {theme ? (
+            <li
+              className={NavigationStyles.themer}
+              onClick={changeTheme}
+              id="themer"
+            >
+              <Image src="/dark.svg"
+              width={50}
+              height={50}
+              alt="Theme image for changing the website to light or dark theme" />
+            </li>
+          ) : (
+            <li
+              className={NavigationStyles.themer}
+              onClick={changeTheme}
+              id="themer"
+            >
+              <Image src="/light.svg"
+              width={50}
+              height={50}
+              alt="Theme image for changing the website to light or dark theme" />
+            </li>
+          )}
         </ul>
         <div
           className={NavigationStyles.hamburgerMenu}
@@ -62,26 +101,26 @@ export const Navigation = () => {
       {active && (
         <section className={NavigationStyles.dropDown} id="drop-down">
           <ul>
-          <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/Projects">
-              Projects
-            </Link>
-          </li>
-          <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/About">
-              About
-            </Link>
-          </li>
-          <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/Contact">
-              Contact
-            </Link>
-          </li>
-          <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/Resume">
-              Resume
-            </Link>
-          </li>
+            <li className={NavigationStyles.listItem} id="projectsID">
+              <Link className={NavigationStyles.navButton} href="/Projects">
+                Projects
+              </Link>
+            </li>
+            <li className={NavigationStyles.listItem} id="projectsID">
+              <Link className={NavigationStyles.navButton} href="/About">
+                About
+              </Link>
+            </li>
+            <li className={NavigationStyles.listItem} id="projectsID">
+              <Link className={NavigationStyles.navButton} href="/Contact">
+                Contact
+              </Link>
+            </li>
+            <li className={NavigationStyles.listItem} id="projectsID">
+              <Link className={NavigationStyles.navButton} href="/Resume">
+                Resume
+              </Link>
+            </li>
           </ul>
         </section>
       )}

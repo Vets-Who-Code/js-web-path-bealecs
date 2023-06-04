@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./page.css";
 import { Navigation } from "./Components/Navigation";
 import { HeroSection } from "./Components/Hero";
