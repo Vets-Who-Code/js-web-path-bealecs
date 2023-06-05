@@ -13,12 +13,13 @@ export const Navigation = () => {
     themer.addEventListener("click", () => {
       document.body.style.backgroundColor = theme ? "white" : "#1c3144";
       document.body.style.color = theme ? "#1c3144" : "white";
+      document.body.style.transition = "all ease 0.3s";
     });
   }, [theme]);
 
   const changeTheme = () => {
     if (!theme) {
-      setTheme(true);
+      setTheme(true)
     } else if(theme) {
       setTheme(false);
     }
@@ -72,7 +73,7 @@ export const Navigation = () => {
               <Image src="/dark.svg"
               width={50}
               height={50}
-              alt="Theme image for changing the website to light or dark theme" />
+              alt="Dark theme button for changing to dark theme" />
             </li>
           ) : (
             <li
@@ -83,7 +84,7 @@ export const Navigation = () => {
               <Image src="/light.svg"
               width={50}
               height={50}
-              alt="Theme image for changing the website to light or dark theme" />
+              alt="light theme button for changing to light theme" />
             </li>
           )}
         </ul>

@@ -46,6 +46,10 @@
   list-style: none;
   font-size: 1.5rem;
   user-select: none;
+  transition: scale ease 0.3s;
+}
+.themer:hover {
+  scale: 1.1;
 }
 .listItem {
   list-style: none;
