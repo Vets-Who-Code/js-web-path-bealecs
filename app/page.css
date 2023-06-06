@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   scroll-margin-top: 80px;
- 
 }
 *::selection {
   background-color: #383f51;
@@ -12,4 +11,5 @@
 .container_dark {
   background-color: #1c3144;
   color: white;
+  transition: all ease 0.3s;
 }
