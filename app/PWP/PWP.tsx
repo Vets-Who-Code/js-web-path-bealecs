@@ -6,7 +6,6 @@ import { Footer } from "../Components/Footer";
 export const PWP = () => {
   return (
     <>
-      <Navigation />
       <section className={PWPStyles.container}>
         <Link className={PWPStyles.back} href="/Projects">
           <span className={PWPStyles.arrow}>←</span> Back to projects

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import CRUDStyles from "../Components/CSS_Modules/CRUD.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 
 function genRandKey() {
@@ -20,7 +19,7 @@ export const CRUD = () => {
 
   async function postComments() {
     const res = await fetch(
-      "https://crudcrud.com/api/8f2bf94173754329bc701be288f4d01d/comments",
+      "https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments",
       {
         method: "POST",
         headers: {
@@ -42,7 +41,7 @@ export const CRUD = () => {
 
   function getComments() {
     fetch(
-      "https://crudcrud.com/api/8f2bf94173754329bc701be288f4d01d/comments",
+      "https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments",
       { cache: "no-store" }
     )
       .then((response) => response.json())
@@ -52,7 +51,7 @@ export const CRUD = () => {
   const deleteComment = async (event) => {
     setChange(true);
     await fetch(
-      `https://crudcrud.com/api/8f2bf94173754329bc701be288f4d01d/comments/${event.target.id}`,
+      `https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments/${event.target.id}`,
       {
         method: "DELETE",
         headers: {
@@ -68,7 +67,7 @@ export const CRUD = () => {
     setChange(true);
     if (comment) {
       await fetch(
-        `https://crudcrud.com/api/8f2bf94173754329bc701be288f4d01d/comments/${event.target.id}`,
+        `https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments/${event.target.id}`,
         {
           method: "PUT",
           headers: {
@@ -102,7 +101,7 @@ export const CRUD = () => {
           <h2 className={CRUDStyles.name}>
             Previous <span className={CRUDStyles.name2}>Feedback</span>
           </h2>
-          <ul>
+          <ul className={CRUDStyles.ul}>
             {commentsData.map((comment) => (
               <div key={genRandKey()} className={CRUDStyles.div}>
                 <li className={CRUDStyles.comment} key={genRandKey()}>
