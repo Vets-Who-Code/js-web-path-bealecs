@@ -21,7 +21,7 @@
   width: fit-content;
   margin: auto;
   border-radius: 1rem;
-  transition: background-color ease 0.3s;
+  transition: all ease 0.3s;
   margin-top: 1rem;
 }
 .anchor:hover {
