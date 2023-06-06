@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ClifsCatalogStyles from "../Components/CSS_Modules/ClifsCatalog.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 
 export const ClifsCatalog = () => {

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import PWPStyles from "../Components/CSS_Modules/PWP.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 
 export const PWP = () => {

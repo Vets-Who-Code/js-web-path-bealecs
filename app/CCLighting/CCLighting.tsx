@@ -1,6 +1,5 @@
 import Link from "next/link";
 import CCLightingStyles from "../Components/CSS_Modules/CCLighting.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 
 export const CCLighting = () => {
