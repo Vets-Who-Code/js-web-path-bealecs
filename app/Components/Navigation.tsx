@@ -19,7 +19,7 @@ export const Navigation = (props: Props) => {
       setActive(false);
     }
   };
-  console.log(props.handler)
+  
  const themeClicker = () => {
     props.handler();
  }

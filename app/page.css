@@ -11,5 +11,8 @@
 .container_dark {
   background-color: #1c3144;
   color: white;
-  transition: all ease 0.3s;
+  transition: background-color ease 1s, color ease 0.3s;
+}
+.container_light {
+  transition: background-color ease 1s, color ease 0.3s;
 }

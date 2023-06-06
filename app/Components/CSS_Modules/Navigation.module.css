@@ -44,7 +44,7 @@
 }
 .themer {
   list-style: none;
-  transition: scale ease 0.3s;
+  transition: all ease 0.3s;
 }
 .themer:hover {
   scale: 1.1;
