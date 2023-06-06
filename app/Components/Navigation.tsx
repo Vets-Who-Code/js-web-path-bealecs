@@ -1,29 +1,17 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import NavigationStyles from "./CSS_Modules/Navigation.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-export const Navigation = () => {
+type Props = {
+  theme: string;
+  handler: () => void;
+};
+
+export const Navigation = (props: Props) => {
   const [active, setActive] = useState(false);
-  const [theme, setTheme] = useState(false);
 
-  useEffect(() => {
-    const themer = document.getElementById("themer");
-    themer.addEventListener("click", () => {
-      document.body.style.backgroundColor = theme ? "white" : "#1c3144";
-      document.body.style.color = theme ? "#1c3144" : "white";
-      document.body.style.transition = "all ease 0.3s";
-    });
-  }, [theme]);
-
-  const changeTheme = () => {
-    if (!theme) {
-      setTheme(true)
-    } else if(theme) {
-      setTheme(false);
-    }
-  };
   const hamburgerClick = () => {
     if (!active) {
       setActive(true);
@@ -31,7 +19,10 @@ export const Navigation = () => {
       setActive(false);
     }
   };
-
+  console.log(props.handler)
+ const themeClicker = () => {
+    props.handler();
+ }
   return (
     <>
       <nav className={NavigationStyles.nav}>
@@ -64,29 +55,24 @@ export const Navigation = () => {
               Resume
             </Link>
           </li>
-          {theme ? (
-            <li
-              className={NavigationStyles.themer}
-              onClick={changeTheme}
-              id="themer"
-            >
-              <Image src="/dark.svg"
-              width={50}
-              height={50}
-              alt="Dark theme button for changing to dark theme" />
-            </li>
-          ) : (
-            <li
-              className={NavigationStyles.themer}
-              onClick={changeTheme}
-              id="themer"
-            >
-              <Image src="/light.svg"
-              width={50}
-              height={50}
-              alt="light theme button for changing to light theme" />
-            </li>
-          )}
+
+          <li className={NavigationStyles.themer} id="themer" onClick={themeClicker}>
+            {props.theme === "light" ? (
+              <Image
+                src="/dark.svg"
+                width={50}
+                height={50}
+                alt="light theme button for changing to dark theme"
+              />
+            ) : (
+              <Image
+                src="/light.svg"
+                width={50}
+                height={50}
+                alt="dark theme button for changing to light theme"
+              />
+            )}
+          </li>
         </ul>
         <div
           className={NavigationStyles.hamburgerMenu}

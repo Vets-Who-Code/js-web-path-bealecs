@@ -7,7 +7,6 @@ import Link from "next/link";
 export const ProjectsPage = () => {
   return (
     <>
-      <Navigation />
       <h2 className={ProjectsStyles.projH2} id="projectsSection">
         My <span className={ProjectsStyles.name2}>Projects</span>
       </h2>

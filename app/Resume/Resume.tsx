@@ -1,12 +1,10 @@
 import React from "react";
 import ResumeStyles from "../Components/CSS_Modules/Resume.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 
 export const ResumePage = () => {
   return (
     <>
-      <Navigation />
       <section className={ResumeStyles.resumeContainer} id="resumeSection">
         <h2 className={ResumeStyles.aboutTitle}>
           My <span className={ResumeStyles.name2}>Resume</span>

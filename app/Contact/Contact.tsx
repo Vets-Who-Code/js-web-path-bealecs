@@ -1,12 +1,10 @@
 import React from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 
 export const ContactPage = () => {
   return (
     <>
-      <Navigation />
       <section className={ContactStyles.contactContainer} id="contactSection">
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>

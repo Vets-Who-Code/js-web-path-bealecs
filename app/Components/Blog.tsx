@@ -10,7 +10,7 @@ export const Blog = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        "https://dev.to/api/articles?username=bealecs"
+        "https://dev.to/api/articles?username=bealecs", { cache: 'no-store'}
       );
       const data = await response.json();
       setPosts(data);
