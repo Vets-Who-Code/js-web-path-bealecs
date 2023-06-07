@@ -1,6 +1,5 @@
-import { PWP } from "./PWP"
+import { PWP } from "./PWP";
 
 export default function Projects() {
-
-    return <PWP />
+  return <PWP />;
 }

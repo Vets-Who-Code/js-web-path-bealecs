@@ -1,6 +1,5 @@
-import { ResumePage } from "./Resume"
+import { ResumePage } from "./Resume";
 
 export default function Resume() {
-
-    return <ResumePage />
+  return <ResumePage />;
 }

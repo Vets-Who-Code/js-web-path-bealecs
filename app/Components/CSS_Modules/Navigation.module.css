@@ -1,185 +1,168 @@
 /* Start of Navbar Section */
 .nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
-    background-color: #4986B6;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-height: 10vh;
-    z-index: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #4986b6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: center;
 }
-.nav > ul {
-    width: 80%;
-    padding: 1%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 50rem;
+  justify-content: space-around;
 }
 .nav > h1 {
-    align-items: center;
-    font-size: 2rem;
-    width: 20%;
-    color: white;
-    cursor: default;
+  align-items: center;
+  font-size: 2rem;
+  width: 20%;
+  color: white;
+  cursor: default;
 }
-
 .hamburgerMenu {
-    display: none;
+  display: none;
 }
 .dropDown {
-    display: none;
+  display: none;
 }
 .logoLetters {
-    color: orange;
-    font-size: 3rem;
+  color: orange;
+  font-size: 3rem;
 }
 .logoTitle {
-    align-items: center;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    margin: 1%;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .themer {
-    list-style: none;
-    font-size: 2.5rem;
-    user-select: none;
+  list-style: none;
+  transition: all ease 0.3s;
 }
 .themer:hover {
-    font-size: 3rem;
+  scale: 1.1;
 }
 .listItem {
-    list-style: none;
+  list-style: none;
 }
 .navButton {
-    text-decoration: none;
-    padding: 0.8rem 1rem;
-    margin: 1%;
-    box-shadow: black 0px 0px 4px 0px;
-    border-radius: 10%;
-    transition: background-color ease-in 0.3s, box-shadow ease-in 0.3s;
-    background-color: #4986B6;
-    color: white;
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5rem;
+  transition: background-color ease-in 0.3s, box-shadow ease-in 0.3s;
+  background-color: #4986b6;
+  color: white;
+  text-decoration: none;
+  list-style: none;
 }
 .navButton:hover {
-    background-color: #1C3144;
-    box-shadow: white 0px 0px 8px 0px;
+  background-color: #1c3144;
+  box-shadow: white 0px 0px 8px 0px;
 }
 .navbutton::selection {
-    text-decoration: none;
+  text-decoration: none;
 }
 /* End of Navbar Section*/
 
+@media screen and (max-width: 1500px) {
+  .logoTitle {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
-    
-    /* Start of navbar section */
-    .hamburgerMenu {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        margin-right: 5%;
-    }
-    .hamburgerBar {
-        width: 40px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: white;
-        transition: all 0.3s ease-in-out;
-    }
-    .hamburgerMenu.active .hamburgerBar:nth-child(1){
-        opacity: 0;
-    }
-    .hamburgerMenu.active .hamburgerBar:nth-child(2){
-        transform:rotate(45deg) translateY(8px);
-    }
-    .hamburgerMenu.active .hamburgerBar:nth-child(3){
-        transform:rotate(-45deg) translateY(-8px);
-    }
-    .logoTitle {
-        margin: 1%;
-    }
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    .nav ul { 
-        display: none;
-    }
-    .dropDown.active {
-        display: block;
-        position: fixed;
-        width: 100%;
-        top: 50;
-        background-color: #4986B6;
-    }
-    .dropDown li {
-        width: fit-content;
-    }
-    .dropDown ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    /*End of navbar section */
+  /* Start of navbar section */
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 5%;
+  }
+  .hamburgerBar {
+    width: 40px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .logoTitle {
+    margin: 1%;
+    font-size: 1.5rem;
+  }
+  .logoLetters {
+    font-size: 2rem;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav ul {
+    display: none;
+  }
+  .dropDown {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: #4986b6;
+    padding-bottom: 1rem;
+  }
+  .dropDown li {
+    width: fit-content;
+    margin: 1rem;
+  }
+  .dropDown ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /*End of navbar section */
 }
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
+  /* Start of navbar section */
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 5%;
+  }
+  .hamburgerBar {
+    width: 40px;
+    height: 2px;
+    margin: 4px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav ul {
+    display: none;
+  }
+  .dropDown {
+    display: block;
+    background-color: #4986b6;
+    position: fixed;
+    padding-top: 3rem;
+  }
+  .dropDown li {
+    width: fit-content;
+  }
+  .dropDown ul {
+    display: flex;
+    justify-content: center;
+  }
+  .navButton {
+    padding: 0.5rem;
+  }
 
-    /* Start of navbar section */
-    .hamburgerMenu {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        margin-right: 5%;
-    }
-    .hamburgerBar {
-        width: 40px;
-        height: 2px;
-        margin: 4px auto;
-        background-color: white;
-        transition: all 0.3s ease-in-out;
-    }
-    .hamburgerMenu.active .hamburgerBar:nth-child(1){
-        opacity: 0;
-    }
-    .hamburgerMenu.active .hamburgerBar:nth-child(2){
-        transform:rotate(45deg) translateY(8px);
-    }
-    .hamburgerMenu.active .hamburgerBar:nth-child(3){
-        transform:rotate(-45deg) translateY(-8px);
-    }
-    
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    .nav ul { 
-        display: none;
-    }
-    .dropDown.active {
-        display: block;
-        background-color: #4986B6;
-        position: fixed;
-        
-    }
-    .dropDown li {
-        width: fit-content;
-    }
-    .dropDown ul {
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    /*End of navbar section */
+  /*End of navbar section */
 }
