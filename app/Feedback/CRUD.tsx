@@ -19,7 +19,7 @@ export const CRUD = () => {
 
   async function postComments() {
     const res = await fetch(
-      "https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments",
+      "https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments",
       {
         method: "POST",
         headers: {
@@ -41,7 +41,7 @@ export const CRUD = () => {
 
   function getComments() {
     fetch(
-      "https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments",
+      "https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments",
       { cache: "no-store" }
     )
       .then((response) => response.json())
@@ -51,7 +51,7 @@ export const CRUD = () => {
   const deleteComment = async (event) => {
     setChange(true);
     await fetch(
-      `https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments/${event.target.id}`,
+      `https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments/${event.target.id}`,
       {
         method: "DELETE",
         headers: {
@@ -67,7 +67,7 @@ export const CRUD = () => {
     setChange(true);
     if (comment) {
       await fetch(
-        `https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments/${event.target.id}`,
+        `https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments/${event.target.id}`,
         {
           method: "PUT",
           headers: {
