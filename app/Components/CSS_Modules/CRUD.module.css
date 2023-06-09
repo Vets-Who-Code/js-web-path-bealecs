@@ -2,7 +2,6 @@
   font-size: 2rem;
   text-align: center;
   width: 60%;
-
   margin: 5rem auto;
   min-height: 40vh;
 }
@@ -20,6 +19,7 @@
   width: 20rem;
   margin: auto;
   padding: 2rem;
+  padding-top: 0;
 }
 .form label {
   margin: 1rem;
@@ -51,9 +51,9 @@
   color: white;
 }
 .ul {
-  width: 40rem;
+  width: 60%;
   margin: auto;
-  height: 40vh;
+  height: 50vh;
   overflow-y: scroll;
 }
 .div {
@@ -62,8 +62,12 @@
   border: 1px solid black;
   border-radius: 1rem;
   align-items: center;
-  width: fit-content;
-  margin: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+.div li {
+  width: 80%;
+  word-wrap: break-word;
 }
 .name2 {
   color: orange;
@@ -71,4 +75,28 @@
 }
 .name {
   font-size: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+  .ul {
+    width: 70%;
+    margin: auto;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .ul {
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ul {
+    width: 90%;
+    margin: auto;
+    height: 50vh;
+    overflow-y: scroll;
+  }
 }

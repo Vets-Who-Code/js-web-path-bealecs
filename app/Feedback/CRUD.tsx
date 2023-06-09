@@ -18,32 +18,28 @@ export const CRUD = () => {
   };
 
   async function postComments() {
-    const res = await fetch(
-      "https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          comment: comment,
-        }),
-      }
-    );
-
-    if (!res.ok) {
-      throw new Error("Failed to post data");
-    }
-
-    return res.json();
+    const res = await fetch("/api/write", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: genRandKey(),
+        comment: comment,
+      }),
+    })
+      .then((response) => {
+        response.json()
+      })
   }
 
-  function getComments() {
-    fetch(
-      "https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments",
-      { cache: "no-store" }
-    )
+  async function getComments() {
+    const res = await fetch("/api/read", {
+      method: "GET",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+    })
       .then((response) => response.json())
       .then((data) => setCommentsData(data));
   }
@@ -75,6 +71,7 @@ export const CRUD = () => {
             Accept: "application/json",
           },
           body: JSON.stringify({
+            id: genRandKey(),
             comment: comment,
           }),
         }

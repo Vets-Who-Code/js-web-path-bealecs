@@ -3,6 +3,7 @@
   aspect-ratio: 1;
   margin: auto;
   float: left;
+  margin-right: 2rem;
 }
 .aboutDiv {
   align-items: center;
