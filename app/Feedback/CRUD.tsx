@@ -4,7 +4,7 @@ import CRUDStyles from "../Components/CSS_Modules/CRUD.module.css";
 import { Footer } from "../Components/Footer";
 
 function genRandKey() {
-  const num = Math.floor(Math.random() * 10000);
+  const num = Math.floor(Math.random() * 100000);
   return num;
 }
 
@@ -27,10 +27,9 @@ export const CRUD = () => {
         id: genRandKey(),
         comment: comment,
       }),
-    })
-      .then((response) => {
-        response.json()
-      })
+    }).then((response) => {
+      response.json();
+    });
   }
 
   async function getComments() {
@@ -45,7 +44,7 @@ export const CRUD = () => {
   }
 
   const deleteComment = async (event) => {
-    setChange(true);
+    setChange(true); //resets the useEffect dependency
     await fetch(
       `https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments/${event.target.id}`,
       {
@@ -60,22 +59,19 @@ export const CRUD = () => {
   };
 
   const editComment = async (event) => {
-    setChange(true);
+    setChange(true); //resets the useEffect dependency
     if (comment) {
-      await fetch(
-        `https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments/${event.target.id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            id: genRandKey(),
-            comment: comment,
-          }),
-        }
-      );
+      await fetch(`/api/write`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          id: genRandKey(),
+          comment: comment,
+        }),
+      });
     } else {
       alert(
         "Please add your change to the feedback box before clicking the edit button"
