@@ -46,12 +46,11 @@ export const CRUD = () => {
   const deleteComment = async (event) => {
     setChange(true); //resets the useEffect dependency
     await fetch(
-      `https://crudcrud.com/api/c94f097df94d4d998ec2b8fe261a804a/comments/${event.target.id}`,
+      `/api/delete`,
       {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json",
         },
       }
     );
@@ -68,7 +67,7 @@ export const CRUD = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          id: genRandKey(),
+          id: event.target.id,
           comment: comment,
         }),
       });
@@ -103,7 +102,7 @@ export const CRUD = () => {
                 <button
                   className={CRUDStyles.button}
                   key={genRandKey()}
-                  id={comment._id}
+                  id={comment.id}
                   onClick={editComment}
                 >
                   Edit
@@ -111,7 +110,7 @@ export const CRUD = () => {
                 <button
                   className={CRUDStyles.button}
                   key={genRandKey()}
-                  id={comment._id}
+                  id={comment.id}
                   onClick={deleteComment}
                 >
                   Delete

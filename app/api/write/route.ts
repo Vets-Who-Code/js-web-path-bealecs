@@ -20,15 +20,20 @@ export async function POST(request: Request, response: Response) {
   }
 }
 
-export async function PUT(request: Request) {
-  const database = path.join(process.cwd(), "data.json"); //directory variable for data.json file
-  const fileData = await fsPromises.readFile(database, { encoding: "utf-8" }); //awaits the json object of the data.json file
-  const dataResult = await request.json(); //grabs the comment that is sent from the client side api
-  const parsed = JSON.parse(fileData);
-  parsed.push(dataResult)
+export async function PUT(request: Request, response: Response) {
   try {
-    await fsPromises.writeFile(database, JSON.stringify(parsed));
-    return NextResponse.json("Comment updated successfully", { status: 200 });
+    const database = path.join(process.cwd(), "data.json"); //directory variable for data.json file
+    const fileData = await fsPromises.readFile(database, { encoding: "utf-8" }); //awaits the json object of the data.json file
+    const dataResult = await request.json(); //grabs the comment that is sent from the client side api
+    const parsed = JSON.parse(fileData);
+    const index = parsed.findIndex((item) => item.id == dataResult.id); //is the id from the edit comment clicked = to anything from data.json?
+    if (index !== -1) { 
+      parsed[index].comment = dataResult.comment;
+      await fsPromises.writeFile(database, JSON.stringify(parsed));
+      return NextResponse.json("Comment updated successfully", { status: 200 });
+    } else {
+      return NextResponse.json("Something went wrong..", { status: 404 });
+    }
   } catch (error) {
     console.log(error);
     return NextResponse.json(
