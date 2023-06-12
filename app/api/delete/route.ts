@@ -1,8 +1,7 @@
 import * as process from "process";
 import * as path from "path";
 import * as fsPromises from "fs/promises";
-import { NextApiRequest } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { headers } from "next/dist/client/components/headers";
 
 //creates type for the comments in data.json
@@ -11,7 +10,7 @@ interface Comment {
   comment: string;
 }
 
-export async function DELETE(request: NextApiRequest, response: NextResponse) {
+export async function DELETE(request: NextRequest, response: NextResponse) {
   const database = path.join(process.cwd(), "data.json"); //directory variable for data.json file
 
   try {
