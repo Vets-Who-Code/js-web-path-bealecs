@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import "./page.css";
 import { Navigation } from "./Components/Navigation";
+import Script from "next/script";
+import GoogleAnalytics from "./Components/GoogleAnalytics";
 
 export default function RootLayout({
   children,
@@ -17,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"container_" + theme}>
+        <GoogleAnalytics />
         <Navigation theme={theme} handler={onThemeChange} />
         {children}
       </body>
