@@ -4,6 +4,7 @@ import "./page.css";
 import { Navigation } from "./Components/Navigation";
 import Script from "next/script";
 import GoogleAnalytics from "./Components/GoogleAnalytics";
+import Head from "next/head";
 
 export default function RootLayout({
   children,
@@ -18,6 +19,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <title>Clif Codes</title>
+        <meta name="description">Clifton Beale's professional portfolio page</meta>
+      </Head>
       <body className={"container_" + theme}>
         <GoogleAnalytics />
         <Navigation theme={theme} handler={onThemeChange} />
