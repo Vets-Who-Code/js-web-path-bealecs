@@ -10,6 +10,7 @@ export const HeroSection = () => {
         <Image
           height={355}
           width={400}
+          loading="eager"
           src="/pfp.webp"
           className={HeroStyles.pfp}
           alt="Professional shot of Clif Beale with a transparent background"

@@ -8,6 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Clif Codes",
   description: "Clifton Beale's Professional Portfolio",
+  robots: "all",
 };
 
 export default function Page() {
