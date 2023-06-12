@@ -18,7 +18,7 @@ export const CRUD = () => {
   };
 
   async function postComments() {
-    const res = await fetch("/api/write", {
+    await fetch("/api/write", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export const CRUD = () => {
   }
 
   async function getComments() {
-    const res = await fetch("/api/read", {
+    await fetch("/api/read", {
       method: "GET",
       headers: {
         "Content-Type": "Application/json",
@@ -44,17 +44,17 @@ export const CRUD = () => {
   }
 
   const deleteComment = async (event) => {
+    const idToDelete = event.target.id;
     setChange(true); //resets the useEffect dependency
-    await fetch(
-      `/api/delete`,
-      {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const res = await fetch(`/api/delete?=${idToDelete}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "Comment-ID": idToDelete,
+      },
+    });
     setChange(false);
+    return await res.json();
   };
 
   const editComment = async (event) => {

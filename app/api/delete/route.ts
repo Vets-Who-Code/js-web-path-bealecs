@@ -1,24 +1,40 @@
 import * as process from "process";
 import * as path from "path";
 import * as fsPromises from "fs/promises";
+import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
+import { headers } from "next/dist/client/components/headers";
 
-export async function DELETE(request: Request, response: Response) {
-    try {
-        // Delete the comment from the data.json file
-        const database = path.join(process.cwd(), "data.json"); //directory variable for data.json file
-        const fileData = await fsPromises.readFile(database, { encoding: "utf-8" }); //awaits the json object of the data.json file
-        const dataResult = await request.json(); //grabs the comment that is sent from the client side api
-        const parsed = JSON.parse(fileData);
-        const index = parsed.findIndex((item) => item.id == dataResult.id); //is the id from the edit comment clicked = to anything from data.json?
-        if (index !== -1) { 
-          await fsPromises.writeFile(database, JSON.stringify(parsed.splice(index, 1)));
-          return NextResponse.json("Comment deleted successfully", { status: 200 });
-        }  else {
-            return NextResponse.json("Route not found...", { status: 404 });
-          }
-      } catch (err) {
-        console.error(err);
-        return NextResponse.json("Internal Server Error", { status: 500 });
-      }
+//creates type for the comments in data.json
+interface Comment {
+  id: number;
+  comment: string;
+}
+
+export async function DELETE(request: NextApiRequest, response: NextResponse) {
+  const database = path.join(process.cwd(), "data.json"); //directory variable for data.json file
+
+  try {
+    //I had to pass the comment ID from the headers to work around a NextJS bug, see client side delete method for what I mean
+    const head = headers();
+    const id = head.get("Comment-ID");
+    // const { id } = request.query; //Destructuring the ID of the comment from the request query of the delete request (this is how I would have done it but there was a nextjs bug)
+
+    const fileData = await fsPromises.readFile(database, {
+      encoding: "utf8",
+    });
+    //returns the info inside data.json
+    const parsed = JSON.parse(fileData);
+
+    const deleteComment = parsed.filter(
+      (comment: Comment) => comment.id !== Number(id)
+    ); //creates a new array after comparing the id of each index from data.json to the id of the comment that was triggering the delete request.
+    // The New array will not have the deleted index
+
+    await fsPromises.writeFile(database, JSON.stringify(deleteComment));
+    //utilizing NextResponse was the proper way to handle responses according to nextDocs for those using /app routing
+    return NextResponse.json("Comment deleted successfully", { status: 200 });
+  } catch (err) {
+    return NextResponse.json(err, { status: 500 });
+  }
 }
