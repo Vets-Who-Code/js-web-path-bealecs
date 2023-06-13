@@ -3,6 +3,13 @@
   aspect-ratio: 1;
   margin: auto;
   float: left;
+  margin-right: 2rem;
+}
+.break {
+  width: 20%;
+  background-color: black;
+  height: 2px;
+  margin: auto;
 }
 .aboutDiv {
   align-items: center;
@@ -14,7 +21,6 @@
 .aboutDiv p {
   display: block;
   margin: auto;
-  text-align: justify;
 }
 .aboutTitle {
   display: block;
@@ -23,7 +29,7 @@
   padding-top: 5rem;
 }
 .aboutContainer {
-  width: 60rem;
+  width: 60%;
   min-height: 85vh;
   margin: auto;
   padding-bottom: 2%;
@@ -46,7 +52,22 @@
   color: orange;
   font-size: 4rem;
 }
-
+.cohortSection {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+.cohortSection h3 {
+  display: block;
+  margin: auto;
+  padding: 2rem;
+}
+.cohortSection p {
+  width: 60%;
+  margin: auto;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
 @media only screen and (max-width: 1200px) {
   .aboutContainer {
     flex-wrap: wrap;

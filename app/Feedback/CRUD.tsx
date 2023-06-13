@@ -4,7 +4,7 @@ import CRUDStyles from "../Components/CSS_Modules/CRUD.module.css";
 import { Footer } from "../Components/Footer";
 
 function genRandKey() {
-  const num = Math.floor(Math.random() * 10000);
+  const num = Math.floor(Math.random() * 100000);
   return num;
 }
 
@@ -18,67 +18,59 @@ export const CRUD = () => {
   };
 
   async function postComments() {
-    const res = await fetch(
-      "https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          comment: comment,
-        }),
-      }
-    );
-
-    if (!res.ok) {
-      throw new Error("Failed to post data");
-    }
-
-    return res.json();
+    await fetch("/api/write", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: genRandKey(),
+        comment: comment,
+      }),
+    }).then((response) => {
+      response.json();
+    });
   }
 
-  function getComments() {
-    fetch(
-      "https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments",
-      { cache: "no-store" }
-    )
+  async function getComments() {
+    await fetch("/api/read", {
+      method: "GET",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+    })
       .then((response) => response.json())
       .then((data) => setCommentsData(data));
   }
 
   const deleteComment = async (event) => {
-    setChange(true);
-    await fetch(
-      `https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments/${event.target.id}`,
-      {
-        method: "DELETE",
+    const idToDelete = event.target.id;
+    setChange(true); //resets the useEffect dependency
+    const res = await fetch(`/api/delete?=${idToDelete}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "Comment-ID": idToDelete,
+      },
+    });
+    setChange(false);
+    return await res.json();
+  };
+
+  const editComment = async (event) => {
+    setChange(true); //resets the useEffect dependency
+    if (comment) {
+      await fetch(`/api/write`, {
+        method: "PUT",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-      }
-    );
-    setChange(false);
-  };
-
-  const editComment = async (event) => {
-    setChange(true);
-    if (comment) {
-      await fetch(
-        `https://crudcrud.com/api/00c4661fee404a06a27fd77baf0ac89f/comments/${event.target.id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            comment: comment,
-          }),
-        }
-      );
+        body: JSON.stringify({
+          id: event.target.id,
+          comment: comment,
+        }),
+      });
     } else {
       alert(
         "Please add your change to the feedback box before clicking the edit button"
@@ -110,7 +102,7 @@ export const CRUD = () => {
                 <button
                   className={CRUDStyles.button}
                   key={genRandKey()}
-                  id={comment._id}
+                  id={comment.id}
                   onClick={editComment}
                 >
                   Edit
@@ -118,7 +110,7 @@ export const CRUD = () => {
                 <button
                   className={CRUDStyles.button}
                   key={genRandKey()}
-                  id={comment._id}
+                  id={comment.id}
                   onClick={deleteComment}
                 >
                   Delete

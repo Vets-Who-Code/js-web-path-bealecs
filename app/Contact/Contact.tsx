@@ -1,8 +1,54 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
 import { Footer } from "../Components/Footer";
 
+function genRandKey() {
+  const num = Math.floor(Math.random() * 100000);
+  return num;
+}
+
 export const ContactPage = () => {
+  //state for contact form inputs
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  //POST request to server side API @ app/api/contact/route.ts
+  async function sendContactMessage() {
+    alert("Thank you for reaching out, I will be in touch soon!");
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: genRandKey(),
+        "first-name": fName,
+        "last-name": lName,
+        email: email,
+        message: message,
+      }),
+    }).then((response) => {
+      response.json();
+    });
+  }
+
+  //handlers for state value changes when filling out the inputs
+  const handleFirstNameChange = (e) => {
+    setFName(e.target.value);
+  };
+  const handleLastNameChange = (e) => {
+    setLName(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
   return (
     <>
       <section className={ContactStyles.contactContainer} id="contactSection">
@@ -12,38 +58,49 @@ export const ContactPage = () => {
         <p>
           The easiest way to get in contact with me, leave me a message here
         </p>
-        <form className={ContactStyles.contactForm}>
+        <form
+          onSubmit={sendContactMessage}
+          className={ContactStyles.contactForm}
+        >
           <label htmlFor="f-name">First Name:</label>
           <input
             id="f-name"
+            onChange={handleFirstNameChange}
+            value={fName}
             placeholder="First Name"
             type="text"
             minLength={1}
-            maxLength={25}
+            maxLength={50}
             required
           />
           <label htmlFor="l-name">Last Name:</label>
           <input
             id="l-name"
+            onChange={handleLastNameChange}
+            value={lName}
             placeholder="Last Name"
             type="text"
             minLength={1}
-            maxLength={25}
+            maxLength={50}
             required
           />
           <label htmlFor="email">Email:</label>
           <input
             id="email"
+            onChange={handleEmailChange}
+            value={email}
             placeholder="Email"
             type="email"
             minLength={8}
-            maxLength={25}
+            maxLength={50}
             required
           />
           <textarea
             placeholder="Message..."
+            onChange={handleMessageChange}
+            value={message}
             minLength={10}
-            maxLength={180}
+            maxLength={500}
           ></textarea>
           <button type="submit">Send Message</button>
         </form>

@@ -10,7 +10,7 @@ export const Blog = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        "https://dev.to/api/articles?username=bealecs", { cache: 'no-store'}
+        "https://dev.to/api/articles?username=bealecs",
       );
       const data = await response.json();
       setPosts(data);
@@ -42,6 +42,8 @@ export const Blog = () => {
                   className={BlogStyles.coverImage}
                   src={item.cover_image}
                   alt={item.title}
+                  height="100%"
+                  width="100%"
                 ></img>
                 <p className={BlogStyles.reading}>
                   Reading Time: {item.reading_time_minutes} minutes
