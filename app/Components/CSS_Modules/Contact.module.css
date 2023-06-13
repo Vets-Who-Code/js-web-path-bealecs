@@ -29,13 +29,12 @@
 .contactForm button {
   padding: 3%;
   margin-top: 5%;
-  background-color: #4986b9;
+  background-color: grey;
   transition: all ease 0.3s;
-  border-radius: 5rem;
+  border-radius: 0.4rem;
 }
 .contactForm button:hover {
-  background-color: #1c3144;
-  color: white;
+  text-decoration: underline;
 }
 .contactTitle {
   text-align: center;

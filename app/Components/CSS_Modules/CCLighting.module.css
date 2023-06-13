@@ -29,30 +29,28 @@
 }
 .anchors > a {
   padding: 2rem;
-  border: 1px solid black;
-  border-radius: 5rem;
-  text-decoration: none;
+  border: 1px solid;
+  border-radius: 0.4rem;
+  background-color: grey;
   color: black;
-  background-color: #4986b6;
+  text-decoration: none;
   transition: all ease 0.3s;
 }
 .anchors > a:hover {
-  background-color: #1c3144;
-  color: white;
+  text-decoration: underline;
 }
 .back {
   padding: 1rem;
   border: 1px solid black;
-  border-radius: 5rem;
+  border-radius: 0.4rem;
   text-decoration: none;
   color: black;
-  background-color: #4986b6;
+  background-color: grey;
   transition: all ease 0.3s;
   margin: 1rem;
 }
 .back:hover {
-  background-color: #1c3144;
-  color: white;
+  text-decoration: underline;
 }
 .arrow {
   font-size: 1.5rem;

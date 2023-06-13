@@ -1,11 +1,14 @@
-import React from "react";
+"use client"
+import React, { useContext } from "react";
 import ResumeStyles from "../Components/CSS_Modules/Resume.module.css";
 import { Footer } from "../Components/Footer";
+import { ThemeContext } from "../layout";
 
 export const ResumePage = () => {
+  const theme = useContext(ThemeContext);
   return (
     <>
-      <section className={ResumeStyles.resumeContainer} id="resumeSection">
+      <section className={!theme ? ResumeStyles.resumeContainer : ResumeStyles.resumeContainerDark } id="resumeSection">
         <h2 className={ResumeStyles.aboutTitle}>
           My <span className={ResumeStyles.name2}>Resume</span>
         </h2>

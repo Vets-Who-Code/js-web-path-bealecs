@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./page.css";
 import { HeroSection } from "./Components/Hero";
 import { Footer } from "./Components/Footer";

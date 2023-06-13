@@ -9,7 +9,7 @@
   color: #f1edee;
 }
 .container_dark {
-  background-color: #1c3144;
+  background-color: #282828;
   color: white;
   transition: background-color ease 1s, color ease 0.3s;
 }

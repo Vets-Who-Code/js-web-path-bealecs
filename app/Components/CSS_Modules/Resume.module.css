@@ -6,6 +6,14 @@
     color: black;
     padding-top: 5rem;
 }
+.resumeContainerDark {
+    min-height: 85vh;
+    background-color: #282828;
+    padding-bottom: 1%;
+    width: 100%;
+    color: black;
+    padding-top: 5rem;
+}
 .topResume {
     background-color: #fffdfa;
     min-height: 20vh;
@@ -43,15 +51,13 @@
     margin: auto;
     width: fit-content;
     padding: 1rem;
-    border-radius: 5rem;
+    border-radius: 0.4rem;
     margin: 2rem auto;
     background-color: #f0f0f0;
     transition: background-color ease-in 0.2s, color ease-in 0.2s, box-shadow ease-in 0.2s;
 }
 .downloadResume:hover {
-    background-color: #1C3144;
-    color: white;
-    box-shadow: white 0px 0px 8px 0px;
+    text-decoration: underline;
 }
 .resumeContainer button {
     display: block;
@@ -100,7 +106,6 @@
     color: white;
     width: 100%;
     text-align: center;
-    background-color: #4986B6;
 }
 .name2 {
     color: orange;

@@ -10,6 +10,17 @@
   z-index: 1;
   align-items: center;
 }
+.navDark {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #1c3144;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: center;
+}
 .navLinks {
   display: flex;
   flex-direction: row;
@@ -46,26 +57,25 @@
 .themer {
   list-style: none;
   transition: all ease 0.3s;
+  font-size: 1.5rem;
 }
 .themer:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 .listItem {
   list-style: none;
 }
 .navButton {
   text-decoration: none;
-  padding: 0.8rem 1rem;
-  border-radius: 5rem;
-  transition: background-color ease-in 0.3s, box-shadow ease-in 0.3s;
-  background-color: #4986b6;
   color: white;
   text-decoration: none;
   list-style: none;
+  font-size: 1.2rem;
+  transition: all ease 0.3s;
 }
 .navButton:hover {
-  background-color: #1c3144;
-  box-shadow: white 0px 0px 8px 0px;
+  text-decoration: underline;
+  color: white;
 }
 .navbutton::selection {
   text-decoration: none;
@@ -115,7 +125,7 @@
   }
   .dropDown li {
     width: fit-content;
-    margin: 1rem;
+    margin: 1rem auto;
   }
   .dropDown ul {
     display: flex;

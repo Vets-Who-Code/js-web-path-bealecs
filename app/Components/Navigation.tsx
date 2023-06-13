@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import NavigationStyles from "./CSS_Modules/Navigation.module.css";
 import Link from "next/link";
-import Image from "next/image";
+import { ThemeContext } from "../layout";
 
 type Props = {
   theme: string;
@@ -23,9 +23,10 @@ export const Navigation = (props: Props) => {
  const themeClicker = () => {
     props.handler();
  }
+ const theme = useContext(ThemeContext);
   return (
     <>
-      <nav className={NavigationStyles.nav}>
+      <nav className={!theme ? NavigationStyles.nav : NavigationStyles.navDark}>
         <div className={NavigationStyles.logoDiv}>
           <h1 id="logotitle">
             <Link className={NavigationStyles.logoTitle} href="/">
@@ -57,21 +58,11 @@ export const Navigation = (props: Props) => {
           </li>
 
           <li className={NavigationStyles.themer} id="themer" onClick={themeClicker}>
-            {props.theme === "light" ? (
-              <Image
-                src="/dark.svg"
-                width={50}
-                height={50}
-                alt="light theme button for changing to dark theme"
-              />
-            ) : (
-              <Image
-                src="/light.svg"
-                width={50}
-                height={50}
-                alt="dark theme button for changing to light theme"
-              />
-            )}
+            {props.theme === "light" ? 
+              "🌛"
+             : 
+              "⛅"
+            }
           </li>
         </ul>
         <div

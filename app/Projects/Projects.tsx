@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectsStyles from "../Components/CSS_Modules/Projects.module.css";
-import { Navigation } from "../Components/Navigation";
 import { Footer } from "../Components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const ProjectsPage = () => {
   return (
@@ -12,59 +12,57 @@ export const ProjectsPage = () => {
       </h2>
       <h2 className={ProjectsStyles.treats}>Click on a project card</h2>
       <article className={ProjectsStyles.container} id="projects">
-        <Link
-          style={{ textDecoration: "none" }}
-          href="/PWP"
-          className={ProjectsStyles.cardsSection}
-        >
-          <section id="pwpSection">
-            <h4>Pips with Paul</h4>
-            <img
+        <section id="pwpSection" className={ProjectsStyles.cardsSection}>
+          <h4>Pips with Paul</h4>
+          <Link style={{ textDecoration: "none" }} href="/PWP">
+            <Image
               src="/pwpLogo.webp"
               alt="Screenshot of pips with paul website"
+              width={200}
+              height={170}
             />
-            <p>
-              Get your learning journey started today! Personalized courses
-              built towards your success.
-            </p>
-          </section>
-        </Link>
-        <Link
-          style={{ textDecoration: "none" }}
+          </Link>
+          <p>
+            Get your learning journey started today! Personalized courses built
+            towards your success.
+          </p>
+        </section>
+        <section
+          id="clifCatalogSection"
           className={ProjectsStyles.cardsSection}
-          href="/ClifsCatalog"
         >
-          <section id="clifCatalogSection">
-            <h4>Clif's Catalog</h4>
-            <img
+          <h4>Clif's Catalog</h4>
+          <Link style={{ textDecoration: "none" }} href="/ClifsCatalog">
+            <Image
               src="/banner.webp"
               alt="Screenshot of Clif's Catalog website"
+              width={200}
+              height={170}
             />
-            <p>
-              A cookbook inspired from lack of inspiration; what started as a
-              random meal generator has grown into something larger, and
-              something that I can be more proud of.
-            </p>
-          </section>
-        </Link>
-        <Link
-          style={{ textDecoration: "none" }}
-          className={ProjectsStyles.cardsSection}
-          href="/CCLighting"
-        >
-          <section id="ccLightingSection">
-            <h4>Cross & Carlile Lighting</h4>
-            <img
+          </Link>
+          <p>
+            A cookbook inspired from lack of inspiration; what started as a
+            random meal generator has grown into something larger, and something
+            that I can be more proud of.
+          </p>
+        </section>
+        <section id="ccLightingSection" className={ProjectsStyles.cardsSection}>
+          <h4>Cross & Carlile Lighting</h4>
+          <Link style={{ textDecoration: "none" }} href="/CCLighting">
+            <Image
               src="/cclightinglogo.webp"
               alt="Screenshot of Cross & Carlile Lighting website"
+              width={200}
+              height={170}
             />
-            <p>
-              Exterior lighting company based in southeastern VA. With Cross &
-              Carlile, you are guaranteed a bright experience.
-            </p>
-          </section>
-        </Link>
+          </Link>
+          <p>
+            Exterior lighting company based in southeastern VA. With Cross &
+            Carlile, you are guaranteed a bright experience.
+          </p>
+        </section>
       </article>
+      <div className={ProjectsStyles.break}></div>
       <p className={ProjectsStyles.para}>
         At the start of each project, I was jumping into mostly unfamiliar
         territory. Through completing such projects, I was able to continue
