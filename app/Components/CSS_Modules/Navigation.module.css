@@ -9,6 +9,7 @@
   justify-content: space-between;
   z-index: 1;
   align-items: center;
+  transition: all ease 0.3s;
 }
 .navDark {
   display: flex;
@@ -20,6 +21,7 @@
   justify-content: space-between;
   z-index: 1;
   align-items: center;
+  transition: all ease 0.3s;
 }
 .navLinks {
   display: flex;
@@ -58,6 +60,7 @@
   list-style: none;
   transition: all ease 0.3s;
   font-size: 1.5rem;
+  cursor:default;
 }
 .themer:hover {
   scale: 1.2;

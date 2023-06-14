@@ -27,6 +27,7 @@
   background-color: #4986b9;
   padding-top: 4%;
   align-items: center;
+  transition: all ease 0.3s;
 }
 .landingSectionDark {
   min-height: 40vh;
@@ -37,6 +38,7 @@
   background-color: #1c3144;
   padding-top: 4%;
   align-items: center;
+  transition: all ease 0.3s;
 }
 .landingInfo {
   display: flex;

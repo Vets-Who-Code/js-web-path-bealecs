@@ -59,16 +59,6 @@
 .downloadResume:hover {
     text-decoration: underline;
 }
-.resumeContainer button {
-    display: block;
-    margin: auto;
-    margin-bottom: 1%;
-}
-.resumeContainer button:hover {
-    background-color: #1C3144;
-    box-shadow: white 0px 0px 8px 0px;
-    color: white;
-}
 .education {
     width: 50%;
 }

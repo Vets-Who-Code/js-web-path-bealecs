@@ -15,6 +15,7 @@
   margin: auto;
   flex-wrap: wrap;
   background-color: #4986b6;
+  transition: all ease 0.3s;
 }
 .footerSectionDark {
   display: flex;
@@ -25,6 +26,7 @@
   margin: auto;
   flex-wrap: wrap;
   background-color: #1c3144;
+  transition: all ease 0.3s;
 }
 .socialLinks {
   display: flex;

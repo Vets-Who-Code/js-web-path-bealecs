@@ -26,13 +26,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <ThemeContext.Provider value={theme}>
       <body className={"container_" + body}>
         <GoogleAnalytics />
-        <ThemeContext.Provider value={theme}>
           <Navigation theme={body} handler={onThemeChange} />
           {children}
-        </ThemeContext.Provider>
       </body>
+      </ThemeContext.Provider>
     </html>
   );
 }

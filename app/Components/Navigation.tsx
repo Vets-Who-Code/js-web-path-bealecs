@@ -37,22 +37,22 @@ export const Navigation = (props: Props) => {
         </div>
         <ul className={NavigationStyles.navLinks}>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/Projects">
+            <Link prefetch={false} className={NavigationStyles.navButton} href="/Projects">
               Projects
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/About">
+            <Link prefetch={false} className={NavigationStyles.navButton} href="/About">
               About
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/Contact">
+            <Link prefetch={false} className={NavigationStyles.navButton} href="/Contact">
               Contact
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="/Resume">
+            <Link prefetch={false} className={NavigationStyles.navButton} href="/Resume">
               Resume
             </Link>
           </li>

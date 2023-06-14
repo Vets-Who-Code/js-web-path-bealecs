@@ -112,4 +112,7 @@
   .aboutDiv {
     width: 80%;
   }
+  .cohortSection p {
+    font-size: 1rem;
+  }
 }
