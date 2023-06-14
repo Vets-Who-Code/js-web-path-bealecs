@@ -11,10 +11,22 @@
 }
 .contactForm {
   display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  width: 60%;
+  justify-content: space-evenly;
+}
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+.textareaDiv{
+  width: 40%;
+  display: flex;
   flex-direction: column;
   margin: auto;
-  width: 30%;
-  margin-top: 5%;
 }
 .contactForm label {
   font-weight: bolder;
@@ -27,9 +39,10 @@
   padding: 5%;
 }
 .contactForm button {
+  width: 100%;
   padding: 3%;
   margin-top: 5%;
-  background-color: grey;
+  background-color: #f0f0f0;
   transition: all ease 0.3s;
   border-radius: 0.4rem;
 }
