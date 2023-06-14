@@ -10,7 +10,6 @@ export const ProjectsPage = () => {
       <h2 className={ProjectsStyles.projH2} id="projectsSection">
         My <span className={ProjectsStyles.name2}>Projects</span>
       </h2>
-      <h2 className={ProjectsStyles.treats}>Click on a project card</h2>
       <article className={ProjectsStyles.container} id="projects">
         <section id="pwpSection" className={ProjectsStyles.cardsSection}>
           <h4>Pips with Paul</h4>

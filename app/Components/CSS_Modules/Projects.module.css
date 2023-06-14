@@ -24,7 +24,7 @@
   padding: 1rem;
   line-height: 1.5rem;
   font-size: 1.2rem;
-  width: 25rem;
+  width: 80%;
 }
 .cardsSection h4 {
   font-size: 1.5rem;
@@ -125,10 +125,13 @@ h2.data {
     width: 90%;
   }
   .container {
-    width: 100%;
+    width: 90%;
   }
   .para {
     width: 80%;
     font-size: 1rem;
+  }
+  .cardsSection p{
+    width: 80%;
   }
 }
