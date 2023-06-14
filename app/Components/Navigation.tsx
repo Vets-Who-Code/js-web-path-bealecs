@@ -77,7 +77,7 @@ export const Navigation = (props: Props) => {
       </nav>
 
       {active && (
-        <section className={NavigationStyles.dropDown} id="drop-down">
+        <section className={!theme ? NavigationStyles.dropDown : NavigationStyles.dropDownDark} id="drop-down">
           <ul>
             <li className={NavigationStyles.listItem} id="projectsID">
               <Link className={NavigationStyles.navButton} href="/Projects">
@@ -99,8 +99,16 @@ export const Navigation = (props: Props) => {
                 Resume
               </Link>
             </li>
+            <li className={NavigationStyles.themer} id="themer" onClick={themeClicker}>
+            {props.theme === "light" ? 
+              "🌛"
+             : 
+              "⛅"
+            }
+          </li>
           </ul>
         </section>
+        
       )}
     </>
   );

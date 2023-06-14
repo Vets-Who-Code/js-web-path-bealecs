@@ -119,12 +119,32 @@
   .nav ul {
     display: none;
   }
+  .navDark ul {
+    display: none;
+  }
   .dropDown {
     display: block;
     position: fixed;
-    width: 100%;
     background-color: #4986b6;
+    width: 100%;
     padding-bottom: 1rem;
+    transition: all ease 0.3s;
+  }
+  .dropDownDark {
+    display: block;
+    position: fixed;
+    background-color: #1c3144;
+    width: 100%;
+    padding-bottom: 1rem;
+    transition: all ease 0.3s;
+  }
+  .dropDownDark li {
+    width: fit-content;
+    margin: 1rem auto;
+  }
+  .dropDownDark ul {
+    display: flex;
+    justify-content: space-evenly;
   }
   .dropDown li {
     width: fit-content;
@@ -163,7 +183,6 @@
   }
   .dropDown {
     display: block;
-    background-color: #4986b6;
     position: fixed;
     padding-top: 3rem;
   }
@@ -174,8 +193,23 @@
     display: flex;
     justify-content: center;
   }
+  .dropDownDark {
+    display: block;
+    position: fixed;
+    padding-top: 3rem;
+  }
+  .dropDownDark li {
+    width: fit-content;
+  }
+  .dropDownDark ul {
+    display: flex;
+    justify-content: center;
+  }
   .navButton {
     padding: 0.5rem;
+  }
+  .themer {
+    font-size: 1rem;
   }
 
   /*End of navbar section */

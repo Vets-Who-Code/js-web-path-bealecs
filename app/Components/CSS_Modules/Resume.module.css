@@ -154,11 +154,10 @@
         width: 100%;
     }
     .skills {
-        flex-wrap: nowrap;
-        overflow: hidden;
+        width: 90%;
     }
     .eduSection p {
-        width: 100%;
+        width: 90%;
     }
     .topResume {
         flex-wrap:wrap;
