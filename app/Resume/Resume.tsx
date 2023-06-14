@@ -1,14 +1,13 @@
 "use client"
 import React, { useContext } from "react";
 import ResumeStyles from "../Components/CSS_Modules/Resume.module.css";
-import { Footer } from "../Components/Footer";
-import { ThemeContext } from "../layout";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const ResumePage = () => {
   const theme = useContext(ThemeContext);
   return (
     <>
-      <section className={!theme ? ResumeStyles.resumeContainer : ResumeStyles.resumeContainerDark } id="resumeSection">
+      <section className={theme.body === 'container_light' ? ResumeStyles.resumeContainer : ResumeStyles.resumeContainerDark } id="resumeSection">
         <h2 className={ResumeStyles.aboutTitle}>
           My <span className={ResumeStyles.name2}>Resume</span>
         </h2>
@@ -124,7 +123,6 @@ export const ResumePage = () => {
           Download Resume
         </a>
       </section>
-      <Footer />
     </>
   );
 };

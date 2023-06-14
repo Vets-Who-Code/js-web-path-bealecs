@@ -1,12 +1,11 @@
 import React from "react";
 import ProjectsStyles from "../Components/CSS_Modules/Projects.module.css";
-import { Footer } from "../Components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
 export const ProjectsPage = () => {
   return (
-    <>
+    <div>
       <h2 className={ProjectsStyles.projH2} id="projectsSection">
         My <span className={ProjectsStyles.name2}>Projects</span>
       </h2>
@@ -79,7 +78,6 @@ export const ProjectsPage = () => {
         .
       </p>
       <section id="app" className={ProjectsStyles.issue10}></section>
-      <Footer />
-    </>
+    </div>
   );
 };

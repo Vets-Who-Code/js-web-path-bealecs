@@ -2,14 +2,10 @@
 import React, { useContext, useState } from "react";
 import NavigationStyles from "./CSS_Modules/Navigation.module.css";
 import Link from "next/link";
-import { ThemeContext } from "../layout";
+import { ThemeContext } from "../store/CtxProvider";
 
-type Props = {
-  theme: string;
-  handler: () => void;
-};
 
-export const Navigation = (props: Props) => {
+export const Navigation = () => {
   const [active, setActive] = useState(false);
 
   const hamburgerClick = () => {
@@ -20,13 +16,10 @@ export const Navigation = (props: Props) => {
     }
   };
   
- const themeClicker = () => {
-    props.handler();
- }
  const theme = useContext(ThemeContext);
   return (
     <>
-      <nav className={!theme ? NavigationStyles.nav : NavigationStyles.navDark}>
+      <nav className={theme.body === 'container_light' ? NavigationStyles.nav : NavigationStyles.navDark}>
         <div className={NavigationStyles.logoDiv}>
           <h1 id="logotitle">
             <Link className={NavigationStyles.logoTitle} href="/">
@@ -57,8 +50,8 @@ export const Navigation = (props: Props) => {
             </Link>
           </li>
 
-          <li className={NavigationStyles.themer} id="themer" onClick={themeClicker}>
-            {props.theme === "light" ? 
+          <li className={NavigationStyles.themer} id="themer" onClick={theme.onThemeChange}>
+            {theme.body === "container_light" ? 
               "🌛"
              : 
               "⛅"
@@ -77,7 +70,7 @@ export const Navigation = (props: Props) => {
       </nav>
 
       {active && (
-        <section className={!theme ? NavigationStyles.dropDown : NavigationStyles.dropDownDark} id="drop-down">
+        <section className={theme.body === 'container_light' ? NavigationStyles.dropDown : NavigationStyles.dropDownDark} id="drop-down">
           <ul>
             <li className={NavigationStyles.listItem} id="projectsID">
               <Link className={NavigationStyles.navButton} href="/Projects">
@@ -99,8 +92,8 @@ export const Navigation = (props: Props) => {
                 Resume
               </Link>
             </li>
-            <li className={NavigationStyles.themer} id="themer" onClick={themeClicker}>
-            {props.theme === "light" ? 
+            <li className={NavigationStyles.themer} id="themer" onClick={theme.onThemeChange}>
+            {theme.body === "container_light" ? 
               "🌛"
              : 
               "⛅"
@@ -108,8 +101,7 @@ export const Navigation = (props: Props) => {
           </li>
           </ul>
         </section>
-        
       )}
-    </>
+      </>
   );
 };

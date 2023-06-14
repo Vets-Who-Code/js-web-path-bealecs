@@ -1,6 +1,5 @@
 import React from "react";
 import AboutStyles from "../Components/CSS_Modules/About.module.css";
-import { Footer } from "../Components/Footer";
 
 export const AboutPage = () => {
 
@@ -75,7 +74,6 @@ export const AboutPage = () => {
           work and continue building on my skills.
         </p>
       </section>
-      <Footer />
     </>
   );
 };

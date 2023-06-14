@@ -57,7 +57,6 @@ export const PWP = () => {
           </p>
         </article>
       </section>
-      <Footer />
     </>
   );
 };

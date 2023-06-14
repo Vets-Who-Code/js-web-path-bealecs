@@ -3,12 +3,12 @@ import React, { useContext } from "react";
 import FooterStyles from "./CSS_Modules/Footer.module.css";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
-import { ThemeContext } from "../layout";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const Footer = () => {
   const theme = useContext(ThemeContext);
   return (
-    <section className={!theme ? FooterStyles.footerSection : FooterStyles.footerSectionDark}>
+    <section className={theme.body === 'container_light' ? FooterStyles.footerSection : FooterStyles.footerSectionDark}>
       <div className={FooterStyles.otherLinks}>
         <h2>Useful Links</h2>
         <Link className={FooterStyles.linkies} href="/">

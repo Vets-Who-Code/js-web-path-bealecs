@@ -1,38 +1,26 @@
-"use client";
-import React, { createContext, useState } from "react";
+import React from "react";
 import "./page.css";
 import { Navigation } from "./Components/Navigation";
 import GoogleAnalytics from "./Components/GoogleAnalytics";
-
-export const ThemeContext = createContext(false);
+import ThemeContextProvider from "./store/CtxProvider";
+import { Main } from "./Components/Main";
+import { Footer } from "./Components/Footer";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [body, setBody] = useState("light");
-  const [theme, setTheme] = useState(false);
-
-  const onThemeChange = () => {
-    if (!theme) {
-      setTheme(true);
-      setBody("dark");
-    } else {
-      setTheme(false);
-      setBody("light");
-    }
-  };
-
   return (
     <html lang="en">
-      <ThemeContext.Provider value={theme}>
-      <body className={"container_" + body}>
+      <body>
         <GoogleAnalytics />
-          <Navigation theme={body} handler={onThemeChange} />
-          {children}
+        <ThemeContextProvider>
+          <Navigation />
+          <Main>{children}</Main>
+          <Footer />
+        </ThemeContextProvider>
       </body>
-      </ThemeContext.Provider>
     </html>
   );
 }

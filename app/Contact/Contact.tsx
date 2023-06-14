@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
-import { Footer } from "../Components/Footer";
 
 function genRandKey() {
   const num = Math.floor(Math.random() * 100000);
@@ -107,7 +106,6 @@ export const ContactPage = () => {
           </div>
         </form>
       </section>
-      <Footer />
     </>
   );
 };

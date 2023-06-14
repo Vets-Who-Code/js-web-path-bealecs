@@ -55,7 +55,8 @@
 .cohortSection {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: inline;
+  padding-bottom: 3rem;
 }
 .cohortSection h3 {
   display: block;

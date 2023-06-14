@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.break {
+.break { 
   width: 30%;
   background-color: grey;
   height: 2px;

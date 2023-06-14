@@ -57,7 +57,6 @@ export const ClifsCatalog = () => {
           </p>
         </article>
       </section>
-      <Footer />
     </>
   );
 };

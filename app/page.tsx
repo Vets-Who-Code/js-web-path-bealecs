@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./page.css";
 import { HeroSection } from "./Components/Hero";
-import { Footer } from "./Components/Footer";
 import { Blog } from "./Components/Blog";
 import { Metadata } from "next";
 
@@ -16,7 +15,6 @@ export default function Page() {
     <div>
       <HeroSection />
       <Blog />
-      <Footer />
     </div>
   );
 }

@@ -3,12 +3,12 @@ import React, { useContext } from "react";
 import HeroStyles from "./CSS_Modules/Hero.module.css";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
-import { ThemeContext } from "../layout";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const HeroSection = () => {
   const theme = useContext(ThemeContext);
   return (
-    <section className={!theme ? HeroStyles.landingSectionLight : HeroStyles.landingSectionDark} id="landingSection">
+    <section className={theme.body === 'container_light' ? HeroStyles.landingSectionLight : HeroStyles.landingSectionDark} id="landingSection">
       <div>
         <Image
           height={355}
