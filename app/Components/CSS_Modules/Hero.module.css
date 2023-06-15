@@ -48,6 +48,7 @@
 .pfp {
   border-radius: 100%;
   width: 350px;
+  aspect-ratio: 1.01;
   background-color: white;
   border: 1px solid orange;
 }
