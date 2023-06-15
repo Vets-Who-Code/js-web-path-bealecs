@@ -1,7 +1,4 @@
 /* Start of Project Section */
-article#projects {
-  min-height: 85vh;
-}
 .container {
   width: 80%;
   display: flex;
@@ -9,53 +6,25 @@ article#projects {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
-.clicked {
-  font-size: 1.5rem;
-  background-color: #4986b6;
-  color: white;
-  width: fit-content;
-  margin: auto;
-}
-#issue7 {
-  width: 100%;
-  margin: auto;
-}
-#apiSection {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  margin-top: 1%;
-}
-#issue7 {
-  margin: auto;
-  text-align: center;
-}
-#issue7 button {
-  margin: 1%;
+.break { 
+  width: 30%;
+  background-color: grey;
+  height: 2px;
+  margin: 2rem auto;
 }
 .cardsSection {
   margin: 2rem auto;
-  background: radial-gradient(
-    circle,
-    rgba(255, 253, 250, 1) 0%,
-    rgba(73, 134, 182, 1) 100%
-  );
-  color: black;
-  border-radius: 10%;
-  border: 2px solid #fffdfa;
+  border-radius: 1rem;
   transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
   width: 25rem;
 }
-.cardsSection:hover {
-  box-shadow: #4986b6 0px 0px 24px 0px;
-  border: 2px solid white;
-  cursor: pointer;
-}
-
 .cardsSection p {
-  padding: 4%;
   text-decoration: none;
+  margin: 1rem auto;
+  padding: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  width: 80%;
 }
 .cardsSection h4 {
   font-size: 1.5rem;
@@ -65,10 +34,15 @@ article#projects {
 }
 .cardsSection img {
   display: block;
-  width: 250px;
-  height: 230px;
+  width: 200px;
+  height: 180px;
+  padding: 0.5rem;
   border-radius: 50%;
   margin: auto;
+  transition: all ease 0.3s;
+}
+.cardsSection img:hover {
+  scale: 1.1;
 }
 .para {
   font-size: 1.6rem;
@@ -151,10 +125,13 @@ h2.data {
     width: 90%;
   }
   .container {
-    width: 100%;
+    width: 90%;
   }
   .para {
     width: 80%;
     font-size: 1rem;
+  }
+  .cardsSection p{
+    width: 80%;
   }
 }

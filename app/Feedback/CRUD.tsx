@@ -137,7 +137,6 @@ export const CRUD = () => {
           value="Submit feedback"
         />
       </form>
-      <Footer />
     </>
   );
 };

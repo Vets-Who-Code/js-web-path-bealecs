@@ -9,6 +9,19 @@
   justify-content: space-between;
   z-index: 1;
   align-items: center;
+  transition: all ease 0.3s;
+}
+.navDark {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #1c3144;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: center;
+  transition: all ease 0.3s;
 }
 .navLinks {
   display: flex;
@@ -46,26 +59,26 @@
 .themer {
   list-style: none;
   transition: all ease 0.3s;
+  font-size: 1.5rem;
+  cursor:default;
 }
 .themer:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 .listItem {
   list-style: none;
 }
 .navButton {
   text-decoration: none;
-  padding: 0.8rem 1rem;
-  border-radius: 5rem;
-  transition: background-color ease-in 0.3s, box-shadow ease-in 0.3s;
-  background-color: #4986b6;
   color: white;
   text-decoration: none;
   list-style: none;
+  font-size: 1.2rem;
+  transition: all ease 0.3s;
 }
 .navButton:hover {
-  background-color: #1c3144;
-  box-shadow: white 0px 0px 8px 0px;
+  text-decoration: underline;
+  color: white;
 }
 .navbutton::selection {
   text-decoration: none;
@@ -106,16 +119,36 @@
   .nav ul {
     display: none;
   }
+  .navDark ul {
+    display: none;
+  }
   .dropDown {
     display: block;
     position: fixed;
-    width: 100%;
     background-color: #4986b6;
+    width: 100%;
     padding-bottom: 1rem;
+    transition: all ease 0.3s;
+  }
+  .dropDownDark {
+    display: block;
+    position: fixed;
+    background-color: #1c3144;
+    width: 100%;
+    padding-bottom: 1rem;
+    transition: all ease 0.3s;
+  }
+  .dropDownDark li {
+    width: fit-content;
+    margin: 1rem auto;
+  }
+  .dropDownDark ul {
+    display: flex;
+    justify-content: space-evenly;
   }
   .dropDown li {
     width: fit-content;
-    margin: 1rem;
+    margin: 1rem auto;
   }
   .dropDown ul {
     display: flex;
@@ -150,7 +183,6 @@
   }
   .dropDown {
     display: block;
-    background-color: #4986b6;
     position: fixed;
     padding-top: 3rem;
   }
@@ -161,8 +193,23 @@
     display: flex;
     justify-content: center;
   }
+  .dropDownDark {
+    display: block;
+    position: fixed;
+    padding-top: 3rem;
+  }
+  .dropDownDark li {
+    width: fit-content;
+  }
+  .dropDownDark ul {
+    display: flex;
+    justify-content: center;
+  }
   .navButton {
     padding: 0.5rem;
+  }
+  .themer {
+    font-size: 1rem;
   }
 
   /*End of navbar section */

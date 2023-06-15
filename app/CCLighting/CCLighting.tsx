@@ -61,7 +61,6 @@ export const CCLighting = () => {
           </p>
         </article>
       </section>
-      <Footer />
     </>
   );
 };

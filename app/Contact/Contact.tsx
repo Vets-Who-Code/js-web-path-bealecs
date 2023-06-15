@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
-import { Footer } from "../Components/Footer";
 
 function genRandKey() {
   const num = Math.floor(Math.random() * 100000);
@@ -55,57 +54,58 @@ export const ContactPage = () => {
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>
         </h2>
-        <p>
-          The easiest way to get in contact with me, leave me a message here
-        </p>
+        <p>If you are looking to get in touch, just leave your info below</p>
         <form
           onSubmit={sendContactMessage}
           className={ContactStyles.contactForm}
         >
-          <label htmlFor="f-name">First Name:</label>
-          <input
-            id="f-name"
-            onChange={handleFirstNameChange}
-            value={fName}
-            placeholder="First Name"
-            type="text"
-            minLength={1}
-            maxLength={50}
-            required
-          />
-          <label htmlFor="l-name">Last Name:</label>
-          <input
-            id="l-name"
-            onChange={handleLastNameChange}
-            value={lName}
-            placeholder="Last Name"
-            type="text"
-            minLength={1}
-            maxLength={50}
-            required
-          />
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            onChange={handleEmailChange}
-            value={email}
-            placeholder="Email"
-            type="email"
-            minLength={8}
-            maxLength={50}
-            required
-          />
-          <textarea
-            placeholder="Message..."
-            onChange={handleMessageChange}
-            value={message}
-            minLength={10}
-            maxLength={500}
-          ></textarea>
-          <button type="submit">Send Message</button>
+          <div className={ContactStyles.formDiv}>
+            <label htmlFor="f-name">First Name:</label>
+            <input
+              id="f-name"
+              onChange={handleFirstNameChange}
+              value={fName}
+              placeholder="First Name"
+              type="text"
+              minLength={1}
+              maxLength={50}
+              required
+            />
+            <label htmlFor="l-name">Last Name:</label>
+            <input
+              id="l-name"
+              onChange={handleLastNameChange}
+              value={lName}
+              placeholder="Last Name"
+              type="text"
+              minLength={1}
+              maxLength={50}
+              required
+            />
+            <label htmlFor="email">Email:</label>
+            <input
+              id="email"
+              onChange={handleEmailChange}
+              value={email}
+              placeholder="Email"
+              type="email"
+              minLength={8}
+              maxLength={50}
+              required
+            />
+          </div>
+          <div className={ContactStyles.textareaDiv}>
+            <textarea
+              placeholder="Message..."
+              onChange={handleMessageChange}
+              value={message}
+              minLength={10}
+              maxLength={500}
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </div>
         </form>
       </section>
-      <Footer />
     </>
   );
 };

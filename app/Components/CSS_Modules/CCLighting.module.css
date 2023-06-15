@@ -1,12 +1,13 @@
 .container {
   min-height: 92vh;
   margin: 7rem auto;
+  width: 100%;
 }
 .container > h2 {
   text-align: center;
 }
 .image {
-  width: 15rem;
+  width: 20rem;
   height: auto;
   border-radius: 10rem;
   display: block;
@@ -20,40 +21,60 @@
 }
 .anchors {
   display: flex;
-  width: 60rem;
+  width: 100%;
   justify-content: space-evenly;
   margin: 2rem auto;
 }
-.anchor {
-  color: black;
-}
 .anchors > a {
   padding: 2rem;
-  border: 1px solid black;
-  border-radius: 5rem;
-  text-decoration: none;
+  border: 1px solid;
+  border-radius: 0.4rem;
+  background-color: #f0f0f0;
   color: black;
-  background-color: #4986b6;
+  text-decoration: none;
   transition: all ease 0.3s;
 }
 .anchors > a:hover {
-  background-color: #1c3144;
-  color: white;
+  text-decoration: underline;
 }
 .back {
   padding: 1rem;
   border: 1px solid black;
-  border-radius: 5rem;
+  border-radius: 0.4rem;
   text-decoration: none;
   color: black;
-  background-color: #4986b6;
+  background-color: #f0f0f0;
   transition: all ease 0.3s;
-  margin: 1rem;
+  padding: 1rem;
 }
 .back:hover {
-  background-color: #1c3144;
-  color: white;
+  text-decoration: underline;
 }
 .arrow {
   font-size: 1.5rem;
+}
+.article {
+  width: 90%;
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 2.2rem auto;
+  }
+  .container img{
+    width: 60%;
+  }
+  .back {
+    padding: 0.2rem;
+    margin: 0;
+
+  }
+  .anchors > a {
+    width: fit-content;
+    padding: 1rem;
+    margin: auto;
+  }
+  .container h2 {
+    margin: 1rem auto;
+  }
 }
