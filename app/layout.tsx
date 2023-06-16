@@ -1,10 +1,9 @@
-"use client"
-import React, { useContext } from "react";
+import React from "react";
 import "./page.css";
 import GoogleAnalytics from "./Components/GoogleAnalytics";
 import { Main } from "./Components/Main";
 import { Metadata } from "next";
-import ThemeContextProvider, { ThemeContext } from "./store/CtxProvider";
+import ThemeContextProvider from "./store/CtxProvider";
 
 export const metadata: Metadata = {
   title: "Clif Codes",
@@ -17,7 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const theme = useContext(ThemeContext)
+  
   return (
     <html lang="en">
       <body>
