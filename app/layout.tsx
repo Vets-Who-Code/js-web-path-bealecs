@@ -5,6 +5,13 @@ import GoogleAnalytics from "./Components/GoogleAnalytics";
 import ThemeContextProvider from "./store/CtxProvider";
 import { Main } from "./Components/Main";
 import { Footer } from "./Components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Clif Codes",
+  description: "Clifton Beale's Professional Portfolio",
+  robots: "all",
+};
 
 export default function RootLayout({
   children,

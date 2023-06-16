@@ -22,7 +22,7 @@ export const Navigation = () => {
       <nav className={theme.body === 'container_light' ? NavigationStyles.nav : NavigationStyles.navDark}>
         <div className={NavigationStyles.logoDiv}>
           <h1 id="logotitle">
-            <Link className={NavigationStyles.logoTitle} href="/">
+            <Link className={NavigationStyles.logoTitle} href="">
               <span className={NavigationStyles.logoLetters}>C</span>lif{" "}
               <span className={NavigationStyles.logoLetters}>C</span>odes
             </Link>
@@ -30,22 +30,22 @@ export const Navigation = () => {
         </div>
         <ul className={NavigationStyles.navLinks}>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link prefetch={false} className={NavigationStyles.navButton} href="/Projects">
+            <Link className={NavigationStyles.navButton} href="Projects">
               Projects
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link prefetch={false} className={NavigationStyles.navButton} href="/About">
+            <Link className={NavigationStyles.navButton} href="About">
               About
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link prefetch={false} className={NavigationStyles.navButton} href="/Contact">
+            <Link className={NavigationStyles.navButton} href="Contact">
               Contact
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID">
-            <Link prefetch={false} className={NavigationStyles.navButton} href="/Resume">
+            <Link className={NavigationStyles.navButton} href="Resume">
               Resume
             </Link>
           </li>
