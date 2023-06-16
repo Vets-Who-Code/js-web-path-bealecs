@@ -1,10 +1,7 @@
 import React from "react";
 import "./page.css";
-import { Navigation } from "./Components/Navigation";
 import GoogleAnalytics from "./Components/GoogleAnalytics";
-import ThemeContextProvider from "./store/CtxProvider";
 import { Main } from "./Components/Main";
-import { Footer } from "./Components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,12 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <GoogleAnalytics />
-        <ThemeContextProvider>
-          <Navigation />
+          <GoogleAnalytics />
           <Main>{children}</Main>
-          <Footer />
-        </ThemeContextProvider>
       </body>
     </html>
   );

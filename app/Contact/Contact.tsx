@@ -49,7 +49,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <>
+    <div>
       <section className={ContactStyles.contactContainer} id="contactSection">
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>
@@ -106,6 +106,6 @@ export const ContactPage = () => {
           </div>
         </form>
       </section>
-    </>
+    </div>
   );
 };

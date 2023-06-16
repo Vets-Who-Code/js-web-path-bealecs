@@ -22,7 +22,7 @@ export const Navigation = () => {
       <nav className={theme.body === 'container_light' ? NavigationStyles.nav : NavigationStyles.navDark}>
         <div className={NavigationStyles.logoDiv}>
           <h1 id="logotitle">
-            <Link className={NavigationStyles.logoTitle} href="">
+            <Link className={NavigationStyles.logoTitle} href="/">
               <span className={NavigationStyles.logoLetters}>C</span>lif{" "}
               <span className={NavigationStyles.logoLetters}>C</span>odes
             </Link>

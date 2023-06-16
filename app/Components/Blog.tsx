@@ -1,6 +1,7 @@
 "use client";
-import {useEffect, useState } from "react";
+import {useContext, useEffect, useState } from "react";
 import BlogStyles from "./CSS_Modules/Blog.module.css";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -21,12 +22,14 @@ export const Blog = () => {
     }
   };
 
+  const theme = useContext(ThemeContext);
+
   useEffect(() => {
     fetchBlogs();
   }, []);
 
   return (
-    <div>
+    <main className={theme.body}>
       <h2 className={BlogStyles.header}>
         <span className={BlogStyles.name2}>Clif's</span> latest blog posts
       </h2>
@@ -60,6 +63,6 @@ export const Blog = () => {
           )}
         </ul>
       </section>
-    </div>
+    </main>
   );
 };
