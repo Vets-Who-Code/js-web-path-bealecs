@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from "react";
-import ThemeContextProvider, { ThemeContext } from "../store/CtxProvider";
+import { ThemeContext } from "../store/CtxProvider";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 
@@ -12,10 +12,10 @@ export const Main = (props: Props) => {
   const theme = useContext(ThemeContext);
 
   return (
-    <ThemeContextProvider>
+    <div>
       <Navigation />
       <main className={theme.body}>{props.children}</main>
       <Footer />
-    </ThemeContextProvider>
+    </div>
   );
 };
