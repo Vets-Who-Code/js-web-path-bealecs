@@ -22,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ContactContextProvider>
-        <ThemeContextProvider>
-        <GoogleAnalytics />
-          <Main>{children}</Main>
-        </ThemeContextProvider>
+          <ThemeContextProvider>
+            <GoogleAnalytics />
+            <Main>{children}</Main>
+          </ThemeContextProvider>
         </ContactContextProvider>
       </body>
     </html>

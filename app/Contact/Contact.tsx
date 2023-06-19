@@ -1,6 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
+import { ThemeContext } from "../store/CtxProvider";
+import { ContactContext } from "../store/ContactContext";
 
 function genRandKey() {
   const num = Math.floor(Math.random() * 100000);
@@ -13,6 +15,9 @@ export const ContactPage = () => {
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const theme = useContext(ThemeContext);
+  const contact = useContext(ContactContext);
 
   //POST request to server side API @ app/api/contact/route.ts
   async function sendContactMessage() {
@@ -49,8 +54,9 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className={ContactStyles.mainDiv}>
-      <section className={ContactStyles.contactContainer} id="contactSection">
+    <div className={ ContactStyles.mainDiv }>
+      <section className={theme.body === 'container_light' ? ContactStyles.contactContainer : ContactStyles.contactContainerDark} id="contactSection">
+        <button onClick={contact.clickHandle} className={ContactStyles.exit}>← Exit</button>
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>
         </h2>

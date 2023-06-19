@@ -20,7 +20,10 @@ export const Main = (props: Props) => {
     <div>
       <Navigation />
       {contact.clicked ? (
-        <Contact />
+        <main className={theme.body}>
+          {props.children}
+          <Contact />
+        </main>
       ) : (
         <main className={theme.body}>{props.children}</main>
       )}

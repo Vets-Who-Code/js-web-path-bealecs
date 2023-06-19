@@ -1,8 +1,13 @@
 .mainDiv {
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(40, 40, 40, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
-  min-height: 85vh;
+  width: 100%;
+  height: 100%;
   padding-top: 5rem;
+  transition: all ease 0.3s;
 }
 .contactContainer {
   min-height: 60vh;
@@ -11,6 +16,54 @@
   border-radius: 1rem;
   padding: 2rem;
   width: 50%;
+  border: 1px solid orange;
+}
+.contactContainerDark {
+  min-height: 60vh;
+  background-color: #1c3144;
+  color: white;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 50%;
+  border: 1px solid orange;
+}
+.contactContainer .exit {
+ background-color: white;
+ transition: all ease 0.3s;
+ border: none;
+ font-size: 1.1rem;
+ border-bottom: 1px solid white;
+}
+.contactContainerDark .exit {
+  background-color: #1c3144;
+  color: white;
+  transition: all ease 0.3s;
+  border: none;
+  border-bottom: 1px solid #1c3144;
+  font-size: 1.1rem;
+}
+.contactContainer .exit:hover {
+  color: orange;
+  border: 1px solid orange;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid orange;
+  font-size: 1.1rem;
+}
+.contactContainerDark .exit:hover {
+  color: orange;
+  border: 1px solid orange;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid orange;
+  font-size: 1.1rem;
+}
+.contactContainerDark > p {
+  font-size: 1.3rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 1%;
 }
 .contactContainer > p {
   font-size: 1.3rem;
@@ -74,7 +127,7 @@
 
 @media only screen and (max-width: 1200px) {
   .contactContainer p {
-    width: 100%;
+    width: 90%;
   }
   .contactForm {
     width: 70%;
@@ -83,7 +136,7 @@
 
 @media screen and (max-width: 768px) {
   .contactContainer {
-    width: 100%;
+    width: 90%;
   }
   .contactContainer p {
     width: 80%;
@@ -98,10 +151,16 @@
   .contactContainer p {
     width: 100%;
   }
+  .contactContainer {
+    width: 80%;
+  }
   .contactContainer form {
     width: 100%;
   }
   .footer-button {
+    font-size: 3rem;
+  }
+  .name2 {
     font-size: 3rem;
   }
 }

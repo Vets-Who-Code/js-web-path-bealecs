@@ -43,7 +43,7 @@ export const Navigation = () => {
             </Link>
           </li>
           <li className={NavigationStyles.listItem} id="projectsID" onClick={contact.clickHandle}>
-            <Link className={NavigationStyles.navButton} onClick={contact.clickHandle}  href="#">
+            <Link className={NavigationStyles.navButton} href="#">
               Contact
             </Link>
           </li>
@@ -76,22 +76,22 @@ export const Navigation = () => {
         <section className={theme.body === 'container_light' ? NavigationStyles.dropDown : NavigationStyles.dropDownDark} id="drop-down">
           <ul>
             <li className={NavigationStyles.listItem} id="projectsID">
-              <Link className={NavigationStyles.navButton} href="/Projects">
+              <Link className={NavigationStyles.navButton} href="Projects">
                 Projects
               </Link>
             </li>
             <li className={NavigationStyles.listItem} id="projectsID">
-              <Link className={NavigationStyles.navButton} href="/About">
+              <Link className={NavigationStyles.navButton} href="About">
                 About
               </Link>
             </li>
-            <li className={NavigationStyles.listItem} id="projectsID">
-              <Link className={NavigationStyles.navButton} href="/Contact">
+            <li className={NavigationStyles.listItem} onClick={contact.clickHandle} id="projectsID">
+              <Link className={NavigationStyles.navButton} href="#">
                 Contact
               </Link>
             </li>
             <li className={NavigationStyles.listItem} id="projectsID">
-              <Link className={NavigationStyles.navButton} href="/Resume">
+              <Link className={NavigationStyles.navButton} href="Resume">
                 Resume
               </Link>
             </li>
