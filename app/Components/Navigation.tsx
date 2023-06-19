@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import NavigationStyles from "./CSS_Modules/Navigation.module.css";
 import Link from "next/link";
 import { ThemeContext } from "../store/CtxProvider";
+import ContactContextProvider, { ContactContext } from "../store/ContactContext";
 
 
 export const Navigation = () => {
@@ -17,8 +18,10 @@ export const Navigation = () => {
   };
   
  const theme = useContext(ThemeContext);
+ const contact = useContext(ContactContext);
+ 
   return (
-    <>
+    <ContactContextProvider>
       <nav className={theme.body === 'container_light' ? NavigationStyles.nav : NavigationStyles.navDark}>
         <div className={NavigationStyles.logoDiv}>
           <h1 id="logotitle">
@@ -39,8 +42,8 @@ export const Navigation = () => {
               About
             </Link>
           </li>
-          <li className={NavigationStyles.listItem} id="projectsID">
-            <Link className={NavigationStyles.navButton} href="Contact">
+          <li className={NavigationStyles.listItem} id="projectsID" onClick={contact.clickHandle}>
+            <Link className={NavigationStyles.navButton} onClick={contact.clickHandle}  href="#">
               Contact
             </Link>
           </li>
@@ -102,6 +105,6 @@ export const Navigation = () => {
           </ul>
         </section>
       )}
-      </>
+      </ContactContextProvider>
   );
 };
