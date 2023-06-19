@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 type Contact = {
   clicked: boolean;
@@ -19,14 +19,8 @@ const ContactContextProvider = (props: Props) => {
   const [clicked, setClicked] = useState(false);
 
   const clickHandle = () => {
-    if (!clicked) {
-      setClicked(true);
-      console.log("clicked")
-    } else {
-      setClicked(false);
-      console.log("clicked")
-    }
-  };
+    setClicked(!clicked);
+  }
 
   const ctxValue: Contact = {
     clicked: clicked,
