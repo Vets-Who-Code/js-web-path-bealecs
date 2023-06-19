@@ -8,16 +8,18 @@ function genRandKey() {
   const num = Math.floor(Math.random() * 100000);
   return num;
 }
-
-export const ContactPage = () => {
+type Props = {
+  theme: string;
+}
+export const ContactPage = (props: Props) => {
   //state for contact form inputs
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const theme = useContext(ThemeContext);
   const contact = useContext(ContactContext);
+  const theme = useContext(ThemeContext);
 
   //POST request to server side API @ app/api/contact/route.ts
   async function sendContactMessage() {
@@ -55,7 +57,7 @@ export const ContactPage = () => {
 
   return (
     <div className={ ContactStyles.mainDiv }>
-      <section className={theme.body === 'container_light' ? ContactStyles.contactContainer : ContactStyles.contactContainerDark} id="contactSection">
+      <section className={props.theme === 'container_light' ? ContactStyles.contactContainer : ContactStyles.contactContainerDark} id="contactSection">
         <button onClick={contact.clickHandle} className={ContactStyles.exit}>← Exit</button>
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>

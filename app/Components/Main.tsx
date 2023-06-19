@@ -19,14 +19,7 @@ export const Main = (props: Props) => {
   return (
     <div>
       <Navigation />
-      {contact.clicked ? (
-        <main className={theme.body}>
-          {props.children}
-          <Contact />
-        </main>
-      ) : (
         <main className={theme.body}>{props.children}</main>
-      )}
       <Footer />
     </div>
   );

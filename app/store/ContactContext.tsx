@@ -1,5 +1,7 @@
 "use client";
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import Contact from "../Contact/page";
+import { ThemeContext } from "./CtxProvider";
 
 type Contact = {
   clicked: boolean;
@@ -17,6 +19,7 @@ export const ContactContext = createContext<Contact>({
 
 const ContactContextProvider = (props: Props) => {
   const [clicked, setClicked] = useState(false);
+  const theme = useContext(ThemeContext);
 
   const clickHandle = () => {
     setClicked(!clicked);
@@ -29,7 +32,14 @@ const ContactContextProvider = (props: Props) => {
 
   return (
     <ContactContext.Provider value={ctxValue}>
-      {props.children}
+      {clicked ? (
+        <main className={theme.body}>
+          {props.children}
+          <Contact />
+        </main>
+      ) : (
+        <main className={theme.body}>{props.children}</main>
+      )}
     </ContactContext.Provider>
   );
 };
