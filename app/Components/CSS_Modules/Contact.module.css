@@ -1,20 +1,28 @@
-.contactContainer {
+.mainDiv {
+  background-color: rgba(128, 128, 128, 0.2);
+  z-index: 1;
   min-height: 85vh;
-  width: 100%;
   padding-top: 5rem;
+}
+.contactContainer {
+  min-height: 60vh;
+  background-color: white;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 50%;
 }
 .contactContainer > p {
   font-size: 1.3rem;
-  width: 30%;
   margin: auto;
   margin-top: 1%;
 }
 .contactForm {
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem auto;
-  width: 60%;
+  width: 100%;
   justify-content: space-evenly;
+  margin: 5rem auto;
 }
 .formDiv {
   display: flex;
@@ -23,10 +31,14 @@
   margin: auto;
 }
 .textareaDiv{
-  width: 40%;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+.textareaDiv textarea {
+  resize: none;
 }
 .contactForm label {
   font-weight: bolder;

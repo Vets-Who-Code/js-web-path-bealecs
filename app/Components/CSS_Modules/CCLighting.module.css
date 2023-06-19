@@ -1,6 +1,7 @@
 .container {
   min-height: 92vh;
-  margin: 7rem auto;
+  margin: auto;
+  padding-top: 5rem;
   width: 100%;
 }
 .container > h2 {

@@ -49,7 +49,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div>
+    <div className={ContactStyles.mainDiv}>
       <section className={ContactStyles.contactContainer} id="contactSection">
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>
