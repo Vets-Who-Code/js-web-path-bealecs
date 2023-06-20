@@ -7,7 +7,7 @@ function genRandKey() {
   const num = Math.floor(Math.random() * 100000);
   return num;
 }
-type Props = {
+interface Props {
   theme: string;
 }
   const Contact = (props: Props) => {
