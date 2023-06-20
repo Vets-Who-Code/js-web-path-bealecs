@@ -86,8 +86,8 @@ export const CRUD = () => {
 
   return (
     <>
-      {commentsData.length < 0 ? (
-        <p>Nothing to show here</p>
+      {commentsData.length <= 0 ? (
+        <p className={CRUDStyles.nothing}>Nothing to show here, yet...</p>
       ) : (
         <section className={CRUDStyles.commentsContainer}>
           <h2 className={CRUDStyles.name}>
