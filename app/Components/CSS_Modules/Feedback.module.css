@@ -3,10 +3,9 @@
   flex-direction: column;
   margin: auto;
   color: white;
-  padding: 1%;
 }
 .feedbackForm label {
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 .feedbackForm input {
   margin-bottom: 1rem;

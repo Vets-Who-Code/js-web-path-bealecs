@@ -30,6 +30,9 @@
 .resumeContainer article {
     padding: 1%;
 }
+.resumeContainerDark article {
+    padding: 1%;
+}
 .experience {
     width: 50%;
 }

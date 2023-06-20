@@ -4,6 +4,7 @@ import GoogleAnalytics from "./Components/GoogleAnalytics";
 import { Main } from "./Components/Main";
 import { Metadata } from "next";
 import ThemeContextProvider from "./store/CtxProvider";
+import ContactContextProvider from "./store/ContactContext";
 
 export const metadata: Metadata = {
   title: "Clif Codes",
@@ -20,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeContextProvider>
-        <GoogleAnalytics />
-          <Main>{children}</Main>
-        </ThemeContextProvider>
+        <ContactContextProvider>
+          <ThemeContextProvider>
+            <GoogleAnalytics />
+            <Main>{children}</Main>
+          </ThemeContextProvider>
+        </ContactContextProvider>
       </body>
     </html>
   );
