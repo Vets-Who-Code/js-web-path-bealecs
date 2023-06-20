@@ -4,7 +4,7 @@ import AboutStyles from "../Components/CSS_Modules/About.module.css";
 export const AboutPage = () => {
 
   return (
-    <>
+    <div>
       <h2 className={AboutStyles.aboutTitle} id="aboutSection">
         About <span className={AboutStyles.name2}>Clif</span>
       </h2>
@@ -74,6 +74,6 @@ export const AboutPage = () => {
           work and continue building on my skills.
         </p>
       </section>
-    </>
+    </div>
   );
 };

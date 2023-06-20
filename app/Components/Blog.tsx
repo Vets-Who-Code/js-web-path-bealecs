@@ -2,6 +2,7 @@
 import {useEffect, useState } from "react";
 import BlogStyles from "./CSS_Modules/Blog.module.css";
 
+
 export const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -26,7 +27,7 @@ export const Blog = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <h2 className={BlogStyles.header}>
         <span className={BlogStyles.name2}>Clif's</span> latest blog posts
       </h2>
@@ -60,6 +61,6 @@ export const Blog = () => {
           )}
         </ul>
       </section>
-    </div>
+    </main>
   );
 };
