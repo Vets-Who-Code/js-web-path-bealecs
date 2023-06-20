@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useState } from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
-import { ThemeContext } from "../store/CtxProvider";
 import { ContactContext } from "../store/ContactContext";
 
 function genRandKey() {
@@ -19,8 +18,7 @@ export const ContactPage = (props: Props) => {
   const [message, setMessage] = useState("");
 
   const contact = useContext(ContactContext);
-  const theme = useContext(ThemeContext);
-
+  
   //POST request to server side API @ app/api/contact/route.ts
   async function sendContactMessage() {
     alert("Thank you for reaching out, I will be in touch soon!");
