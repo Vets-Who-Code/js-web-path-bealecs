@@ -35,7 +35,7 @@ const ContactContextProvider = (props: Props) => {
         {clicked ? (
           <main className={theme.body}>
             {props.children}
-            <Contact theme={theme.body} />
+            <Contact />
           </main>
         ) : (
           <main className={theme.body}>{props.children}</main>

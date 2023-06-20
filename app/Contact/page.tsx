@@ -2,15 +2,14 @@
 import React, { useContext, useState } from "react";
 import ContactStyles from "../Components/CSS_Modules/Contact.module.css";
 import { ContactContext } from "../store/ContactContext";
+import { ThemeContext } from "../store/CtxProvider";
 
 function genRandKey() {
   const num = Math.floor(Math.random() * 100000);
   return num;
 }
-interface Props {
-  theme: string;
-}
-  const Contact = (props: Props) => {
+
+  const Contact = () => {
   //state for contact form inputs
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
@@ -18,6 +17,7 @@ interface Props {
   const [message, setMessage] = useState("");
 
   const contact = useContext(ContactContext);
+  const theme = useContext(ThemeContext);
   
   //POST request to server side API @ app/api/contact/route.ts
   async function sendContactMessage() {
@@ -55,7 +55,7 @@ interface Props {
 
   return (
     <div className={ ContactStyles.mainDiv }>
-      <section className={props.theme === 'container_light' ? ContactStyles.contactContainer : ContactStyles.contactContainerDark} id="contactSection">
+      <section className={theme.body === 'container_light' ? ContactStyles.contactContainer : ContactStyles.contactContainerDark} id="contactSection">
         <button onClick={contact.clickHandle} className={ContactStyles.exit}>← Exit</button>
         <h2 className={ContactStyles.contactTitle} id="aboutSection">
           Point of <span className={ContactStyles.name2}>Contact</span>
