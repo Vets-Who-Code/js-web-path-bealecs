@@ -3,10 +3,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../store/CtxProvider";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
-import ContactContextProvider, {
-  ContactContext,
-} from "../store/ContactContext";
-import Contact from "../Contact/page";
+import { ContactContext } from "../store/ContactContext";
 
 interface Props {
   children: React.ReactNode;
@@ -14,8 +11,6 @@ interface Props {
 
 export const Main = (props: Props) => {
   const theme = useContext(ThemeContext);
-  const contact = useContext(ContactContext);
-
   return (
     <div>
       <Navigation />

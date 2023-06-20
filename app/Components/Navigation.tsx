@@ -86,9 +86,9 @@ export const Navigation = () => {
               </Link>
             </li>
             <li className={NavigationStyles.listItem} onClick={contact.clickHandle} id="projectsID">
-              <Link className={NavigationStyles.navButton} href="#">
+              <div className={NavigationStyles.navButton}> 
                 Contact
-              </Link>
+              </div>
             </li>
             <li className={NavigationStyles.listItem} id="projectsID">
               <Link className={NavigationStyles.navButton} href="Resume">
