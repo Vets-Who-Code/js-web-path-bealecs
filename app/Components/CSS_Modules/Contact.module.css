@@ -10,22 +10,22 @@
   transition: all ease 0.3s;
 }
 .contactContainer {
-  min-height: 60vh;
+  min-height: 40vh;
   background-color: white;
   margin: auto;
   border-radius: 1rem;
   padding: 2rem;
-  width: 50%;
+  width: 30%;
   border: 1px solid orange;
 }
 .contactContainerDark {
-  min-height: 60vh;
+  min-height: 40vh;
   background-color: #1c3144;
   color: white;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 1rem;
   padding: 2rem;
-  width: 50%;
+  width: 30%;
   border: 1px solid orange;
 }
 .contactContainer .exit {
@@ -154,11 +154,23 @@
   .contactContainer {
     width: 80%;
   }
-  .contactContainer form {
+  .contactForm {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .formDiv {
     width: 100%;
   }
   .footer-button {
     font-size: 3rem;
+  }
+  .textareaDiv {
+    display: block;
+    width: 100%;
+  }
+  .textareaDiv textarea {
+    width: 90%;
   }
   .name2 {
     font-size: 3rem;

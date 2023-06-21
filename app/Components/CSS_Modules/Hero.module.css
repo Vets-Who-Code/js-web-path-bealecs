@@ -117,6 +117,7 @@
   justify-content: space-evenly;
   width: 100%;
   margin: 1rem auto;
+  z-index: 0;
 }
 /* End of Landing Section */
 
@@ -124,18 +125,32 @@
   /*Landing Section*/
 
   .typewriterText {
-    font-size: 1rem;
-  }
-  .landingSection {
-    padding-top: 10%;
-    width: 100%;
-  }
-  .typewriterText {
     display: none;
   }
   .pfp {
-    width: 250px;
-    margin: auto;
+    width: 80%;
+    height: 70%;
+    display: block;
+    margin: 3.6rem auto auto;
+  }
+  .landingSection {
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 95vh;
+    padding-bottom: 2rem;
+    display: block;
+  }
+  .landingInfo {
+    width: 100%;
+  }
+  .logo-title {
+    padding: 1%;
+    width: fit-content;
+    font-size: 1.5rem;
+  }
+  .iconsFlex {
+    margin: 0;
+    padding-top: 2rem;
   }
 }
 

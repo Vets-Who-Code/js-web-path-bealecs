@@ -11,18 +11,18 @@ type Props = {
 };
 
 export const ThemeContext = createContext<Ctx>({
-  body: "container_light",
+  body: "container_dark",
   onThemeChange: () => {},
 });
 
 const ThemeContextProvider = (props: Props) => {
-  const [body, setBody] = useState("container_light");
+  const [body, setBody] = useState("container_dark");
 
   const onThemeChange = () => {
-    if (body == 'container_light') {
-      setBody("container_dark");
-    } else {
+    if (body == 'container_dark') {
       setBody("container_light");
+    } else {
+      setBody("container_dark");
     }
   };
 
