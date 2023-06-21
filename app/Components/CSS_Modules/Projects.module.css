@@ -5,6 +5,7 @@
   margin: auto;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  min-height: 70vh;
 }
 .break { 
   width: 30%;
@@ -38,7 +39,7 @@
   display: block;
   width: 200px;
   height: 180px;
-  padding: 0.5rem;
+  padding: 1rem 0;
   border-radius: 50%;
   margin: auto;
   transition: all ease 0.3s;
@@ -48,7 +49,7 @@
 }
 .para {
   font-size: 1.6rem;
-  width: 70rem;
+  width: 60%;
   margin: auto;
   line-height: 2.5rem;
   padding: 1rem;

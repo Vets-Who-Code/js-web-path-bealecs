@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 10;
   align-items: center;
   transition: all ease 0.3s;
 }
@@ -19,7 +19,7 @@
   top: 0;
   width: 100%;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 10;
   align-items: center;
   transition: all ease 0.3s;
 }
@@ -42,6 +42,9 @@
   display: none;
 }
 .dropDown {
+  display: none;
+}
+.dropDownDark {
   display: none;
 }
 .logoLetters {
@@ -73,12 +76,12 @@
   color: white;
   text-decoration: none;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   padding-bottom: 0.3rem;
 }
 .navButton:hover {
-  border-bottom: 2px solid white;
-  color: white;
+  border-bottom: 2px solid orange;
+  color: orange;
 }
 .navbutton::selection {
   text-decoration: none;
@@ -127,6 +130,7 @@
     position: fixed;
     background-color: #4986b6;
     width: 100%;
+    padding-top: 3rem;
     padding-bottom: 1rem;
     transition: all ease 0.3s;
   }
@@ -135,6 +139,7 @@
     position: fixed;
     background-color: #1c3144;
     width: 100%;
+    padding-top: 3rem;
     padding-bottom: 1rem;
     transition: all ease 0.3s;
   }

@@ -37,16 +37,14 @@ export const CCLighting = () => {
             also a lifelong friend of mine. I thought it would be a great
             opportunity for all of us if I created a website for them. <br />
             <br />I was able to leverage just about all of the information I
-            needed off of their company
-            <a
+            needed off of their company <a
               className={CCLightingStyles.anchor}
               href="https://www.facebook.com/crossandcarlilelighting/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              facebook page
-            </a>
-            and create something that can hopefully bring in more customers for
+            facebook page 
+            </a> and create something that can hopefully bring in more customers for
             their business. <br />
             <br />
             React was the only tool that I utilized for this project. I created

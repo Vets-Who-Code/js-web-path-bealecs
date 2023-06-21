@@ -111,7 +111,9 @@ const Contact = () => {
               />
             </div>
             <div className={ContactStyles.textareaDiv}>
+              <label htmlFor="textareaBox">Leave your message:</label>
               <textarea
+                id="textareaBox"
                 placeholder="Message..."
                 onChange={handleMessageChange}
                 value={message}
