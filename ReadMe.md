@@ -1,5 +1,6 @@
 # Introduction
 
+### Deploy Preview for the site: [Here](https://clifcodes.vercel.app)
 1. **VQS Program.** The VetsWhoCode Qualification Standard (VQS) program is a qualification
 system of basic Training Performance Objectives (TPO) designed to establish the minimum level of
 competency required for a member to successfully perform in their grade. This VQS is a compilation of
