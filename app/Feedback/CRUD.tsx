@@ -120,6 +120,7 @@ export const CRUD = () => {
           </ul>
         </section>
       )}
+      <h4 style={{textAlign:"center",margin:"2rem auto"}}>This feature is inoperable with the current hosting option. This will be updated with new hosting.</h4>
       <form onSubmit={postComments} className={CRUDStyles.form}>
         <label htmlFor="comment">Feedback:</label>
         <input
