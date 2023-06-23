@@ -14,10 +14,9 @@
   margin: 2rem auto;
 }
 .cardsSection {
-  margin: auto;
+  margin: 0 auto;
   transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
   width: 25rem;
-
 }
 .cardsSection p {
   text-decoration: none;
@@ -97,7 +96,7 @@ li.nav-button:hover {
 .projH2 {
   text-align: center;
   padding-top: 5rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .treats {
   text-align: center;
@@ -113,10 +112,6 @@ h2.data {
   width: 50%;
   margin: auto;
   line-height: 1.5rem;
-}
-.list-item {
-  list-style: upper-roman;
-  margin-bottom: 0.5%;
 }
 /* End of Project Section */
 
@@ -137,5 +132,9 @@ h2.data {
   }
   .cardsSection p{
     width: 80%;
+  }
+  .cardsSection img {
+    width: 140px;
+    height: 125px;
   }
 }

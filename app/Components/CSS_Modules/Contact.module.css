@@ -12,6 +12,10 @@
 .contactContainer {
   min-height: 40vh;
   background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   border-radius: 1rem;
   padding: 2rem;
@@ -21,6 +25,10 @@
 .contactContainerDark {
   min-height: 40vh;
   background-color: #1c3144;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   margin: 0 auto;
   border-radius: 1rem;
@@ -153,6 +161,11 @@
   }
   .contactContainer {
     width: 80%;
+    height: 80%;
+  }
+  .contactContainerDark {
+    width: 80%;
+    height: 80%;
   }
   .contactForm {
     width: 100%;
