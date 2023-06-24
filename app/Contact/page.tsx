@@ -70,7 +70,7 @@ const Contact = () => {
           <h2 className={ContactStyles.contactTitle} id="aboutSection">
             Point of <span className={ContactStyles.name2}>Contact</span>
           </h2>
-          <p>If you are looking to get in touch, just leave your info below</p>
+          <p className={ContactStyles.mainP}>If you are looking to get in touch, just leave your info below</p>
           <form
             onSubmit={sendContactMessage}
             className={ContactStyles.contactForm}
