@@ -21,6 +21,7 @@
   padding: 2rem;
   width: 30%;
   border: 1px solid orange;
+  transition: all ease 0.3s;
 }
 .contactContainerDark {
   min-height: 40vh;
@@ -35,6 +36,7 @@
   padding: 2rem;
   width: 30%;
   border: 1px solid orange;
+  transition: all ease 0.3s;
 }
 .contactContainer .exit {
  background-color: white;
