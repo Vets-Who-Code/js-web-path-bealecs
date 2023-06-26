@@ -45,6 +45,7 @@
 .loading {
   font-size: 2rem;
   text-align: center;
+  height: 20vh;
 }
 .title {
   font-size: 1.5rem;
