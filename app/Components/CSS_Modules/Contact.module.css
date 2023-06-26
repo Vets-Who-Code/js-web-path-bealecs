@@ -21,6 +21,7 @@
   padding: 2rem;
   width: 30%;
   border: 1px solid orange;
+  transition: all ease 0.3s;
 }
 .contactContainerDark {
   min-height: 40vh;
@@ -35,6 +36,7 @@
   padding: 2rem;
   width: 30%;
   border: 1px solid orange;
+  transition: all ease 0.3s;
 }
 .contactContainer .exit {
  background-color: white;
@@ -124,6 +126,7 @@
 }
 .contactTitle {
   text-align: center;
+  margin: 2rem auto;
 }
 .contactContainer p {
   text-align: center;
@@ -134,17 +137,28 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .contactContainer p {
-    width: 90%;
+  .contactContainerDark {
+    width: 60%;
   }
   .contactForm {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .formDiv {
+    width: 70%;
+  }
+  .textareaDiv {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .contactContainer {
-    width: 90%;
+    width: 80%;
+  }
+  .contactContainerDark {
+    width: 60%;
   }
   .contactContainer p {
     width: 80%;
@@ -156,8 +170,8 @@
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
-  .contactContainer p {
-    width: 100%;
+  .mainP {
+    display: none;
   }
   .contactContainer {
     width: 80%;
@@ -166,6 +180,9 @@
   .contactContainerDark {
     width: 80%;
     height: 80%;
+  }
+  .contactContainerDark {
+    width: 80%;
   }
   .contactForm {
     width: 100%;
@@ -186,6 +203,6 @@
     width: 90%;
   }
   .name2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
