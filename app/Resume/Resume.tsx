@@ -115,7 +115,7 @@ export const ResumePage = () => {
         </div>
         <a
           className={ResumeStyles.downloadResume}
-          href="/Clifton Beale's Resume (Dice).pdf"
+          href="/Clifton Beale's Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           download

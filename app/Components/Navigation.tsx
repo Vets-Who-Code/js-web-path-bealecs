@@ -7,8 +7,10 @@ import ContactContextProvider, { ContactContext } from "../store/ContactContext"
 
 
 export const Navigation = () => {
+  //state for mobile navigation drop down menu
   const [active, setActive] = useState(false);
 
+  //handles the state for the dropdown nav menu on mobile
   const hamburgerClick = () => {
     if (!active) {
       setActive(true);
@@ -16,7 +18,7 @@ export const Navigation = () => {
       setActive(false);
     }
   };
-  
+
  const theme = useContext(ThemeContext);
  const contact = useContext(ContactContext);
  
@@ -75,22 +77,22 @@ export const Navigation = () => {
       {active && (
         <section className={theme.body === 'container_light' ? NavigationStyles.dropDown : NavigationStyles.dropDownDark} id="drop-down">
           <ul>
-            <li className={NavigationStyles.listItem} id="projectsID">
+            <li className={NavigationStyles.listItem} onClick={hamburgerClick} id="projectsID">
               <Link className={NavigationStyles.navButton} href="Projects">
                 Projects
               </Link>
             </li>
-            <li className={NavigationStyles.listItem} id="projectsID">
+            <li className={NavigationStyles.listItem} onClick={hamburgerClick} id="projectsID">
               <Link className={NavigationStyles.navButton} href="About">
                 About
               </Link>
             </li>
             <li className={NavigationStyles.listItem} onClick={contact.clickHandle} id="projectsID">
-              <Link className={NavigationStyles.navButton} href="#"> 
+              <Link className={NavigationStyles.navButton} onClick={hamburgerClick} href="#"> 
                 Contact
               </Link>
             </li>
-            <li className={NavigationStyles.listItem} id="projectsID">
+            <li className={NavigationStyles.listItem} onClick={hamburgerClick} id="projectsID">
               <Link className={NavigationStyles.navButton} href="Resume">
                 Resume
               </Link>
