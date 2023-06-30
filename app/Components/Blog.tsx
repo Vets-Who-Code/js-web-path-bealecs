@@ -1,7 +1,6 @@
 "use client";
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BlogStyles from "./CSS_Modules/Blog.module.css";
-
 
 export const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -11,7 +10,7 @@ export const Blog = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        "https://dev.to/api/articles?username=bealecs",
+        "https://dev.to/api/articles?username=bealecs"
       );
       const data = await response.json();
       setPosts(data);
@@ -36,28 +35,31 @@ export const Blog = () => {
           {loading ? (
             <p className={BlogStyles.loading}>Loading...</p>
           ) : (
-            posts.map((item) => (
-              <li className={BlogStyles.listItem} key={item.id}>
-                <h3 className={BlogStyles.title}>{item.title}</h3>
-                <img
-                  className={BlogStyles.coverImage}
-                  src={item.cover_image}
-                  alt={item.title}
-                  height="100%"
-                  width="100%"
-                ></img>
-                <p className={BlogStyles.reading}>
-                  Reading Time: {item.reading_time_minutes} minutes
-                </p>
-                <a
-                  className={BlogStyles.anchor}
-                  href={item.canonical_url}
-                  target="_blank"
-                >
-                  Visit article
-                </a>
-              </li>
-            ))
+            posts.map(
+              (item, index) =>
+                index < 5 && (
+                  <li className={BlogStyles.listItem} key={item.id}>
+                    <h3 className={BlogStyles.title}>{item.title}</h3>
+                    <img
+                      className={BlogStyles.coverImage}
+                      src={item.cover_image}
+                      alt={item.title}
+                      height="100%"
+                      width="100%"
+                    ></img>
+                    <p className={BlogStyles.reading}>
+                      Reading Time: {item.reading_time_minutes} minutes
+                    </p>
+                    <a
+                      className={BlogStyles.anchor}
+                      href={item.canonical_url}
+                      target="_blank"
+                    >
+                      Visit article
+                    </a>
+                  </li>
+                )
+            )
           )}
         </ul>
       </section>
