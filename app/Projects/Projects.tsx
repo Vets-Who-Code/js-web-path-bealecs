@@ -9,6 +9,15 @@ export const ProjectsPage = () => {
       <h2 className={ProjectsStyles.projH2} id="projectsSection">
         My <span className={ProjectsStyles.name2}>Projects</span>
       </h2>
+      <p className={ProjectsStyles.para}>
+        At the start of each project, I was jumping into mostly unfamiliar
+        territory. Through completing such projects, I was able to continue
+        expanding on my knowledge, and put real world use cases into my code.
+      </p>
+      <br />
+      
+      <section id="app" className={ProjectsStyles.issue10}></section>
+      <div className={ProjectsStyles.break}></div>
       <article className={ProjectsStyles.container} id="projects">
         <section id="pwpSection" className={ProjectsStyles.cardsSection}>
           <h4>Pips with Paul</h4>
@@ -60,24 +69,6 @@ export const ProjectsPage = () => {
           </p>
         </section>
       </article>
-      <div className={ProjectsStyles.break}></div>
-      <p className={ProjectsStyles.para}>
-        At the start of each project, I was jumping into mostly unfamiliar
-        territory. Through completing such projects, I was able to continue
-        expanding on my knowledge, and put real world use cases into my code.
-      </p>
-      <br />
-      <p className={ProjectsStyles.para}>
-        Making projects with my code has not been the only way for me to learn,
-        personally. Lately, I have been creating blog posts on subjects that I
-        feel could use some light. Some of the latest posts can be found
-        directly on the{" "}
-        <a className={ProjectsStyles.landingAnchor} href="./">
-          landing page
-        </a>
-        .
-      </p>
-      <section id="app" className={ProjectsStyles.issue10}></section>
     </div>
   );
 };
