@@ -40,7 +40,7 @@ export const CRUD = () => {
       },
     })
       .then((response) => response.json())
-      .then((data) => setCommentsData(data));
+      .then((data) => setCommentsData(data.reverse()));
   }
 
   const deleteComment = async (event) => {
@@ -94,7 +94,8 @@ export const CRUD = () => {
             Previous <span className={CRUDStyles.name2}>Feedback</span>
           </h2>
           <ul className={CRUDStyles.ul}>
-            {commentsData.map((comment) => (
+            {commentsData.map((comment, index) =>
+              index < 10 && (
               <div key={genRandKey()} className={CRUDStyles.div}>
                 <li className={CRUDStyles.comment} key={genRandKey()}>
                   {comment.comment}
