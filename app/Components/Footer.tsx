@@ -17,6 +17,9 @@ export const Footer = () => {
         <Link className={FooterStyles.linkies} href="https://dev.to/bealecs" target="_blank" rel="noreferrer noopener">
           My Dev.to Profile
         </Link>
+        <Link className={FooterStyles.linkies} href="Feedback" target="_blank" rel="noreferrer noopener">
+          Leave some feedback
+        </Link>
       </div>
       <div className={FooterStyles.socialLinks}>
         <SocialIcon

@@ -2,8 +2,8 @@
   font-size: 2rem;
   text-align: center;
   width: 60%;
-  margin: 5rem auto;
-  min-height: 40vh;
+  margin: 0 auto;
+  padding-top: 5rem;
 }
 .comment {
   font-size: 1.2rem;
@@ -24,8 +24,6 @@
   width: 20rem;
   margin: auto;
   padding: 2rem;
-  padding-top: 0;
-  min-height: 70vh;
 }
 .form label {
   margin: 1rem;

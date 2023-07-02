@@ -12,7 +12,9 @@
   background-color: #282828;
   color: white;
   transition: all ease 0.3s;
+  min-height: 85vh;
 }
 .container_light {
   transition: all ease 0.3s;
+  min-height: 85vh;
 }
