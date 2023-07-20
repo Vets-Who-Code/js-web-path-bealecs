@@ -15,10 +15,11 @@
   margin: 1rem auto;
 }
 .article {
-  width: 60rem;
+  width: 60%;
   margin: auto;
   font-size: 1.3rem;
   line-height: 2rem;
+  padding: 1rem;
 }
 .anchors {
   display: flex;
@@ -36,6 +37,18 @@
   transition: all ease 0.3s;
 }
 .anchors > a:hover {
+  text-decoration: underline;
+}
+.newProjAnchor {
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 0.4rem;
+  background-color: #f0f0f0;
+  color: black;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+.newProj.newProjAnchor {
   text-decoration: underline;
 }
 .back {

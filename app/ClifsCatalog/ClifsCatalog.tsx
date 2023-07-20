@@ -13,7 +13,7 @@ export const ClifsCatalog = () => {
         <img
           className={ClifsCatalogStyles.image}
           src="./banner.webp"
-          alt="Screenshot of pips with paul website"
+          alt="Banner logo for Clifs Catalog"
         />
         <div className={ClifsCatalogStyles.anchors}>
           <a
@@ -31,6 +31,7 @@ export const ClifsCatalog = () => {
             Check out the site directly
           </a>
         </div>
+        <h4 style={{textAlign:"center",fontSize:"2rem",padding:"2rem"}}>This project is being redone as <a className={ClifsCatalogStyles.newProjAnchor} href="https://github.com/bealecs/NextMeal" target="_blank" rel="noopener noreferrer">Next Meal</a></h4>
         <article className={ClifsCatalogStyles.article}>
           <p>
             This catalog was my most long-standing project I would say. It
