@@ -15,13 +15,11 @@
   margin: 1rem auto;
 }
 .article {
-  width: 60rem;
+  width: 60%;
   margin: auto;
   font-size: 1.3rem;
   line-height: 2rem;
-}
-.anchor {
-  color: orange;
+  padding: 1rem;
 }
 .anchors {
   display: flex;
@@ -30,6 +28,17 @@
   margin: 2rem auto;
 }
 .anchors > a {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+.anchors > a:hover {
+  text-decoration: underline;
+}
+.newProjAnchor {
   padding: 0.5rem;
   border: 1px solid;
   border-radius: 0.4rem;
@@ -38,17 +47,17 @@
   text-decoration: none;
   transition: all ease 0.3s;
 }
-.anchors > a:hover {
+.newProj.newProjAnchor {
   text-decoration: underline;
 }
 .back {
-  padding: 0.5rem;
-  border: 1px solid black;
   border-radius: 0.4rem;
   text-decoration: none;
-  color: black;
-  background-color: #f0f0f0;
+  color: white;
+  margin-bottom: 2rem 0;
+  background-color: transparent;
   transition: all ease 0.3s;
+  padding: 0.5rem;
 }
 .back:hover {
   text-decoration: underline;
@@ -69,8 +78,6 @@
   }
   .back {
     padding: 0.2rem;
-    margin: 0;
-
   }
   .anchors > a {
     width: fit-content;
