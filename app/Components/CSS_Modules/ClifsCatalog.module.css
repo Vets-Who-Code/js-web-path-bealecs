@@ -40,10 +40,8 @@
 }
 .newProjAnchor {
   padding: 0.5rem;
-  border: 1px solid;
-  border-radius: 0.4rem;
-  background-color: #f0f0f0;
-  color: black;
+  border-bottom: 1px solid;
+  color: orange;
   text-decoration: none;
   transition: all ease 0.3s;
 }

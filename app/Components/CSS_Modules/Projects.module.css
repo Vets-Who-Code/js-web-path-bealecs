@@ -12,6 +12,7 @@
   background-color: grey;
   height: 2px;
   margin: 2rem auto;
+  margin-bottom: 4rem;
 }
 .cardsSection {
   margin: 0 auto;
@@ -118,6 +119,11 @@ h2.data {
 
 
 /* Mobile View */
+@media only screen and (max-width: 768px) {
+  .para {
+    display: none;
+  }
+}
 @media only screen and (max-width: 480px) {
   /* Projects Section */
   .data-p {
