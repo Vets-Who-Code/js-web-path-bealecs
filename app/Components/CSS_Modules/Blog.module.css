@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 .coverImage {
-  border-radius: 5%;
+  border-radius: 0.5rem;
   width: 100%;
   align-content: center;
   margin: 1rem auto;
