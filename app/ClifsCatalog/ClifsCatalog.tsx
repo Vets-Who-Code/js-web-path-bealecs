@@ -1,19 +1,15 @@
-import Link from "next/link";
+"use client"
+import { useContext } from "react";
 import ClifsCatalogStyles from "../Components/CSS_Modules/ClifsCatalog.module.css";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const ClifsCatalog = () => {
+
+  const theme = useContext(ThemeContext);
   return (
-    <>
-      <section className={ClifsCatalogStyles.container}>
-        <Link className={ClifsCatalogStyles.back} href="/Projects">
-          <span className={ClifsCatalogStyles.arrow}>←</span> Back to projects
-        </Link>
-        <h2>Clif's Catalog / Next Meal</h2>
-        <img
-          className={ClifsCatalogStyles.image}
-          src="./banner.webp"
-          alt="Banner logo for Clifs Catalog"
-        />
+    <section className={theme.body}>
+      <div className={ClifsCatalogStyles.container}>
+        <h2>Next Meal</h2>
         <div className={ClifsCatalogStyles.anchors}>
           <a
             href="https://www.github.com/bealecs/nextmeal"
@@ -30,7 +26,6 @@ export const ClifsCatalog = () => {
             Check out the site directly
           </a>
         </div>
-        <h4 style={{textAlign:"center",fontSize:"2rem",padding:'2rem',lineHeight:"3rem"}}>The previous version can be found here <a className={ClifsCatalogStyles.newProjAnchor} href="https://github.com/bealecs/meal" target="_blank" rel="noopener noreferrer">Clif's Catalog</a></h4>
         <article className={ClifsCatalogStyles.article}>
           <p>
             This web app has been my most long-standing project I would say. It
@@ -57,7 +52,7 @@ export const ClifsCatalog = () => {
             overall it was definitely an enriching experience.
           </p>
         </article>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };

@@ -12,18 +12,40 @@
   background-color: #282828;
   color: white;
   transition: all ease 0.3s;
-  min-height: 85vh;
+  min-height: 90vh;
 }
-.container_dark a {
+.container_dark button {
   color: white;
-}
-.container_light a {
-  color: black;
 }
 a:hover {
   color: orange;
 }
 .container_light {
   transition: all ease 0.3s;
-  min-height: 85vh;
+  min-height:90vh;
 }
+@media only screen and (max-width: 1200px) {
+  .container_dark {
+    min-height: 100vh;
+  }
+  .container_light {
+    min-height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container_dark {
+    min-height: 120vh;
+  }
+  .container_light {
+    min-height: 120vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container_dark {
+    min-height: 140vh;
+  }
+  .container_light {
+    min-height: 140vh;
+  }
+}
+

@@ -13,7 +13,8 @@
   align-content: center;
 }
 .anchor {
-  color: black;
+  color: orange;
+  background-color: whitesmoke;
   text-decoration: none;
   padding: 0.8rem;
   background-color: transparent;

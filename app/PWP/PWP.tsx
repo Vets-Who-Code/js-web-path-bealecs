@@ -1,20 +1,16 @@
-import Link from "next/link";
+"use client"
+import { useContext } from "react";
 import PWPStyles from "../Components/CSS_Modules/PWP.module.css";
-import { Footer } from "../Components/Footer";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const PWP = () => {
+
+  const theme = useContext(ThemeContext);
+
   return (
-    <>
-      <section className={PWPStyles.container}>
-        <Link className={PWPStyles.back} href="/Projects">
-          <span className={PWPStyles.arrow}>←</span> Back to projects
-        </Link>
+    <section className={theme.body}>
+      <div className={PWPStyles.container}>
         <h2> Pips With Paul </h2>
-        <img
-          className={PWPStyles.image}
-          src="./pwpLogo.webp"
-          alt="Screenshot of pips with paul website"
-        />
         <div className={PWPStyles.anchors}>
           <a
             href="https://www.github.com/bealecs/pipswithpaul"
@@ -56,7 +52,7 @@ export const PWP = () => {
             experience.
           </p>
         </article>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };

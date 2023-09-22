@@ -1,20 +1,16 @@
-import Link from "next/link";
+"use client"
+import { useContext } from "react";
 import CCLightingStyles from "../Components/CSS_Modules/CCLighting.module.css";
-import { Footer } from "../Components/Footer";
+import { ThemeContext } from "../store/CtxProvider";
 
 export const CCLighting = () => {
+
+  const theme = useContext(ThemeContext);
+
   return (
-    <>
-      <section className={CCLightingStyles.container}>
-        <Link className={CCLightingStyles.back} href="/Projects">
-          <span className={CCLightingStyles.arrow}>←</span> Back to projects
-        </Link>
+    <section className={theme.body}>
+      <div className={CCLightingStyles.container}>
         <h2>Cross & Carlile Lighting</h2>
-        <img
-          className={CCLightingStyles.image}
-          src="./cclightinglogo.webp"
-          alt="Screenshot of pips with paul website"
-        />
         <div className={CCLightingStyles.anchors}>
           <a
             href="https://www.github.com/bealecs/CCLighting"
@@ -58,7 +54,7 @@ export const CCLighting = () => {
             and with all of my projects.
           </p>
         </article>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };

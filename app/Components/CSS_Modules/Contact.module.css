@@ -117,9 +117,8 @@
   width: 100%;
   padding: 3%;
   margin-top: 5%;
-  background-color: #f0f0f0;
+  background-color: transparent;
   transition: all ease 0.3s;
-  border-radius: 0.4rem;
 }
 .contactForm button:hover {
   text-decoration: underline;

@@ -1,94 +1,56 @@
 /* Start of Project Section */
-.container {
-  width: 80%;
+.projectsContainer {
+  width: 100%;
+  padding-top: 5rem;
+}
+.individualContainer {
   display: flex;
-  margin: auto;
+  flex-direction: column;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  min-height: 70vh;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 100%;
 }
-.break { 
-  width: 30%;
-  background-color: grey;
-  height: 2px;
-  margin: 2rem auto;
-  margin-bottom: 4rem;
+.individualContainer .cardsSection {
+  background-color: transparent;
+  border: none;
+  margin-top: 1rem;
+  border-bottom: 5px solid transparent;
+  transition: all ease 0.3s;
 }
-.cardsSection {
-  margin: 0 auto;
-  transition: box-shadow ease-in 0.2s, border ease-in 0.2s;
-  width: 25rem;
+.individualContainer .cardsSection.cardsSection:focus, .cardsSection:hover {
+  border-bottom: 5px solid orange;
 }
 .cardsSection p {
   text-decoration: none;
-  margin: 1rem auto;
   padding: 1rem;
   line-height: 1.5rem;
   font-size: 1.2rem;
-  width: 80%;
 }
-.cardsSection:nth-child(odd) p {
-  min-height: 130px;
+.forMobile {
+  display: none;
+}
+.forDesktop {
+  display: block;
 }
 .cardsSection h4 {
   font-size: 1.5rem;
-  text-align: center;
   text-decoration: none;
+  text-align: center;
 }
 .cardsSection img {
   display: block;
-  width: 200px;
-  height: 180px;
+  width: 180px;
+  height: 160px;
   padding: 1rem 0;
   border-radius: 50%;
-  margin: auto;
   transition: all ease 0.3s;
 }
-.cardsSection img:hover {
-  scale: 1.1;
-}
-.para {
-  font-size: 1.6rem;
-  width: 60%;
-  margin: auto;
-  line-height: 2.5rem;
-  padding: 1rem;
-}
-.api {
-  margin: auto;
-  margin-top: 2%;
-  padding: 1%;
-  border: 1px solid black;
-  border-radius: 10%;
-  transition: background-color ease-in 0.2s, color ease-in 0.2s,
-    border ease-in 0.2s, box-shadow ease-in 0.2s;
-}
-.api:hover {
-  box-shadow: #4986b6 0px 4px 12px 0px;
-  background-color: white;
-  color: #4986b6;
-  border: 1px solid #4986b6;
-}
-li.nav-button {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  padding: 1%;
-  margin: 1%;
-  box-shadow: black 0px 0px 4px 0px;
-  border-radius: 10%;
-  transition: background-color ease-in 0.2s, box-shadow ease-in 0.2s;
-  background-color: #4986b6;
-  color: white;
-}
-li.nav-button:hover {
-  background-color: #1c3144;
-  box-shadow: white 0px 0px 8px 0px;
-}
-.landingAnchor {
-  text-decoration: underline;
-  color: orange;
-  font-weight: bolder;
+.projectDisplay p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 1rem 0;
 }
 .name2 {
   color: orange;
@@ -96,40 +58,52 @@ li.nav-button:hover {
 }
 .projH2 {
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-.treats {
-  text-align: center;
-}
-h2.data {
-  padding: 1%;
-}
-.data-img {
-  width: 300px;
-  border-radius: 10%;
-}
-.data-p {
-  width: 50%;
-  margin: auto;
-  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all ease 0.3s;
 }
 /* End of Project Section */
 
-
+@media only screen and (max-width: 1400px) {
+  .individualContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .projectsContainer {
+    padding-top: 16rem;
+  }
+}
 
 /* Mobile View */
 @media only screen and (max-width: 768px) {
   .para {
     display: none;
   }
+  .cardsSection {
+    width: 30%;
+  }
+  .forMobile {
+    display: block;
+    margin: 2rem 0;
+    font-size: 3rem;
+  }
+
+  .forDesktop {
+    display: none;
+  }
+   .projectsContainer {
+    padding-top: 10rem;
+   }
+   .cardsSection img {
+    display: none;
+   }
 }
 @media only screen and (max-width: 480px) {
   /* Projects Section */
-  .data-p {
-    width: 90%;
-  }
-  .container {
+  .individualContainer {
     width: 90%;
   }
   .para {
@@ -138,9 +112,5 @@ h2.data {
   }
   .cardsSection p{
     width: 80%;
-  }
-  .cardsSection img {
-    width: 140px;
-    height: 125px;
   }
 }
